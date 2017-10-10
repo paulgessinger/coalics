@@ -1,0 +1,13 @@
+.login {
+  max-width:50%;
+  /*margin-top:1rem;*/
+}
+
+.editable-table tr td:last-child, .editable-table tr th:last-child {
+  text-align:right;
+}
+
+.invalid-feedback ul {
+  list-style-type:none;
+  padding:0;
+}

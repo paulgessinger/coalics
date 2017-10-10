@@ -1,0 +1,28 @@
+{% from "macros.html" import input, back, subnav, subnav_back %}
+{% extends "base.html" %}
+{% block content %}
+<div class="card login mx-auto">
+  <div class="card-body">
+    <h4 class="card-title">Login</h4>
+    <form novalidate method="POST">
+    {{ input(form.email) }}
+    {{ input(form.password) }}
+    {{ form.csrf_token }}
+    <input type="submit" class="btn btn-primary mt-3" value="Login"/>
+    {#
+      <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"/>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="psw">Password</label>
+        <input type="password" class="form-control" name="psw" id="psw" placeholder="Password">
+      </div>
+      <input type="submit" class="btn btn-primary"/>
+      #}
+    </form>
+  </div>
+</div>
+
+{% endblock %}

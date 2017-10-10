@@ -1,0 +1,17 @@
+{% from "macros.html" import input, subnav_back %}
+{% extends "calendars.html" %}
+{% block subnav %}
+{{ subnav_back(url_for("calendars")) }}
+{% endblock %}
+
+
+{% block content %}
+<form novalidate method="POST" action="">
+  <div class="form-group">
+    {{ input(form.name) }}
+    {{ form.csrf_token }}
+  </div>
+  <button class="btn btn-primary" type="submit">Save</button>
+</form>
+{% endblock %}
+

@@ -1,0 +1,15 @@
+flask
+gunicorn
+circus
+celery[redis]
+redis
+Flask-Migrate
+flask_sqlalchemy
+sqlalchemy-utils
+flask-login
+passlib
+alembic
+bcrypt
+Flask-Session
+furl
+WTForms

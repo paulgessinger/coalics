@@ -1,0 +1,38 @@
+{% from "macros.html" import subnav, subnav_item %}
+{% extends "base.html" %}
+
+{% block subnav %}
+{{ subnav_item("Add new", url_for("calendar_add")) }}
+{% endblock %}
+
+{% block content %}
+
+
+<table class="table editable-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Edit</th>
+    </tr>
+  </thead>
+  <tbody>
+{% for cal in calendars %}
+<tr>
+  <td>
+    <a href="{{ url_for("calendar_edit", cal_id=cal.id) }}">{{ cal.name }}</a>
+  </td>
+  <td>
+      <form method="post" action="{{ url_for("calendar_delete", cal_id=cal.id) }}">
+    <div class="btn-group" role="group" aria-label="Basic example">
+      {#<a href="{{ url_for("calendar_edit", cal_id=cal.id) }}" class="btn btn-outline-secondary">Edit</a>#}
+        <button type="submit" class="btn btn-outline-danger">Delete</button>
+    </div>
+        {{ delete_form.csrf_token }}
+      </form>
+    </td>
+</tr>
+{% endfor %}
+  </tbody>
+</table>
+
+{% endblock %}
