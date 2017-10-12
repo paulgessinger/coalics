@@ -35,7 +35,7 @@ class CalendarSource(db.Model):
     url = db.Column(types.url.URLType(), nullable=True)
     positive_pattern = db.Column(db.String(255), default=".*")
     negative_pattern = db.Column(db.String(255), default="")
-    alerts = db.Column(types.scalar_list.ScalarListType(), default=[])
+    alerts = db.Column(db.String(255), default="")
     calendar_id = db.Column(db.Integer, db.ForeignKey("calendar.id"))
     calendar = db.relationship("Calendar", backref=db.backref("sources", lazy="dynamic"))
 

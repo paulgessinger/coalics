@@ -7,12 +7,17 @@
 
 {% block content %}
 
-<form novalidate method="POST" action="">
-  <div class="form-group">
+<div class="card">
+  <h4 class="card-header">Add calendar group</h4>
+  <div class="card-body">
+<form novalidate method="POST" action="" class="form-inline">
+  <div class="form-group mr-2">
     {{ input(form.name) }}
     {{ form.csrf_token }}
   </div>
   <button class="btn btn-primary" type="submit">Save</button>
 </form>
+</div>
+</div>
 {% endblock %}
 

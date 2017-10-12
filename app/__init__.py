@@ -24,14 +24,18 @@ app.session_interface = RedisSessionInterface(StrictRedis(host="redis"), __name_
 
 
 from .models import User, Calendar, CalendarSource
-from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm
+from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
 
 
 
 migrate = Migrate(app, db)
 
 lm = LoginManager()
+lm.login_view = "login"
 lm.init_app(app)
+
+app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
+
 
 def make_celery(app):
     celery = Celery(app.import_name, backend=app.config['CELERY_RESULT_BACKEND'],
@@ -54,18 +58,7 @@ celery = make_celery(app)
 
 @celery.on_after_configure.connect
 def setup_periodic_tasks(sender, **kwargs):
-    # Calls test('hello') every 10 seconds.
     sender.add_periodic_task(10*60, update.s(), name='add every 10')
-
-    # Calls test('world') every 30 seconds
-    # sender.add_periodic_task(30.0, test.s('world'), expires=10)
-
-    # # Executes every Monday morning at 7:30 a.m.
-    # sender.add_periodic_task(
-        # crontab(hour=7, minute=30, day_of_week=1),
-        # test.s('Happy Mondays!'),
-    # )
-
 
 @celery.task()
 def update():
@@ -81,30 +74,6 @@ def get_or_abort(model, object_id, code=404):
     if result is None:
         abort(code)
     return result
-
-def generate_csrf_token(force=False):
-    if force:
-        del flask.session["_csrf_token"]
-    if '_csrf_token' not in flask.session:
-        flask.session['_csrf_token'] = uuid.uuid4()
-    return flask.session['_csrf_token']
-
-app.jinja_env.globals['csrf_token'] = generate_csrf_token
-
-def csrf_protected(func):
-    @wraps(func)
-    def handler(*args, **kwargs):
-        if request.method == "POST":
-            csrf = request.form["_csrf_token"]
-            sess_csrf = flask.session["_csrf_token"]
-            app.logger.debug(csrf)
-            app.logger.debug(sess_csrf)
-            if not csrf or csrf != csrf:
-                appl.logger.error("CSRF failure")
-                flask.abort(403)
-
-        return func(*args, **kwargs)
-    return handler
 
 @app.route("/")
 def home():
@@ -150,7 +119,7 @@ def calendar_add():
 def calendar_edit(cal_id):
 
     cal = Calendar.query.get(cal_id)
-    if not cal:
+    if not cal or cal.owner != current_user:
         flask.flash("Calendar not found", "error")
         redirect(url_for("calendars"))
 
@@ -158,17 +127,96 @@ def calendar_edit(cal_id):
 
     if request.method == "GET":
         form = CalendarForm(obj=cal)
-        return render_template("calendar_edit.html", form=form)
+        delete_form = DeleteForm()
+        return render_template("calendar_edit.html", form=form, sources=sources, cal_id=cal_id, delete_form=delete_form)
     
     # is post
     form = CalendarForm(request.form, obj=cal)
     if not form.validate():
-        return render_template("calendar_edit.html", form=form)
+        return render_template("calendar_edit.html", form=form, cal_id=cal_id)
     
     form.populate_obj(cal)
     db.session.commit()
     flask.flash("Calendar updated", "success")
     return redirect(url_for("calendars"))
+
+
+@app.route("/calendar/<int:cal_id>/source", methods=["GET", "POST"])
+@login_required
+def add_source(cal_id):
+    cal = Calendar.query.get(cal_id)
+    if not cal or cal.owner != current_user:
+        flask.flash("Calendar not found", "error")
+        redirect(url_for("calendars"))
+    
+    if request.method == "GET":
+        form = CalendarSourceForm()
+        return render_template("source_edit.html", form=form, cal_id=cal_id)
+
+    form = CalendarSourceForm(request.form)
+    if not form.validate():
+        return render_template("source_edit.html", form=form, cal_id=cal_id)
+
+    source = CalendarSource()
+    source.calendar=cal
+    form.populate_obj(source)
+    db.session.add(source)
+    db.session.commit()
+
+    return redirect(url_for("calendar_edit", cal_id=cal_id))
+
+@app.route("/source/<int:source_id>", methods=["GET"])
+@login_required
+def view_source(source_id):
+    source = CalendarSource.query.get(source_id)
+    if not source or source.calendar.owner != current_user:
+        abort(400)
+
+    return "this is it"
+
+@app.route("/calendar/<int:cal_id>/source/<int:source_id>/edit", methods=["GET", "POST"])
+@login_required
+def edit_source(cal_id, source_id):
+    cal = Calendar.query.get(cal_id)
+    source = CalendarSource.query.get(source_id)
+    if not cal or cal.owner != current_user or source.calendar != cal:
+        flask.flash("Calendar not found", "error")
+        redirect(url_for("calendars"))
+
+    
+    if request.method == "GET":
+        form = CalendarSourceForm(obj=source)
+        return render_template("source_edit.html", form=form, cal_id=cal_id)
+
+    form = CalendarSourceForm(request.form)
+    if not form.validate():
+        return render_template("source_edit.html", form=form, cal_id=cal_id)
+
+    # source = CalendarSource()
+    # source.calendar=cal
+    # form.populate_obj(source)
+    # db.session.add(source)
+    form.populate_obj(source)
+    db.session.commit()
+
+    return redirect(url_for("calendar_edit", cal_id=cal_id))
+
+@app.route("/calendar/<int:cal_id>/source/<int:source_id>/delete", methods=["POST"])
+@login_required
+def delete_source(cal_id, source_id):
+    cal = Calendar.query.get(cal_id)
+    source = CalendarSource.query.get(source_id)
+    if not cal or cal.owner != current_user or source.calendar != cal:
+        abort()
+    
+    delete_form = DeleteForm(request.form)
+    if not delete_form.validate():
+        flask.flash("Unable to delete item", "danger")
+        return redirect(request.referrer)
+
+    db.session.delete(source)
+    db.session.commit()
+    return redirect(url_for("calendar_edit", cal_id=cal_id))
 
 @app.route("/calendar/<int:cal_id>/delete", methods=["post"])
 @login_required
@@ -232,13 +280,15 @@ def register():
     guest = User('guest', 'guest@example.com', "hallo")
     db.session.add(guest)
     db.session.commit()
-    generate_csrf_token(True)
     return "Ok"
 
 @app.route("/logout", methods=["POST"])
 @login_required
-@csrf_protected
 def logout():
-    logout_user()
-    generate_csrf_token(True)
-    return flask.redirect("login")
+
+    form = LogoutForm(request.form)
+    if form.validate():
+        logout_user()
+        return flask.redirect("login")
+    else:
+        flask.abort(400)

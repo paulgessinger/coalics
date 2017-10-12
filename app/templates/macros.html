@@ -1,11 +1,15 @@
-{% macro input(field) %}
-      {{ field.label }}
-      {{ field(required=field.flags.required) }}
-      {% if field.errors %}
-      <div class="invalid-feedback">
-        <ul class="errors">{% for error in field.errors %}<li>{{ error }}</li>{% endfor %}</ul>
-      </div>
-      {% endif %}
+{% macro input(field, classes=[], addon="", addon_end="", label=False) %}
+<div class="form-group">
+        {% if label %}
+          {{ field.label() }}
+        {% endif %}
+        {{ field(required=field.flags.required, placeholder=field.label.text, class=classes|join(" ")) }}
+        {% if field.errors %}
+        <div class="invalid-feedback">
+          <ul class="errors">{% for error in field.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+</div>
 {% endmacro %}
 
 

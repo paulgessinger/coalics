@@ -10,7 +10,7 @@ def bootstrap(cls):
             self.error_class = error_class
 
         def __call__(self, field, **kwargs):
-            c = kwargs.pop('class', '') or kwargs.pop('class_', '').split(" ")
+            c = kwargs.pop('class', '').split(" ") or kwargs.pop('class_', '').split(" ")
 
             c.append("form-control")
 
@@ -73,14 +73,20 @@ class CalendarForm(BaseForm):
     name = StringField("Name", [validators.Length(min=3), validators.DataRequired()], widget=TextInput())
 
 class CalendarSourceForm(BaseForm):
-    url = StringField("URL", [validators.URL(), validators.DataRequired()])
-    positive_pattern = StringField("Positve pattern")
-    negative_pattern = StringField("Negative pattern")
-    alerts = SelectMultipleField(choices=[5, 10, 15])
+    url = StringField("URL", [validators.URL(), validators.DataRequired()], widget=TextInput())
+    positive_pattern = StringField("Positve pattern", default=".*", widget=TextInput())
+    negative_pattern = StringField("Negative pattern", widget=TextInput())
+    alerts = StringField("Alerts", default="15", widget=TextInput())
 
-    def validate_alerts(form, field):
-        if not(all(map(is_int, field.data))):
-            raise ValidationError("Alerts must be integers")
+    # def validate_alerts(form, field):
+        # if not(all(map(is_int, field.data))):
+            # raise ValidationError("Alerts must be integers")
 
 class DeleteForm(BaseForm):
+    pass
+
+class EditForm(BaseForm):
+    pass
+
+class LogoutForm(BaseForm):
     pass

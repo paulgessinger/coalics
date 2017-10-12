@@ -1,0 +1,24 @@
+{% from "macros.html" import input, back, subnav, subnav_back %}
+{% extends "base.html" %}
+
+{% block subnav %}
+{{ subnav_back(url_for("calendar_edit", cal_id=cal_id)) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="card">
+  <h4 class="card-header">Add calendar source</h4>
+  <div class="card-body">
+<form novalidate method="POST" action="" class="">
+    {{ input(form.url, classes=["form-control-lg"]) }}
+    {{ input(form.positive_pattern, label=True) }}
+    {{ input(form.negative_pattern, label=True) }}
+    {{ input(form.alerts, label=True) }}
+    {{ form.csrf_token }}
+  <button class="btn btn-primary" type="submit">Save</button>
+</form>
+</div>
+</div>
+{% endblock %}
+

@@ -6,12 +6,53 @@
 
 
 {% block content %}
-<form novalidate method="POST" action="">
-  <div class="form-group">
-    {{ input(form.name) }}
-    {{ form.csrf_token }}
+<div class="card">
+  <h4 class="card-header">Calendar group</h4>
+  <div class="card-body">
+    <form novalidate method="POST" action="" class="form-inline">
+        {{ input(form.name) }}
+        {{ form.csrf_token }}
+      <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+
+    {% if sources %}
+    <div class="card mt-5">
+
+      <div class="card-body">
+        <h4 class="card-title">Sources</h4>
+        <table class="table editable-table">
+          <thead>
+            <tr>
+              <th>URL</th>
+              <th>actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for source in sources %}
+            <tr>
+              <td>
+                <a href="{{ url_for("view_source", source_id=source.id) }}">{{ source.url }}</a>
+              </td>
+              <td>
+                <form method="post" action="{{ url_for("delete_source", cal_id=cal_id, source_id=source.id) }}">
+                  <div class="btn-group" role="group">
+                    <a href="{{ url_for("edit_source", cal_id=cal_id, source_id=source.id) }}" class="btn btn-outline-secondary">Edit</a>
+                    <button type="submit" class="btn btn-outline-danger">Delete</button>
+                  </div>
+                  {{ delete_form.csrf_token }}
+                </form>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <a href="{{ url_for("add_source", cal_id=cal_id) }}" class="btn btn-primary">Add new</a>
+
+      </div>
+    </div>
   </div>
-  <button class="btn btn-primary" type="submit">Save</button>
-</form>
+  {% endif %}
+</div>
 {% endblock %}
 
