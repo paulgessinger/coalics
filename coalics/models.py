@@ -1,5 +1,5 @@
 from sqlalchemy_utils import types
-from app import db
+from coalics import db
 import flask_login
 
 

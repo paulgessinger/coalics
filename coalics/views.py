@@ -1,84 +1,29 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 import flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
 from flask_login import LoginManager, login_required, login_user, current_user, logout_user
-from flask_session import RedisSessionInterface
-from redis import StrictRedis
-import uuid
-from functools import wraps
-import logging
-from celery import Celery
+import time
 
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////data/test.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config["CSRF_SECRET_KEY"] = b'0694d5d1-87b4-4afa-b6bc-03f935f41c48'
-
-
-db = SQLAlchemy(app)
-
-app.session_interface = RedisSessionInterface(StrictRedis(host="redis"), __name__)
-
-
-
+from coalics.util import get_or_abort
 from .models import User, Calendar, CalendarSource
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
 
-
-
-migrate = Migrate(app, db)
-
-lm = LoginManager()
-lm.login_view = "login"
-lm.init_app(app)
+from coalics import app, q
 
 app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
 
-
-def make_celery(app):
-    celery = Celery(app.import_name, backend=app.config['CELERY_RESULT_BACKEND'],
-                    broker=app.config['CELERY_BROKER_URL'])
-    celery.conf.update(app.config)
-    TaskBase = celery.Task
-    class ContextTask(TaskBase):
-        abstract = True
-        def __call__(self, *args, **kwargs):
-            with app.app_context():
-                return TaskBase.__call__(self, *args, **kwargs)
-    celery.Task = ContextTask
-    return celery
-
-app.config.update(
-    CELERY_BROKER_URL='redis://redis:6379',
-    CELERY_RESULT_BACKEND='redis://redis:6379'
-)
-celery = make_celery(app)
-
-@celery.on_after_configure.connect
-def setup_periodic_tasks(sender, **kwargs):
-    sender.add_periodic_task(10*60, update.s(), name='add every 10')
-
-@celery.task()
-def update():
-    print("UPDATE")
-
-
-@lm.user_loader
-def load_user(user_id):
-    return User.query.get(user_id)
-
-def get_or_abort(model, object_id, code=404):
-    result = model.query.get(object_id)
-    if result is None:
-        abort(code)
-    return result
-
+def tmp_update(var):
+    print("TMP UPDATE", var)
+    return "blubb"
 @app.route("/")
 def home():
     print("run update")
-    update.delay()
+    r = q.enqueue(tmp_update, "HALLO")
+    while not r.result:
+        time.sleep(0.1)
+
+    return r.result
+
+    # update.delay()
     if current_user.is_authenticated:
         return flask.redirect(url_for("calendars"))
     return render_template("home.html")

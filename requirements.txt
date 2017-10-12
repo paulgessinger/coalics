@@ -13,3 +13,5 @@ bcrypt
 Flask-Session
 furl
 WTForms
+rq
+rq-scheduler
