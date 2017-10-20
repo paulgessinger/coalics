@@ -3,25 +3,23 @@ import flask
 from flask_login import LoginManager, login_required, login_user, current_user, logout_user
 import time
 
-from coalics.util import get_or_abort
+from .util import get_or_abort
 from .models import User, Calendar, CalendarSource
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
+from .tasks import update_sources
 
-from coalics import app, q
+from coalics import app, q, db
 
 app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
 
-def tmp_update(var):
-    print("TMP UPDATE", var)
-    return "blubb"
 @app.route("/")
 def home():
     print("run update")
-    r = q.enqueue(tmp_update, "HALLO")
-    while not r.result:
-        time.sleep(0.1)
+    r = q.enqueue(update_sources)
+    # while not r.result:
+        # time.sleep(0.1)
 
-    return r.result
+    # return ""
 
     # update.delay()
     if current_user.is_authenticated:

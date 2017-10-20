@@ -7,7 +7,6 @@ from flask_session import RedisSessionInterface
 import uuid
 from functools import wraps
 import logging
-from celery import Celery
 from redis import StrictRedis
 from rq import Queue
 

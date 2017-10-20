@@ -1,7 +1,6 @@
 flask
 gunicorn
 circus
-celery[redis]
 redis
 Flask-Migrate
 flask_sqlalchemy
@@ -15,3 +14,7 @@ furl
 WTForms
 rq
 rq-scheduler
+requests
+icalendar
+pytz
+tzlocal

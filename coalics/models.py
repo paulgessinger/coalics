@@ -39,3 +39,18 @@ class CalendarSource(db.Model):
     calendar_id = db.Column(db.Integer, db.ForeignKey("calendar.id"))
     calendar = db.relationship("Calendar", backref=db.backref("sources", lazy="dynamic"))
 
+
+class Event(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    uid = db.Column(db.String(255), nullable=False, unique=True)
+    summary = db.Column(db.Text())
+    description = db.Column(db.Text())
+    start = db.Column(db.TIMESTAMP())
+    end = db.Column(db.TIMESTAMP())
+    timestamp = db.Column(db.TIMESTAMP())
+    url = db.Column(types.url.URLType())
+    location = db.Column(db.Text())
+    source_id = db.Column(db.Integer, db.ForeignKey("calendar_source.id"))
+    source = db.relationship("CalendarSource", backref=db.backref("events", lazy="dynamic"))
+
+

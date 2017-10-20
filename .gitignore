@@ -2,3 +2,5 @@
 database
 *.pid
 celerybeat-schedule
+.cache
+/venv
