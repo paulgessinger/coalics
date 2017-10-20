@@ -16,5 +16,6 @@ rq
 rq-scheduler
 requests
 icalendar
+pytest
 pytz
 tzlocal

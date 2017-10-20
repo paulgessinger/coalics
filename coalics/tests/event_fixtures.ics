@@ -1,0 +1,79 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:ATLAS WÜeekly
+DTSTART;VALUE=DATE-TIME:20170912T120000Z
+DTEND;VALUE=DATE-TIME:20170912T130500Z
+DTSTAMP;VALUE=DATE-TIME:20171013T170900Z
+UID:indico-event-665016@indico.cern.ch
+DESCRIPTION:Speakers: Karl Jakobs (Albert-Ludwigs-Universitaet Freiburg (D
+ E))\nVidyo PIN is 120917 \n\nReminder: ATLAS Weekly meetings are recorded
+  \n\n \n\nHelp:\n\nFor questions/problems regarding Vidyo\, please conta
+ ct: vidyo-support@cern.ch.\nFor questions/problems regarding Webcast\, ple
+ ase contact: webcast-support@cern.ch.\n \nhttps://indico.cern.ch/event/66
+ 5016/
+LOCATION:40-S2-C01 - Salle Curie (CERN)
+URL:https://indico.cern.ch/event/665016/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ATLAS Weekly
+DTSTART;VALUE=DATE-TIME:20170919T120000Z
+DTEND;VALUE=DATE-TIME:20170919T131000Z
+DTSTAMP;VALUE=DATE-TIME:20171013T170900Z
+UID:indico-event-666149@indico.cern.ch
+DESCRIPTION:Speakers: Karl Jakobs (Albert-Ludwigs-Universitaet Freiburg (D
+ E))\nVidyo PIN is 190917 \n\nReminder: ATLAS Weekly meetings are recorded
+  \n\n \n\nHelp:\n\nFor questions/problems regarding Vidyo\, please conta
+ ct: vidyo-support@cern.ch.\nFor questions/problems regarding Webcast\, ple
+ ase contact: webcast-support@cern.ch.\n \nhttps://indico.cern.ch/event/66
+ 6149/
+LOCATION:40-S2-C01 - Salle Curie (CERN)
+URL:https://indico.cern.ch/event/666149/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ATLAS Weekly/Open EB
+DTSTART;VALUE=DATE-TIME:20170926T120000Z
+DTEND;VALUE=DATE-TIME:20170926T141000Z
+DTSTAMP;VALUE=DATE-TIME:20171013T170900Z
+UID:indico-event-667957@indico.cern.ch
+DESCRIPTION:Speakers: Karl Jakobs (Albert-Ludwigs-Universitaet Freiburg (D
+ E))\, Ludovico Pontecorvo (CERN)\nVidyo PIN is 260917 \n\nReminder: ATLAS 
+ Weekly meetings are recorded \n\n \n\nHelp:\n\nFor questions/problems re
+ garding Vidyo\, please contact: vidyo-support@cern.ch.\nFor questions/prob
+ lems regarding Webcast\, please contact: webcast-support@cern.ch.\n \nhtt
+ ps://indico.cern.ch/event/667957/
+LOCATION:40-S2-C01 - Salle Curie (CERN)
+URL:https://indico.cern.ch/event/667957/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ATLAS Weekly
+DTSTART;VALUE=DATE-TIME:20171003T120000Z
+DTEND;VALUE=DATE-TIME:20171003T134500Z
+DTSTAMP;VALUE=DATE-TIME:20171013T170900Z
+UID:indico-event-669940@indico.cern.ch
+DESCRIPTION:Speakers: Karl Jakobs (Albert-Ludwigs-Universitaet Freiburg (D
+ E))\nVidyo PIN is 031017 \n\nReminder: ATLAS Weekly meetings are recorded
+  \n\n \n\nHelp:\n\nFor questions/problems regarding Vidyo\, please conta
+ ct: vidyo-support@cern.ch.\nFor questions/problems regarding Webcast\, ple
+ ase contact: webcast-support@cern.ch.\n \nhttps://indico.cern.ch/event/66
+ 9940/
+LOCATION:40-S2-C01 - Salle Curie (CERN)
+URL:https://indico.cern.ch/event/669940/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ATLAS Weekly
+DTSTART;VALUE=DATE-TIME:20171017T120000Z
+DTEND;VALUE=DATE-TIME:20171017T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171013T170900Z
+UID:indico-event-673247@indico.cern.ch
+DESCRIPTION:Speakers: Karl Jakobs (Albert-Ludwigs-Universitaet Freiburg (D
+ E))\nVidyo PIN is 171017 \n\nReminder: ATLAS Weekly meetings are recorded
+  \n\n \n\nHelp:\n\nFor questions/problems regarding Vidyo\, please conta
+ ct: vidyo-support@cern.ch.\nFor questions/problems regarding Webcast\, ple
+ ase contact: webcast-support@cern.ch.\n \nhttps://indico.cern.ch/event/67
+ 3247/
+LOCATION:40-S2-C01 - Salle Curie (CERN)
+URL:https://indico.cern.ch/event/673247/
+END:VEVENT
+END:VCALENDAR
