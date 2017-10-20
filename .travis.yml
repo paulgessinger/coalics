@@ -9,4 +9,4 @@ services:
   - redis-server
 
 script:
-  - pytest
+  - PYTHONPATH=. pytest
