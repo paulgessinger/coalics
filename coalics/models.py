@@ -39,6 +39,10 @@ class CalendarSource(db.Model):
     calendar_id = db.Column(db.Integer, db.ForeignKey("calendar.id"))
     calendar = db.relationship("Calendar", backref=db.backref("sources", lazy="dynamic"))
 
+    def __init__(self, positive_pattern=".*", negative_pattern="", **kwargs):
+        super().__init__(positive_pattern=positive_pattern, 
+                         negative_pattern=negative_pattern, 
+                         **kwargs)
 
 class Event(db.Model):
     id = db.Column(db.Integer, primary_key=True)

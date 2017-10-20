@@ -3,7 +3,7 @@ import icalendar as ics
 
 from coalics import db, app, q
 from coalics.models import CalendarSource, Event
-from coalics.util import wait_for
+from coalics.util import wait_for, event_acceptor
 
 def update_sources():
     calendar_sources = CalendarSource.query.all()
@@ -27,11 +27,11 @@ def _update_source(source):
 
 class ICSEvent():
     def __init__(self, event):
-        self.uid = event.decoded("UID")
-        self.summary = event.decoded("SUMMARY")
-        self.description = event.decoded("DESCRIPTION")
-        self.url = event.decoded("URL")
-        self.location = event.decoded("LOCATION")
+        self.uid = event.get("UID")
+        self.summary = event.get("SUMMARY")
+        self.description = event.get("DESCRIPTION")
+        self.url = event.get("URL")
+        self.location = event.get("LOCATION")
         self.start = event.decoded("DTSTART")
         self.end = event.decoded("DTEND")
         self.timestamp = event.decoded("DTSTAMP")
@@ -57,19 +57,26 @@ def update_source(cal, source):
             # was deleted upstream
             db.session.delete(event)
                       
+    accept_event = event_acceptor(source)
 
     for event in upstream_events:
-        # # print(event["SUMMARY"])
-
         dbevent = Event.query.filter_by(uid=event.uid).one_or_none()
         if not dbevent:
             # this is a new one
-            dbevent = Event(**event.__dict__)
-            dbevent.source = source
-            db.session.add(dbevent)
+            if accept_event(event):
+                dbevent = Event(**event.__dict__)
+                dbevent.source = source
+                db.session.add(dbevent)
         else:
-            event.populate_obj(dbevent)
-
+            # this one exists
+            # check if event is still accepted by filters
+            if accept_event(event):
+                # yes: update
+                event.populate_obj(dbevent)
+            else:
+                # no: remove it
+                db.session.delete(dbevent)
+        
     db.session.commit()
 
     return True

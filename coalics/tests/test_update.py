@@ -12,7 +12,7 @@ from coalics.models import User, Calendar, CalendarSource, Event
 
 @pytest.fixture
 def ics_str():
-    with open(os.path.dirname(__file__)+"/event_fixtures.ics") as f:
+    with open(os.path.dirname(__file__)+"/event_fixtures.ics", "rt") as f:
         ics = f.read()
     return ics
 
@@ -43,9 +43,6 @@ def defsrc(app):
     with app.app_context():
         srcs = CalendarSource.query.one()
     return srcs
-    # assert len(srcs) == 1
-    # return srcs[0]
-
 
 def test_update_events_import(ics_str, app, defsrc):
 
@@ -53,7 +50,7 @@ def test_update_events_import(ics_str, app, defsrc):
     
     cal = ics.Calendar.from_ical(ics_str)
 
-    exp_uids = [e.decoded("uid") for e in cal.subcomponents]
+    exp_uids = [e.get("uid") for e in cal.subcomponents]
 
     t.update_source(cal, defsrc)
 
@@ -65,16 +62,6 @@ def test_update_events_import(ics_str, app, defsrc):
     assert len(events) == 5, "Not all events found"
     assert act_uids == exp_uids, "Not all events found"
 
-    # tz = get_localzone()
-    # first_event = min(events, key=lambda e: e.start)
-
-    # print(first_event.start)
-    # for event in events:
-        # utc_dt = event.start
-        # dt = utc_dt.astimezone(tz)
-        # print(dt.isoformat())
-        # print(dt.tzinfo)
-
 
 def test_update_events_delete(ics_str, app, defsrc):
     import coalics.tasks as t
@@ -82,7 +69,7 @@ def test_update_events_delete(ics_str, app, defsrc):
     cal = ics.Calendar.from_ical(ics_str)
     t.update_source(cal, defsrc)
    
-    deleted_uid = cal.subcomponents[2].decoded("uid")
+    deleted_uid = cal.subcomponents[2].get("uid")
 
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 5
@@ -111,7 +98,7 @@ def test_update_events_update(ics_str, app, defsrc):
    
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 5
-        assert Event.query.filter_by(uid=premod.decoded("uid")).one().summary == b"ORIGINAL"
+        assert Event.query.filter_by(uid=premod.get("uid")).one().summary == "ORIGINAL"
     
     cal.subcomponents[2]["SUMMARY"] = ics.prop.vText("MODIFIED")
 
@@ -119,4 +106,4 @@ def test_update_events_update(ics_str, app, defsrc):
     
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 5
-        assert Event.query.filter_by(uid=premod.decoded("uid")).one().summary == b"MODIFIED"
+        assert Event.query.filter_by(uid=premod.get("uid")).one().summary == "MODIFIED"
