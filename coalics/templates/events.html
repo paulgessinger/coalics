@@ -1,0 +1,14 @@
+{% from "macros.html" import subnav, subnav_item %}
+{% extends "base.html" %}
+
+
+{% block content %}
+
+{% for event in events %}
+{{ event.summary }} <br/>
+{{ event.start|localdate }} - {{ event.end|localdate }} <br/>
+<br/>
+
+{% endfor %}
+
+{% endblock %}

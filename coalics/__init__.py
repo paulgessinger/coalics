@@ -10,11 +10,21 @@ import logging
 from redis import StrictRedis
 from rq import Queue
 
+import pytz
+from tzlocal import get_localzone
+
 
 app = Flask(__name__)
 app.config.from_object("config")
 
+def datetimefilter(value, format='%d.%m.%Y %H:%I:%S'):
+    # this will have to come from the user sometime
+    tz = pytz.timezone("Europe/Zurich")
+    dt = value
+    local_dt = dt.astimezone(tz)
+    return local_dt.strftime(format)
 
+app.jinja_env.filters['localdate'] = datetimefilter
 
 db = SQLAlchemy(app)
 
@@ -35,8 +45,6 @@ migrate = Migrate(app, db)
 lm = LoginManager()
 lm.login_view = "login"
 lm.init_app(app)
-
-
 
 
 @lm.user_loader

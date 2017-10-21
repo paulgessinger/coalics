@@ -7,9 +7,12 @@ python run.py &
 #celery -A app.celery beat --pidfile="/tmp/celerybeat.pid" 
 #rq worker -c rq_config
 
-#for i in {1..4}; do
-  #rq worker -u "redis://redis:6379" &
-#done
+for i in {1..4}; do
+  rq worker -u "redis://redis:6379" &
+done
 
+
+#python coalics/schedule.py
+#rqscheduler --host redis --port 6379 &
 
 wait

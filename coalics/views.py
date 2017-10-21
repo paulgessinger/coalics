@@ -3,10 +3,10 @@ import flask
 from flask_login import LoginManager, login_required, login_user, current_user, logout_user
 import time
 
-from .util import get_or_abort
-from .models import User, Calendar, CalendarSource
+from .util import get_or_abort, event_acceptor, wait_for, TaskTimeout
+from .models import User, Calendar, CalendarSource, Event
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
-from .tasks import update_sources
+from .tasks import update_sources, update_source_id
 
 from coalics import app, q, db
 
@@ -14,8 +14,7 @@ app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
 
 @app.route("/")
 def home():
-    print("run update")
-    r = q.enqueue(update_sources)
+    # r = q.enqueue(update_sources)
     # while not r.result:
         # time.sleep(0.1)
 
@@ -67,20 +66,25 @@ def calendar_edit(cal_id):
         redirect(url_for("calendars"))
 
     sources = cal.sources
+    
+    # events = Event.query.filter(Event.source in sources).all()
+    events = Event.query.join(CalendarSource).filter_by(calendar=cal).order_by(Event.start.desc()).paginate(max_per_page=10)
 
     if request.method == "GET":
         form = CalendarForm(obj=cal)
         delete_form = DeleteForm()
-        return render_template("calendar_edit.html", form=form, sources=sources, cal_id=cal_id, delete_form=delete_form)
+        return render_template("calendar_edit.html", form=form, sources=sources, cal_id=cal_id, delete_form=delete_form, events=events)
     
     # is post
     form = CalendarForm(request.form, obj=cal)
     if not form.validate():
-        return render_template("calendar_edit.html", form=form, cal_id=cal_id)
+        return render_template("calendar_edit.html", form=form, cal_id=cal_id, events=events)
     
     form.populate_obj(cal)
     db.session.commit()
     flask.flash("Calendar updated", "success")
+
+
     return redirect(url_for("calendars"))
 
 
@@ -106,6 +110,14 @@ def add_source(cal_id):
     db.session.add(source)
     db.session.commit()
 
+    # trigger update
+    task = q.enqueue(update_source_id, source.id)
+    try:
+        wait_for(task, timeout=5)
+    except TaskTimeout:
+        # timeout
+        flask.flash("Upstream source still being updated", "info")
+
     return redirect(url_for("calendar_edit", cal_id=cal_id))
 
 @app.route("/source/<int:source_id>", methods=["GET"])
@@ -115,7 +127,14 @@ def view_source(source_id):
     if not source or source.calendar.owner != current_user:
         abort(400)
 
-    return "this is it"
+    # return "this is it"
+    events = source.events
+    # res = ""
+    # for event in events:
+        # res += event.summary + "<br/>"
+    # return res
+    return render_template("events.html", events=events)
+
 
 @app.route("/calendar/<int:cal_id>/source/<int:source_id>/edit", methods=["GET", "POST"])
 @login_required
@@ -129,18 +148,33 @@ def edit_source(cal_id, source_id):
     
     if request.method == "GET":
         form = CalendarSourceForm(obj=source)
-        return render_template("source_edit.html", form=form, cal_id=cal_id)
+        return render_template("source_edit.html", edit=True, form=form, cal_id=cal_id)
 
     form = CalendarSourceForm(request.form)
     if not form.validate():
-        return render_template("source_edit.html", form=form, cal_id=cal_id)
+        return render_template("source_edit.html", edit=True, form=form, cal_id=cal_id)
 
-    # source = CalendarSource()
-    # source.calendar=cal
-    # form.populate_obj(source)
-    # db.session.add(source)
     form.populate_obj(source)
+
+    # we need to reapply the filter to all existing events
+    accept_event = event_acceptor(source)
+    for event in source.events:
+        app.logger.debug("Rechecking event {}".format(event.summary))
+        if not accept_event(event):
+            db.session.delete(event)
+
     db.session.commit()
+
+    # check if we need old ones
+    # wait max 5 secs return early if longer
+    task = q.enqueue(update_source_id, source.id)
+    try:
+        wait_for(task, timeout=5)
+    except TaskTimeout:
+        # timeout
+        flask.flash("Upstream source still being updated", "info")
+        pass
+
 
     return redirect(url_for("calendar_edit", cal_id=cal_id))
 
@@ -203,7 +237,7 @@ def login():
         return render_template("login.html", form=form)
 
 
-    user = User.query.filter_by(email=email).first()
+    user = User.query.filter_by(email=email).one()
     app.logger.debug(user)
 
 

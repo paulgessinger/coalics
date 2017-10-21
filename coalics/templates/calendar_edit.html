@@ -1,4 +1,4 @@
-{% from "macros.html" import input, subnav_back %}
+{% from "macros.html" import input, subnav_back, render_pagination %}
 {% extends "calendars.html" %}
 {% block subnav %}
 {{ subnav_back(url_for("calendars")) }}
@@ -10,8 +10,10 @@
   <h4 class="card-header">Calendar group</h4>
   <div class="card-body">
     <form novalidate method="POST" action="" class="form-inline">
+      <div class="form-group mr-2">
         {{ input(form.name) }}
         {{ form.csrf_token }}
+      </div>
       <button class="btn btn-primary" type="submit">Save</button>
     </form>
 
@@ -51,7 +53,25 @@
 
       </div>
     </div>
-  </div>
+  
+    <div class="card mt-5" id="events-card">
+
+      <div class="card-body">
+        <h4 class="card-title">Events</h4>
+
+        {% for event in events.items %}
+        {{ event.summary }} <br/>
+        {{ event.start|localdate }} - {{ event.end|localdate }} <br/>
+        <br/>
+        {% endfor %}
+
+        {%- call(page) render_pagination(events, "calendar_edit") %}
+        {{- url_for("calendar_edit", cal_id=cal_id, page=page, _anchor="events-card") }}
+        {%- endcall %}
+
+      </div>
+    </div>
+
   {% endif %}
 </div>
 {% endblock %}

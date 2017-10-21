@@ -1,20 +1,31 @@
 from sqlalchemy_utils import types
 from coalics import db
 import flask_login
+from coalics.util import BcryptPassword
 
 
 class User(db.Model, flask_login.mixins.UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True)
     email = db.Column(db.String(120), unique=True)
-    password = db.Column(types.password.PasswordType(schemes=[
-            'bcrypt',
-    ]), nullable=False)
+    _password = db.Column("password", db.String(255), nullable=False)
+    # password = db.Column(types.password.PasswordType(schemes=[
+            # 'bcrypt',
+    # ]), nullable=False)
 
     def __init__(self, username, email, password):
         self.username = username
         self.email = email
         self.password = password
+
+    @property
+    def password(self):
+        return BcryptPassword(hash=self._password.encode("utf-8"))
+        
+    @password.setter
+    def password(self, value):
+        pw = BcryptPassword(password=value)
+        self._password = pw.hash.decode("utf-8")
 
     def __repr__(self):
         return '<User %r>' % self.username
@@ -22,8 +33,8 @@ class User(db.Model, flask_login.mixins.UserMixin):
 class Calendar(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
-    owner_id = db.Column(db.Integer, db.ForeignKey("user.id"))
-    owner = db.relationship("User", backref=db.backref("calendars", lazy="dynamic"))
+    owner_id = db.Column(db.Integer, db.ForeignKey("user.id", ondelete="CASCADE"))
+    owner = db.relationship("User", backref=db.backref("calendars", lazy="dynamic", passive_deletes=True))
 
     def __init__(self, name, owner):
         self.name = name
@@ -36,8 +47,8 @@ class CalendarSource(db.Model):
     positive_pattern = db.Column(db.String(255), default=".*")
     negative_pattern = db.Column(db.String(255), default="")
     alerts = db.Column(db.String(255), default="")
-    calendar_id = db.Column(db.Integer, db.ForeignKey("calendar.id"))
-    calendar = db.relationship("Calendar", backref=db.backref("sources", lazy="dynamic"))
+    calendar_id = db.Column(db.Integer, db.ForeignKey("calendar.id", ondelete="CASCADE"))
+    calendar = db.relationship("Calendar", backref=db.backref("sources", lazy="dynamic", passive_deletes=True))
 
     def __init__(self, positive_pattern=".*", negative_pattern="", **kwargs):
         super().__init__(positive_pattern=positive_pattern, 
@@ -54,7 +65,7 @@ class Event(db.Model):
     timestamp = db.Column(db.TIMESTAMP())
     url = db.Column(types.url.URLType())
     location = db.Column(db.Text())
-    source_id = db.Column(db.Integer, db.ForeignKey("calendar_source.id"))
-    source = db.relationship("CalendarSource", backref=db.backref("events", lazy="dynamic"))
+    source_id = db.Column(db.Integer, db.ForeignKey("calendar_source.id", ondelete="CASCADE"))
+    source = db.relationship("CalendarSource", backref=db.backref("events", lazy="dynamic", passive_deletes=True))
 
 

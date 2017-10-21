@@ -1,5 +1,6 @@
 import requests
 import icalendar as ics
+import time
 
 from coalics import db, app, q
 from coalics.models import CalendarSource, Event
@@ -10,7 +11,7 @@ def update_sources():
     app.logger.info("Update {} sources".format(len(calendar_sources)))
     tasks = []
     for source in calendar_sources:
-        t = q.enqueue(_update_source, source)
+        t = q.enqueue(update_source, source)
         tasks.append(t)
 
     # wait_for(tasks, timeout=3)
@@ -21,9 +22,21 @@ def build_ics(source):
     cal = ics.Calendar.from_ical(r.text)
     return cal
 
-def _update_source(source):
+def update_source_id(id):
+    return update_source(CalendarSource.query.get(id))
+
+def update_source(source):
+
+    # we might have to attach
+    # state = inspect(source)
+    # if state.detached:
+        # db.session.add(source)
+
     app.logger.debug("Updating source url {}".format(source.url))
-    return update_source(build_ics(source), source)
+    res = _update_source(build_ics(source), source)
+
+    app.logger.debug("Source now has {} events".format(source.events.count()))
+    return res
 
 class ICSEvent():
     def __init__(self, event):
@@ -41,7 +54,7 @@ class ICSEvent():
             setattr(obj, k, v)
 
 
-def update_source(cal, source):
+def _update_source(cal, source):
 
     upstream_events = [ICSEvent(e) for e in cal.subcomponents]
 

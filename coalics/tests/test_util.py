@@ -19,3 +19,12 @@ def test_event_acceptor():
         event = Event(summary=summary)
         src = CalendarSource(positive_pattern=pos, negative_pattern=neg)
         assert event_acceptor(src)(event) == res, (summary, pos, neg, res)
+
+def test_password_container():
+    from coalics.util import BcryptPassword as PSW
+
+    pw = "HALLO"
+
+    c = PSW(password=pw)
+    assert c == pw
+    assert c != "WRONG"

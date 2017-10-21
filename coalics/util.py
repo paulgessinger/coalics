@@ -2,6 +2,7 @@ from flask import abort
 from datetime import datetime
 import time
 import re
+import bcrypt
 
 from coalics import app
 
@@ -16,6 +17,8 @@ class TaskTimeout(RuntimeError):
 
 def wait_for(tasks, timeout=None, tick=0.1):
     start = datetime.now()
+    if type(tasks) != list:
+        tasks = [tasks]
     for task in tasks:
         while not task.result:
             time.sleep(tick)
@@ -47,3 +50,22 @@ def event_acceptor(source):
             # print("neg", negmatch)
             return posmatch != None and negmatch == None
     return accept_event
+
+class BcryptPassword():
+    def __init__(self, **kwargs):
+
+        if "hash" in kwargs and "password" in kwargs:
+            raise ValueError("Create with either hash or pw")
+
+        if "hash" in kwargs:
+            self.hash = kwargs["hash"]
+        elif "password" in kwargs:
+            self.hash = bcrypt.hashpw(kwargs["password"].encode("utf-8"), bcrypt.gensalt())
+        else:
+            raise ValueError("Create with either hash or pw")
+
+    def __eq__(self, test):
+        return bcrypt.checkpw(test.encode("utf-8"), self.hash)
+
+    def __neq__(self, test):
+        return not self.__eq__()

@@ -30,7 +30,7 @@ def upgrade():
     sa.Column('url', sqlalchemy_utils.types.url.URLType(), nullable=True),
     sa.Column('location', sa.Text(), nullable=True),
     sa.Column('source_id', sa.Integer(), nullable=True),
-    sa.ForeignKeyConstraint(['source_id'], ['calendar_source.id'], ),
+    sa.ForeignKeyConstraint(['source_id'], ['calendar_source.id'], ondelete="CASCADE", ),
     sa.PrimaryKeyConstraint('id')
     )
     # ### end Alembic commands ###

@@ -34,7 +34,7 @@ def upgrade():
     sa.Column('alerts', sa.String(length=255), nullable=True),
     # sa.Column('alerts', sqlalchemy_utils.types.scalar_list.ScalarListType(), nullable=True),
     sa.Column('calendar_id', sa.Integer(), nullable=True),
-    sa.ForeignKeyConstraint(['calendar_id'], ['calendar.id'], ),
+    sa.ForeignKeyConstraint(['calendar_id'], ['calendar.id'], ondelete="CASCADE"),
     sa.PrimaryKeyConstraint('id')
     )
     # ### end Alembic commands ###

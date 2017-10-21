@@ -17,6 +17,12 @@ def ics_str():
     return ics
 
 @pytest.fixture
+def ics_str_alt():
+    with open(os.path.dirname(__file__)+"/fixture2.ics", "rt") as f:
+        ics = f.read()
+    return ics
+
+@pytest.fixture
 def app():
     db_fd, db_fn = tempfile.mkstemp()
     print(db_fn)
@@ -41,7 +47,7 @@ def app():
 @pytest.fixture
 def defsrc(app):
     with app.app_context():
-        srcs = CalendarSource.query.one()
+        srcs = CalendarSource.query.get(1)
     return srcs
 
 def test_update_events_import(ics_str, app, defsrc):
@@ -52,7 +58,7 @@ def test_update_events_import(ics_str, app, defsrc):
 
     exp_uids = [e.get("uid") for e in cal.subcomponents]
 
-    t.update_source(cal, defsrc)
+    t._update_source(cal, defsrc)
 
     with app.app_context():
         events = Event.query.all()
@@ -67,7 +73,7 @@ def test_update_events_delete(ics_str, app, defsrc):
     import coalics.tasks as t
 
     cal = ics.Calendar.from_ical(ics_str)
-    t.update_source(cal, defsrc)
+    t._update_source(cal, defsrc)
    
     deleted_uid = cal.subcomponents[2].get("uid")
 
@@ -78,7 +84,7 @@ def test_update_events_delete(ics_str, app, defsrc):
     del cal.subcomponents[2]
 
     # again with modified cal
-    t.update_source(cal, defsrc)
+    t._update_source(cal, defsrc)
     
     
     with app.app_context():
@@ -94,7 +100,7 @@ def test_update_events_update(ics_str, app, defsrc):
     premod = cal.subcomponents[2]
     cal.subcomponents[2]["SUMMARY"] = ics.prop.vText("ORIGINAL")
 
-    t.update_source(cal, defsrc)
+    t._update_source(cal, defsrc)
    
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 5
@@ -102,8 +108,20 @@ def test_update_events_update(ics_str, app, defsrc):
     
     cal.subcomponents[2]["SUMMARY"] = ics.prop.vText("MODIFIED")
 
-    t.update_source(cal, defsrc)
+    t._update_source(cal, defsrc)
     
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 5
         assert Event.query.filter_by(uid=premod.get("uid")).one().summary == "MODIFIED"
+
+def test_update_events_pattern(ics_str_alt, app, defsrc):
+    import coalics.tasks as t
+    
+    cal = ics.Calendar.from_ical(ics_str_alt)
+    
+    defsrc.positive_pattern = ".*W'.*"
+
+    t._update_source(cal, defsrc)
+    
+    with app.app_context():
+        assert Event.query.filter_by(source=defsrc).count() == 15

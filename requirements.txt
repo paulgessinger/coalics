@@ -19,3 +19,9 @@ icalendar
 pytest
 pytz
 tzlocal
+#psycopg2
+#MySQL-python
+#mysql-connector
+#py-postgresql
+PyGreSQL
+bcrypt
