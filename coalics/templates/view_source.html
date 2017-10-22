@@ -1,0 +1,36 @@
+{% from "macros.html" import input, subnav_back, render_pagination, render_event %}
+{% extends "base.html" %}
+{% block subnav %}
+{{ subnav_back(url_for("calendar_edit", cal_id=source.calendar_id)) }}
+{% endblock %}
+
+
+{% block content %}
+<div class="card">
+  <h4 class="card-header">Calendar source</h4>
+  <div class="card-body">
+
+    <h5>{{ source.url }}</h5>
+
+  
+    <div class="card mt-5" id="events-card">
+
+      <div class="card-body">
+        <h4 class="card-title">Events</h4>
+        
+        {% for event in events.items %}
+        {{ render_event(event) }}
+        {% endfor %}
+
+        {%- call(page) render_pagination(events) %}
+        {{- url_for("view_source", source_id=source.id, page=page, _anchor="events-card") }}
+        {%- endcall %}
+        
+      </div>
+    </div>
+
+
+</div>
+</div>
+{% endblock %}
+

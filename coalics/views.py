@@ -127,13 +127,9 @@ def view_source(source_id):
     if not source or source.calendar.owner != current_user:
         abort(400)
 
-    # return "this is it"
-    events = source.events
-    # res = ""
-    # for event in events:
-        # res += event.summary + "<br/>"
-    # return res
-    return render_template("events.html", events=events)
+    # events = Event.query.join(CalendarSource).filter_by(calendar=cal).order_by(Event.start.desc()).paginate(max_per_page=10)
+    events = Event.query.filter_by(source=source).order_by(Event.start.desc()).paginate(max_per_page=20)
+    return render_template("view_source.html", events=events, source=source)
 
 
 @app.route("/calendar/<int:cal_id>/source/<int:source_id>/edit", methods=["GET", "POST"])

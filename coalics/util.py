@@ -3,6 +3,7 @@ from datetime import datetime
 import time
 import re
 import bcrypt
+import math
 
 from coalics import app
 
@@ -69,3 +70,17 @@ class BcryptPassword():
 
     def __neq__(self, test):
         return not self.__eq__()
+
+def string_shorten(string, max_length, repl="(…)"):
+    if type(string) != str:
+        string = str(string)
+    if len(string) <= max_length+len(repl):
+        return string
+    
+    length = len(string)
+    repll = len(repl)
+
+    a = string[0:int(math.floor(max_length/2)) - int(math.ceil(repll/2))]
+    b = string[-int(math.ceil(max_length/2)) + int(math.floor(repll/2)):]
+
+    return a + repl + b

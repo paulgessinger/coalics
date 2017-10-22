@@ -36,7 +36,9 @@ q = Queue(connection=redis)
 
 from .models import User, Calendar, CalendarSource
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
+from .util import string_shorten
 
+app.jinja_env.filters['shorten'] = string_shorten
 
 
 

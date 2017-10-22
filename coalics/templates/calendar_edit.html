@@ -1,4 +1,4 @@
-{% from "macros.html" import input, subnav_back, render_pagination %}
+{% from "macros.html" import input, subnav_back, render_pagination, render_event %}
 {% extends "calendars.html" %}
 {% block subnav %}
 {{ subnav_back(url_for("calendars")) }}
@@ -33,7 +33,7 @@
             {% for source in sources %}
             <tr>
               <td>
-                <a href="{{ url_for("view_source", source_id=source.id) }}">{{ source.url }}</a>
+                <a href="{{ url_for("view_source", source_id=source.id) }}">{{ source.url | shorten(90) }}</a>
               </td>
               <td>
                 <form method="post" action="{{ url_for("delete_source", cal_id=cal_id, source_id=source.id) }}">
@@ -58,17 +58,15 @@
 
       <div class="card-body">
         <h4 class="card-title">Events</h4>
-
+        
         {% for event in events.items %}
-        {{ event.summary }} <br/>
-        {{ event.start|localdate }} - {{ event.end|localdate }} <br/>
-        <br/>
+        {{ render_event(event) }}
         {% endfor %}
 
-        {%- call(page) render_pagination(events, "calendar_edit") %}
+        {%- call(page) render_pagination(events) %}
         {{- url_for("calendar_edit", cal_id=cal_id, page=page, _anchor="events-card") }}
         {%- endcall %}
-
+        
       </div>
     </div>
 

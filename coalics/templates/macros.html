@@ -82,19 +82,10 @@
   </ul>
 </nav>
 
-{#
-  <div class=pagination>
-  {%- for page in pagination.iter_pages() %}
-    {% if page %}
-      {% if page != pagination.page %}
-        
-      {% else %}
-        <strong>{{ page }}</strong>
-      {% endif %}
-    {% else %}
-      <span class=ellipsis>…</span>
-    {% endif %}
-  {%- endfor %}
-</div>
-#}
+{% endmacro %}
+
+{% macro render_event(event) %}
+        {{ event.summary }} <br/>
+        {{ event.start|localdate }} - {{ event.end|localdate }} <br/>
+        <br/>
 {% endmacro %}
