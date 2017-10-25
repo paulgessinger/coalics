@@ -2,6 +2,7 @@ from sqlalchemy_utils import types
 from coalics import db
 import flask_login
 from coalics.util import BcryptPassword
+import uuid
 
 
 class User(db.Model, flask_login.mixins.UserMixin):
@@ -33,12 +34,14 @@ class User(db.Model, flask_login.mixins.UserMixin):
 class Calendar(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(255))
+    slug = db.Column(db.String(255), unique=True)
     owner_id = db.Column(db.Integer, db.ForeignKey("user.id", ondelete="CASCADE"))
     owner = db.relationship("User", backref=db.backref("calendars", lazy="dynamic", passive_deletes=True))
 
     def __init__(self, name, owner):
         self.name = name
         self.owner = owner
+        self.slug = uuid.uuid4()
 
 
 class CalendarSource(db.Model):

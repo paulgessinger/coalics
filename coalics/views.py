@@ -2,8 +2,9 @@ from flask import Flask, render_template, request, redirect, url_for, abort
 import flask
 from flask_login import LoginManager, login_required, login_user, current_user, logout_user
 import time
+import sqlalchemy
 
-from .util import get_or_abort, event_acceptor, wait_for, TaskTimeout
+from .util import get_or_abort, event_acceptor, wait_for, TaskTimeout, TimeoutException
 from .models import User, Calendar, CalendarSource, Event
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm
 from .tasks import update_sources, update_source_id
@@ -73,7 +74,7 @@ def calendar_edit(cal_id):
     if request.method == "GET":
         form = CalendarForm(obj=cal)
         delete_form = DeleteForm()
-        return render_template("calendar_edit.html", form=form, sources=sources, cal_id=cal_id, delete_form=delete_form, events=events)
+        return render_template("calendar_edit.html", form=form, sources=sources, cal=cal, delete_form=delete_form, events=events)
     
     # is post
     form = CalendarForm(request.form, obj=cal)
@@ -87,6 +88,37 @@ def calendar_edit(cal_id):
 
     return redirect(url_for("calendars"))
 
+
+@app.route("/calendar/<int:cal_id>/delete", methods=["post"])
+@login_required
+def calendar_delete(cal_id):
+    delete_form = DeleteForm(request.form)
+    if not delete_form.validate():
+        flask.flash("Unable to delete item", "danger")
+        return redirect(request.referrer)
+
+    cal = Calendar.query.filter_by(id=cal_id, owner=current_user).first()
+
+    if not cal:
+        flask.flash("Item to delete not found", "warning")
+        return redirect(request.referrer)
+    
+    flask.flash("Item {} deleted".format(cal.name), "success")
+    db.session.delete(cal)
+    db.session.commit()
+
+
+    return redirect(url_for("calendars"))
+
+
+@app.route("/ics/<slug>/<name>.ics")
+def calendar_ics(slug, name):
+    # return slug + name
+    try:
+        cal = Calendar.query.filter_by(slug=slug).one()
+        return "ok"
+    except sqlalchemy.orm.exc.NoResultFound:
+        abort(404)
 
 @app.route("/calendar/<int:cal_id>/source", methods=["GET", "POST"])
 @login_required
@@ -153,16 +185,22 @@ def edit_source(cal_id, source_id):
     form.populate_obj(source)
 
     # we need to reapply the filter to all existing events
-    accept_event = event_acceptor(source)
-    for event in source.events:
-        app.logger.debug("Rechecking event {}".format(event.summary))
-        if not accept_event(event):
-            db.session.delete(event)
+    accept_event = event_acceptor(source, to=app.config["REGEX_TIMEOUT"])
+    try:
+        for event in source.events:
+            app.logger.debug("Rechecking event {}".format(event.summary))
+            if not accept_event(event):
+                db.session.delete(event)
+    except TimeoutException:
+        # no use in continuinging the update
+        app.logger.error("Timeout exception occurred on regex execution.")
 
     db.session.commit()
 
     # check if we need old ones
     # wait max 5 secs return early if longer
+    # also add timeout on task itself to make sure
+    # a bad regex does not kill everything
     task = q.enqueue(update_source_id, source.id)
     try:
         wait_for(task, timeout=5)
@@ -191,26 +229,6 @@ def delete_source(cal_id, source_id):
     db.session.commit()
     return redirect(url_for("calendar_edit", cal_id=cal_id))
 
-@app.route("/calendar/<int:cal_id>/delete", methods=["post"])
-@login_required
-def calendar_delete(cal_id):
-    delete_form = DeleteForm(request.form)
-    if not delete_form.validate():
-        flask.flash("Unable to delete item", "danger")
-        return redirect(request.referrer)
-
-    cal = Calendar.query.filter_by(id=cal_id, owner=current_user).first()
-
-    if not cal:
-        flask.flash("Item to delete not found", "warning")
-        return redirect(request.referrer)
-    
-    flask.flash("Item {} deleted".format(cal.name), "success")
-    db.session.delete(cal)
-    db.session.commit()
-
-
-    return redirect(url_for("calendars"))
 
 
 

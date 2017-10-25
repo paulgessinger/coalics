@@ -4,6 +4,9 @@ import time
 import re
 import bcrypt
 import math
+import time
+import signal
+from contextlib import contextmanager
 
 from coalics import app
 
@@ -31,7 +34,7 @@ def wait_for(tasks, timeout=None, tick=0.1):
 
             
 
-def event_acceptor(source):
+def event_acceptor(source, to=10):
     posreg = re.compile(source.positive_pattern)
     negreg = re.compile(source.negative_pattern)
 
@@ -42,14 +45,17 @@ def event_acceptor(source):
     def accept_event(event):
         summary = event.summary
         # print("summary", summary)
-        posmatch = posreg.match(summary)
-        # print("pos", posmatch)
-        if len(source.negative_pattern) == 0:
-            return posmatch != None
-        else:
-            negmatch = negreg.match(summary)
-            # print("neg", negmatch)
-            return posmatch != None and negmatch == None
+        with timeout(to):
+            posmatch = posreg.match(summary)
+
+            # print("pos", posmatch)
+            if len(source.negative_pattern) == 0:
+                return posmatch != None
+            else:
+                negmatch = negreg.match(summary)
+                # print("neg", negmatch)
+                return posmatch != None and negmatch == None
+
     return accept_event
 
 class BcryptPassword():
@@ -84,3 +90,24 @@ def string_shorten(string, max_length, repl="(…)"):
     b = string[-int(math.ceil(max_length/2)) + int(math.floor(repll/2)):]
 
     return a + repl + b
+ 
+
+
+class TimeoutException(Exception): pass
+
+class timeout:
+    def __init__(self, seconds=1, error_message='Timeout'):
+        self.seconds = seconds
+        self.error_message = error_message
+    def handle_timeout(self, signum, frame):
+        raise TimeoutException(self.error_message)
+    def __enter__(self):
+
+        if not app.debug:
+            # does not work in debug
+            signal.signal(signal.SIGALRM, self.handle_timeout)
+            signal.alarm(self.seconds)
+    def __exit__(self, type, value, traceback):
+        if not app.debug:
+            signal.alarm(0)
+ 

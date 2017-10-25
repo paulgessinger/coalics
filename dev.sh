@@ -11,6 +11,8 @@ for i in {1..4}; do
   rq worker -u "redis://redis:6379" &
 done
 
+#rq worker -u "redis://redis:6379" &
+
 
 #python coalics/schedule.py
 #rqscheduler --host redis --port 6379 &
