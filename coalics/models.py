@@ -41,7 +41,7 @@ class Calendar(db.Model):
     def __init__(self, name, owner):
         self.name = name
         self.owner = owner
-        self.slug = uuid.uuid4()
+        self.slug = str(uuid.uuid4())
 
 
 class CalendarSource(db.Model):

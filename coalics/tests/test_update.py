@@ -30,7 +30,8 @@ def app():
     # coalics.app.config["SQLALCHEMY_ECHO"] = True
     coalics.app.testing = True
     with coalics.app.app_context():
-        upgrade()
+        # upgrade()
+        coalics.db.create_all()
         # create fake data
         u = User(username="test", email="test@example.com", password="hallo")
         coalics.db.session.add(u)
