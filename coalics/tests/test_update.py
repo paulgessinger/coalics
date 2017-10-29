@@ -33,7 +33,7 @@ def app():
         # upgrade()
         coalics.db.create_all()
         # create fake data
-        u = User(username="test", email="test@example.com", password="hallo")
+        u = User(email="test@example.com", password="hallo")
         coalics.db.session.add(u)
 
         cal = Calendar(name="TestCal", owner=u)
