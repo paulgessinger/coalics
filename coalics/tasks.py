@@ -71,7 +71,7 @@ def _update_source(cal, source):
 
     try:
         for event in upstream_events:
-            dbevent = Event.query.filter_by(uid=event.uid).one_or_none()
+            dbevent = Event.query.filter_by(uid=event.uid, source=source).one_or_none()
             if not dbevent:
                 # this is a new one
                 if accept_event(event):

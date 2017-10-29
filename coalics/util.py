@@ -7,6 +7,7 @@ import math
 import time
 import signal
 from contextlib import contextmanager
+from datetime import timedelta
 
 from coalics import app
 
@@ -33,6 +34,17 @@ def wait_for(tasks, timeout=None, tick=0.1):
                     raise TaskTimeout()
 
             
+def parse_from(s):
+    unit = s[-1:]
+    length = int(s[:-1])
+
+    if unit == "d":
+        return timedelta(days=length)
+    elif unit == "h":
+        return timedelta(hours=length)
+    else:
+        raise ValueError("Invalid format")
+
 
 def event_acceptor(source, to=10):
     posreg = re.compile(source.positive_pattern)

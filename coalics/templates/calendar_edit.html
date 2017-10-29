@@ -17,7 +17,7 @@
       <button class="btn btn-primary" type="submit">Save</button>
     </form>
 
-    <input class="form-control" readonly value="{{ url_for("calendar_ics", slug=cal.slug, name=cal.name, _external=True) }}"></input>
+    <input class="form-control mt-2" readonly value="{{ url_for("calendar_ics", slug=cal.slug, name=cal.name, from="-31d", _external=True) }}"></input>
 
     {% if sources %}
     <div class="card mt-5">
@@ -56,6 +56,7 @@
       </div>
     </div>
   
+    {% if events.items|length > 0 %}
     <div class="card mt-5" id="events-card">
 
       <div class="card-body">
@@ -71,6 +72,7 @@
         
       </div>
     </div>
+    {% endif %}
 
   {% endif %}
 </div>

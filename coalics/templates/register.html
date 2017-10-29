@@ -2,16 +2,17 @@
 {% extends "base.html" %}
 
 {% block subnav %}
-{{ subnav_item("Register", url_for("register"), "secondary") }}
+{{ subnav_item("Login", url_for("login"), "secondary") }}
 {% endblock %}
 
 {% block content %}
 <div class="card login mx-auto">
   <div class="card-body">
-    <h4 class="card-title">Login</h4>
+    <h4 class="card-title">Register</h4>
     <form novalidate method="POST">
     {{ input(form.email) }}
     {{ input(form.password) }}
+    {{ input(form.password2) }}
     {{ form.csrf_token }}
     <input type="submit" class="btn btn-primary mt-3" value="Login"/>
     {#

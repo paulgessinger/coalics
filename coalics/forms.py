@@ -65,9 +65,23 @@ class BaseForm(Form):
 
 
 class LoginForm(BaseForm):
-    email = StringField("Username", [validators.Length(min=4), validators.DataRequired()], widget=TextInput())
+    email = StringField("E-Mail", [validators.Length(min=4), validators.DataRequired()], widget=TextInput())
     password = PasswordField("Password", [validators.Length(min=4), validators.DataRequired()], widget=PasswordInput())
 
+class RegisterForm(BaseForm):
+    email = StringField("E-Mail", [validators.Length(min=4), validators.DataRequired()], widget=TextInput())
+    password = PasswordField("Password", [validators.Length(min=4), validators.DataRequired()], widget=PasswordInput())
+    password2 = PasswordField("Password confirmation", [validators.Length(min=4), validators.DataRequired()], widget=PasswordInput())
+
+    def validate(self):
+        if not super().validate():
+            return False
+
+        if self.password.data != self.password2.data:
+            self.password2.errors.append("Passwords must match")
+            return False
+
+        return True
 
 class CalendarForm(BaseForm):
     name = StringField("Name", [validators.Length(min=3), validators.DataRequired()], widget=TextInput())

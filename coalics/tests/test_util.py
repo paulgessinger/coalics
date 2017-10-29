@@ -1,6 +1,9 @@
 from coalics.models import CalendarSource, Event
 
-from coalics.util import event_acceptor, string_shorten
+from coalics.util import event_acceptor, string_shorten, parse_from
+
+from datetime import timedelta
+import pytest
 
 def test_event_acceptor():
     
@@ -49,3 +52,18 @@ def test_string_shorten():
     assert string_shorten(12*"a", 10, 3*"x") == 12*"a"
     assert string_shorten(13*"a", 10, 3*"x") == 13*"a"
     assert string_shorten(14*"a", 10, 3*"x") == 3*"a" + 3*"x" + 4*"a"
+
+def test_parse_from():
+
+    assert parse_from("-31d") == timedelta(days=-31)
+    assert parse_from("31d") == timedelta(days=31)
+    assert parse_from("-14d") == timedelta(days=-14)
+    assert parse_from("14d") == timedelta(days=14)
+    assert parse_from("-24h") == timedelta(hours=-24)
+    assert parse_from("24h") == timedelta(hours=24)
+
+    with pytest.raises(ValueError):
+        parse_from("abc")
+    with pytest.raises(ValueError):
+        parse_from("-14c")
+

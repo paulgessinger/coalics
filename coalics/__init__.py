@@ -17,7 +17,7 @@ from tzlocal import get_localzone
 app = Flask(__name__)
 app.config.from_object("config")
 
-def datetimefilter(value, format='%d.%m.%Y %H:%I:%S'):
+def datetimefilter(value, format='%d.%m.%Y %H:%M:%S'):
     # this will have to come from the user sometime
     tz = pytz.timezone("Europe/Zurich")
     dt = value
