@@ -2,7 +2,23 @@ version: '3.2'
 
 services:
   app:
-    environment: []
+    environment:
+      - LANG=en_US.UTF-8
     volumes: []
     command: circusd circus.ini 
+    ports: []
+    expose:
+      - "8080"
+
+  nginx:
+    build: 
+      context: .
+      dockerfile: Dockerfile.nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "8081:80"
+    depends_on:
+      - app
+
 

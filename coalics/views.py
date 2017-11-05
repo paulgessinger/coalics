@@ -311,12 +311,16 @@ def login():
         return render_template("login.html", form=form)
 
 
-    user = User.query.filter_by(email=email).one()
-    app.logger.debug(user)
+    try:
+        user = User.query.filter_by(email=email).one()
+        app.logger.debug(user)
+    except sqlalchemy.orm.exc.NoResultFound:
+        flask.flash("Invalid login info", "danger")
+        return render_template("login.html", form=form)
 
 
     if user.password != psw:
-        flask.flash("Invalid password")
+        flask.flash("Invalid password", "danger")
         return render_template("login.html", form=form)
         # return render_template("login.html"), 401
 

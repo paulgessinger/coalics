@@ -89,7 +89,7 @@ class BcryptPassword():
     def __neq__(self, test):
         return not self.__eq__()
 
-def string_shorten(string, max_length, repl="(…)"):
+def string_shorten(string, max_length, repl=" (…) "):
     if type(string) != str:
         string = str(string)
     if len(string) <= max_length+len(repl):

@@ -4,3 +4,6 @@ database
 celerybeat-schedule
 .cache
 /venv
+/log
+/postgres-data
+/redis-data

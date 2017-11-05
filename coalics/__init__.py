@@ -17,6 +17,14 @@ from tzlocal import get_localzone
 app = Flask(__name__)
 app.config.from_object("config")
 
+if not app.debug:
+    stream_handler = logging.StreamHandler()
+    stream_handler.setLevel(logging.INFO)
+    app.logger.addHandler(stream_handler)
+    # fh = logging.FileHandler("/app/log/app.log")
+    # fh.setLevel(logging.INFO)
+    # app.logger.addHandler(fh)
+
 def datetimefilter(value, format='%d.%m.%Y %H:%M:%S'):
     # this will have to come from the user sometime
     tz = pytz.timezone("Europe/Zurich")

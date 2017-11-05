@@ -8,13 +8,17 @@ python run.py &
 #rq worker -c rq_config
 
 for i in {1..4}; do
-  rq worker -u "redis://redis:6379" &
+  #rq worker -u "redis://redis:6379" &
+  echo "Launching worker $i"
+  rq worker -c rq_config &
+  sleep 0.5
 done
 
 #rq worker -u "redis://redis:6379" &
 
 
-#python coalics/schedule.py
+echo "Launching rq scheduler"
 #rqscheduler --host redis --port 6379 &
+python coalics/schedule.py &
 
 wait

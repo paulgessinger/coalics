@@ -33,8 +33,8 @@ class User(db.Model, flask_login.mixins.UserMixin):
     def is_active(self):
         return self.active
 
-    def __repr__(self):
-        return '<User %r>' % self.username
+    # def __repr__(self):
+        # return '<User %r>' % self.username
 
 class Calendar(db.Model):
     id = db.Column(db.Integer, primary_key=True)

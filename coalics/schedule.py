@@ -1,27 +1,37 @@
-# from coalics import app
-from coalics import tasks, q, redis
+import os.path
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
+import logging
+
+from coalics import tasks, q, redis, app
 from datetime import datetime
 
-from rq_scheduler import Scheduler
-from datetime import datetime
-
-scheduler = Scheduler(connection=redis)
-
-# scheduler.cron(
-    # ,                # A cron string (e.g. "0 0 * * 0")
-    # func=func,                  # Function to be queued
-    # args=[arg1, arg2],          # Arguments passed into function when executed
-    # kwargs={'foo': 'bar'},      # Keyword arguments passed into function when executed
-    # repeat=10                   # Repeat this number of times (None means repeat forever)
-    # queue_name=queue_name       # In which queue the job should be put in
-# )
+from datetime import datetime, timedelta
+import time
 
 
-# scheduler.schedule(
-    # scheduled_time=datetime.utcnow(), # Time for first execution, in UTC timezone
-    # func=tasks.update_sources,                     # Function to be queued
-    # args=[],             # Arguments passed into function when executed
-    # kwargs={},         # Keyword arguments passed into function when executed
-    # interval=10,                   # Time before the function is called again, in seconds
-    # repeat=None                      # Repeat this number of times (None means repeat forever)
-# )
+# stream_handler = logging.StreamHandler()
+# stream_handler.setLevel(logging.INFO)
+# app.logger.addHandler(stream_handler)
+logger = logging.getLogger("Scheduler")
+fh = logging.FileHandler("/app/log/scheduler.log")
+fh.setLevel(logging.INFO)
+logger.setLevel(logging.INFO)
+# app.logger.addHandler(fh)
+logger.addHandler(fh)
+
+prev_job = None
+td = timedelta(seconds=app.config["SOURCE_UPDATE_FREQUENCY"])
+logger.info("Scheduler launching")
+while True:
+    try:
+        logger.info("Begin schedule run")
+        if prev_job: print(prev_job.result)
+        if prev_job == None or prev_job.result != None:
+            prev_job = q.enqueue(tasks.update_sources, timeout=td.seconds*0.9)
+        logger.info("Scheduler: ran without error")
+    except Exception as e:
+        logger.error("Scheduler: caught error {}".format(str(e)))
+    finally:
+        logger.info("Scheduler: Sleeping for {}s".format(td.seconds))
+        time.sleep(td.seconds)
