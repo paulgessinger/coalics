@@ -67,7 +67,7 @@ class ICSEvent():
 
 def _update_source(cal, source):
 
-    upstream_events = [ICSEvent(e) for e in cal.subcomponents]
+    upstream_events = [ICSEvent(e) for e in cal.subcomponents if e.name == "VEVENT"]
 
     first_event = min(upstream_events, key=lambda e: e.start)
     upstream_uids = [e.uid for e in upstream_events]

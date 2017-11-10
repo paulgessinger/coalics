@@ -1,0 +1,2128 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//30.seminar.physik.uni-mainz.de//NONSGML kigkonsult.se iCalcreator
+  2.16.12//
+METHOD:PUBLISH
+X-WR-CALNAME:THEP Internal Seminar / Exp. Theory Crosstalk (iAnnounce)
+X-WR-CALDESC:Pizza & Physics at Lunchtime\, Contact: Yu Felix <yu001@uni-ma
+ inz.de>
+X-WR-TIMEZONE:Europe/Berlin
+BEGIN:VTIMEZONE
+TZID:Europe/Berlin
+X-LIC-LOCATION:Europe/Berlin
+BEGIN:STANDARD
+DTSTART:20171029T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+RDATE:20181028T030000
+TZNAME:CET
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20180325T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20171110T175018CET-8900WoUnFg@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Grundidee\; AUsintegration schwerer Moden\; Wilsonsche effektiv
+ e Wirkung\; Entwicklung in lokale Operatoren
+DTSTART;TZID=Europe/Berlin:20070504T123000
+DTEND;TZID=Europe/Berlin:20070504T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Einführung in die EFT (I) (Torsten Pfoh\, Institut für Physik WA Th
+ EP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8909RERIGP@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:effektive Lagrangedichte\; relevante\, marginale und irrelevant
+ e Operatoren\; dimensionale Analyse\; gleitende Kopplungen\; 'Matching' un
+ d 'Running'
+DTSTART;TZID=Europe/Berlin:20070511T123000
+DTEND;TZID=Europe/Berlin:20070511T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Einführung in die EFT (II) (Florian Goertz\, Institut für Physik WA
+  ThEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8917l7Arcu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Renormierung zusammengesetzter Operatoren\, anomale Dimensionen
+ \; Operatormischung\; Renormierungsgruppengleichug\; Resummation großer Lo
+ garithmen
+DTSTART;TZID=Europe/Berlin:20070518T123000
+DTEND;TZID=Europe/Berlin:20070518T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Renormierungsgruppenverbesserte Störungstheorie (I) (Torsten Pfoh /
+  Florian Goertz\, Institut für Physik WA ThEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8925MdWJU4@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Methoden zur Berechnung von anomalen Dimensionen und Betafunkti
+ onen\; dimensionelle Regularisierung
+DTSTART;TZID=Europe/Berlin:20070525T123000
+DTEND;TZID=Europe/Berlin:20070525T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Renormierugsgruppenverbesserte Störungstheorie (II) (Valentin Ahren
+ s\, Institut für Physik WA TheP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8933VF34u4@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20070608T123000
+DTEND;TZID=Europe/Berlin:20070608T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Anwendungen von EFT (III): Gittereichtheorie 1 (Prof. Dr. Hartmut W
+ ittig / Dr. Miho Koma / Bastian\, Institut für Kernphysik Theoriegruppe)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8940Hd4BNu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20070615T123000
+DTEND;TZID=Europe/Berlin:20070615T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Anwendungen von EFT (III): Gittereichtheorie 2 (Prof. Dr. Hartmut W
+ ittig / Dr. Miho Koma / Bastian\, Institut für Kernphysik Theoriegruppe)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8947Vmlrhu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Ginsparg-Wilson-Fremionen\; Domainwall-Fermionen
+DTSTART;TZID=Europe/Berlin:20070622T123000
+DTEND;TZID=Europe/Berlin:20070622T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Chirale Fermionen (Dr. Miho Koma\, Institut für Kernphysik Theorieg
+ ruppe)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8954DCrC3O@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Auffinden führender Impulsregionen\; Beziehung zwischen Regione
+ n und Moden in der effektiven Wirkung
+DTSTART;TZID=Europe/Berlin:20070629T123000
+DTEND;TZID=Europe/Berlin:20070629T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Methode der Regionen (Matthias Schindler\, Institut für Kernphysik 
+ Theoriegruppe)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8961Fj54EZ@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:effektive Theorien für schwere Quarks
+DTSTART;TZID=Europe/Berlin:20070713T123000
+DTEND;TZID=Europe/Berlin:20070713T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Anwendungen von EFT (I) (Valentin Ahrens\, WA ThEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8968im6B5I@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:effektive Theorien für leichte Quarks (ChPT)\; Renormierung des
+  Zweinukleonenprobleme
+DTSTART;TZID=Europe/Berlin:20070720T123000
+DTEND;TZID=Europe/Berlin:20070720T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Anwendungen von EFT (II) (Dalibor Djukanovic\, Institut für Kernphy
+ sik Teoriegruppe)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-89751RVCWe@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20080314T123000
+DTEND;TZID=Europe/Berlin:20080314T133000
+LOCATION:Sozialraum der WA ThEP
+SUMMARY:Precision determination of αs from thrust distributions at LEP (Dr.
+  Thomas Becher\, Fermilab)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8982a74UiV@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20090522T123000
+DTEND;TZID=Europe/Berlin:20090522T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Structure of IR Divergences of Gauge Theory Amplitudes (Dr. Thomas 
+ Becher\, Fermilab)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8988gaHn86@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100423T123000
+DTEND;TZID=Europe/Berlin:20100423T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Application of SCET to Collider Physics: From PDFs to Initial State
+  Jets (Leonardo Vernazza\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-8995CGFsch@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100507T123000
+DTEND;TZID=Europe/Berlin:20100507T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:SCET at colliders: t-tbar production (Ben Pecjak\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9001xBPTix@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100514T123000
+DTEND;TZID=Europe/Berlin:20100514T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Forward-backward asymmetry in t-tbar production (Lucia Masetti\, ET
+ AP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9008Zl1DeU@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100521T123000
+DTEND;TZID=Europe/Berlin:20100521T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Parton showers -- introduction (Sebastian Becker\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9014VDf6uT@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100528T123000
+DTEND;TZID=Europe/Berlin:20100528T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Parton showers -- ctd. (Christian Reuschle\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9020VbvU5U@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100604T123000
+DTEND;TZID=Europe/Berlin:20100604T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Parton showers -- experiment (Keith Edmonds\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9026gnN8J7@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100611T123000
+DTEND;TZID=Europe/Berlin:20100611T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Anomalous dimuon asymmetry at D0 (Rainer Wanke\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9033MdrtZ8@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100618T123000
+DTEND;TZID=Europe/Berlin:20100618T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Search for W' and Z' at the Tevatron (Christian Goeringer\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9039B0vfGI@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100625T123000
+DTEND;TZID=Europe/Berlin:20100625T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Supersymmetry at the LHC (Stefan Berge\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9045SoDO5v@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100702T123000
+DTEND;TZID=Europe/Berlin:20100702T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Flavour violation in SUSY at hadron colliders (Tobias Hurth\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9052GupadN@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100709T123000
+DTEND;TZID=Europe/Berlin:20100709T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Institutsfest (entfaellt\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9058rkH2jO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20100716T123000
+DTEND;TZID=Europe/Berlin:20100716T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Stop-antistop production (Alessandro Broggio\, Timo Mueller\, THEP\
+ , ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9064t7Rt1K@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101029T123000
+DTEND;TZID=Europe/Berlin:20101029T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:LHC Status Report and Question Time (Christian Schmitt\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-90706W6nuD@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101105T123000
+DTEND;TZID=Europe/Berlin:20101105T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Long-Range\, Near-Side Angular Correlations at the LHC (Tobias Hüls
+ ing & Martin Bauer\, ETAP & THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9077VkUF4p@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101112T123000
+DTEND;TZID=Europe/Berlin:20101112T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Gravity as an Emergent Force (Dr. Frank Saueressig\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9083U0lMVo@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101119T123000
+DTEND;TZID=Europe/Berlin:20101119T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Jet Cross Section and Search for Dijet Resonances at the LHC (Sebas
+ tian Eckweiler\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9090rtduTJ@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101126T123000
+DTEND;TZID=Europe/Berlin:20101126T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:entfällt wegen Theorie-Palaver (NN\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-90968MPoEI@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101203T123000
+DTEND;TZID=Europe/Berlin:20101203T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:entfällt (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-91022hxkJV@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I will first of all introduce and discuss general aspects of st
+ ring phenomenology\, see e.g. chapter 11 (pages 202-228) in the Pre-SUSY 2
+ 009 summary report arXiv:1001.2693 [hep-ph]. To complement Sebastians prev
+ ious discussion on 'Dijet Resonances'\, I will then go on to present the p
+ roposal by Anchordoqui\, Goldberg\, Luest\, Nawata\, Stieberger and Taylor
+  of string resonances in dijet events in the TeV range [their short origin
+ al papers are arXiv:0808.0497 [hep-ph] and arXiv:0904.3547 [hep-ph] with s
+ ome later proceedings by the same collection of authors and the intricate 
+ technical details of the string computations out-sourced to some other pap
+ ers by Luest\, (Schlotterer)\, Stieberger and Taylor]. This will be a blac
+ kboard talk at an introductory level - discussion and questions are very w
+ elcome!
+DTSTART;TZID=Europe/Berlin:20101210T123000
+DTEND;TZID=Europe/Berlin:20101210T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:String Phenomenology and the LHC (Jun.-Prof. Dr. Gabriele Honecker\
+ , THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9116DuaH2i@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Sondertermin: Dienstag\, 14:30 Uhr) In the hadronic threshold 
+ region of high energy scattering\, a large momentum transfer between the a
+ ctive and spectator partons in the initial hadron is inevitable. Using thi
+ s fact we develop the power-counting rules near the endpoint region and sh
+ ow the scaling behavior in terms of 1-x. We also consider the dynamics nea
+ r the endpoint more specifically employing the factorization approach usin
+ g soft-collinear effective theory. The result is similar to exclusive proc
+ esses such as semileptonic B decays\, and not in agreement with the conven
+ tional approach\, which includes only the interaction of the active parton
+ . More rigorous studies are required for the precise numerical estimations
+ .
+DTSTART;TZID=Europe/Berlin:20101214T143000
+DTEND;TZID=Europe/Berlin:20101214T153000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Scaling behavior near the endpoint in high energy scattering (Dr. C
+ hul Kim\, CERN\, Theory Division)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9129n6ULUG@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20101217T123000
+DTEND;TZID=Europe/Berlin:20101217T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:String Phenomenology and the LHC II (Jun.-Prof. Dr. Gabriele Honeck
+ er\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9135PRM1xN@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110114T123000
+DTEND;TZID=Europe/Berlin:20110114T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The Universal Renormalization Group Machine (Dr. Frank Saueressig\,
+  THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-914225SOuH@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110121T123000
+DTEND;TZID=Europe/Berlin:20110121T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Higgs Searches at LHC and Tevatron (Jun.-Prof. Dr. Barbara Jäger & 
+ Jonas Weichert\, THEP & ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9148VMRvur@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110128T123000
+DTEND;TZID=Europe/Berlin:20110128T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:W' Searches at ATLAS (Dr. Giovanni Siragusa & Jennifer Mutschall\, 
+ ETAP & THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-91552W5wTV@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110204T123000
+DTEND;TZID=Europe/Berlin:20110204T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:entfällt wegen Theorie-Palaver (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9161soUeB1@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110211T123000
+DTEND;TZID=Europe/Berlin:20110211T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Susy Searches at the LHC (Matthias Lungwitz & Martin Bauer\, ETAP &
+  THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9168To3XtU@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110218T123000
+DTEND;TZID=Europe/Berlin:20110218T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Determination of |V_us| @ NA48 (Manuel Hita-Hochgesand\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-91757uk77m@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110429T123000
+DTEND;TZID=Europe/Berlin:20110429T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The CDF Dijet Anomaly (Christian Schröder & Daniel Wilhelm\, ETAP &
+  THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-91810WMvpv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110506T123000
+DTEND;TZID=Europe/Berlin:20110506T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The CDF Dijet Anomaly (part II) (Daniel Wilhelm & Christian Schröde
+ r\, THEP & ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9187bihROu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110513T123000
+DTEND;TZID=Europe/Berlin:20110513T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:An Introduction to (Warped) Extra Dimensions (Christoph Schmell\, T
+ HEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9194WJwPjg@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110520T123000
+DTEND;TZID=Europe/Berlin:20110520T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to MESA workshop (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9200MwBuKK@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110527T123000
+DTEND;TZID=Europe/Berlin:20110527T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Search for top-quark FCNCs (Jun.-Prof. Dr. Lucia Masetti\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-92075w7IUJ@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110603T123000
+DTEND;TZID=Europe/Berlin:20110603T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No Seminar (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9213ZZ2bWO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110610T123000
+DTEND;TZID=Europe/Berlin:20110610T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No Seminar due to doctoral examination (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9219js5sHX@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110617T123000
+DTEND;TZID=Europe/Berlin:20110617T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Boosted Top Quarks (Dr. Susanne Westhoff & Dr. Weina Ji\, THEP & ET
+ AP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9225NWn80G@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110624T123000
+DTEND;TZID=Europe/Berlin:20110624T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Direct Dark Matter Searches with XENON (Dr. Cyril Grignon\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9231U33G2T@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110701T123000
+DTEND;TZID=Europe/Berlin:20110701T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Direct Dark Matter Searches with XENON (cont.) (Dr. Cyril Grignon\,
+  ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-923822u3u4@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110708T123000
+DTEND;TZID=Europe/Berlin:20110708T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No Seminar due to Institutstreff (NN\, NN)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9244UB5vCv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110715T123000
+DTEND;TZID=Europe/Berlin:20110715T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Meaningful Perturbative Theoretical Uncertainties (Torsten Pfoh\, T
+ HEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9250aRuwWv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20110722T123000
+DTEND;TZID=Europe/Berlin:20110722T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discussion Session (NA\, THEP & ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9256TPHtA6@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Precedent to Prof. Köpke's talk a short discussion is planed\,
+  concerning the formalities and possible further topics of this semester's
+  Friday Seminar.) I will briefly explain the principle of the OPERA measur
+ ement of the neutrino velocity\, the prospects for similar measurements by
+  OPERA competitors\, as well as existing experimental constraints on absol
+ ute neutrino velocities and possible Lorentz violating differences in the 
+ asymptotic velocities of different neutrino species. Finally I will discus
+ s two attempts for experimental explanations for the observed -60 ns time 
+ shift currently under discussion.
+DTSTART;TZID=Europe/Berlin:20111028T123000
+DTEND;TZID=Europe/Berlin:20111028T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Neutrinos faster than light? Experimental aspects. (Prof. Dr. Lutz 
+ Köpke\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9268tz7ueo@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20111104T123000
+DTEND;TZID=Europe/Berlin:20111104T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Event Generators: 1) Automated Computation of Leading Order QCD Mat
+ rix Elements Part 1. (Daniel Götz and Christopher Schwan\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9275CJoXvH@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20111111T123000
+DTEND;TZID=Europe/Berlin:20111111T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Canceled due to the Theorie Palaver. (NN\, )
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-92811kXvXu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20111118T123000
+DTEND;TZID=Europe/Berlin:20111118T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Canceled (NN\, )
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9287cw4Csd@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(The 3rd part of this seminar (Overview on and Experimental Asp
+ ects of Monte Carlo Event Generators) could unfortunately not be presented
+ .) 
+DTSTART;TZID=Europe/Berlin:20111125T123000
+DTEND;TZID=Europe/Berlin:20111125T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Event Generators: 2) Automated Computation of Leading Order QCD Mat
+ rix Elements Part 2. 3) Overview on and Experimental Aspects of Monte Carl
+ o Event Generators. (Daniel Götz\, Christopher Schwan and Timo Müller\, TH
+ EP and ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-92970KTZDL@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20111202T123000
+DTEND;TZID=Europe/Berlin:20111202T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The Matrix Element Measurement Method. (Dr. Frank Fiedler\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9303wZ13gw@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The talk of Klaus can be found as pdf file under http://wwwthep
+ .physik.uni-mainz.de/~reuschle/Homepage/Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20111209T123000
+DTEND;TZID=Europe/Berlin:20111209T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:The IceCube Neutrino Telescope and Indirect Searches for Dark Matte
+ r. (Klaus Wiebe\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9311FHUE0g@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The talk of Christian can be found as pdf file under http://www
+ thep.physik.uni-mainz.de/~reuschle/Homepage/Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20111216T123000
+DTEND;TZID=Europe/Berlin:20111216T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:The latest Higgs results from the LHC. (Dr. Christian Schmitt\, ETA
+ P)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9319WCdEkI@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:In September 2011\, the OPERA collaboration published a paper w
+ here they claimed to have measured myon neutrinos\, exceeding the speed of
+  light. I will briefly repeat the main points of the experiment and then d
+ iscuss several constraints\, e.g. the Cohen-Glashow bremsstrahlung\, which
+  are quite challenging for new models to explain the observations.
+DTSTART;TZID=Europe/Berlin:20120113T123000
+DTEND;TZID=Europe/Berlin:20120113T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:Neutrinos Faster Than Light? Theoretical Aspects. (Raoul Malm\, THE
+ P)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9328jtllOl@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I will present one approach of quantizing gravity\, the Asympto
+ tic Safety program. Following these lines\, gravity turns out to be non-pe
+ rturbatively renormalizable\, although it is perturbatively non-renormaliz
+ able. The talk is intended to introduce the basic ideas of Asymptotic Safe
+ ty and its consequences. For this purpose\, functional renormalization gro
+ up methods are used to derive the running of Newton's constant and the cos
+ mological constant\, and we discuss the reason for the presumably well-def
+ ined high energy behavior of the underlying theory.
+DTSTART;TZID=Europe/Berlin:20120120T123000
+DTEND;TZID=Europe/Berlin:20120120T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:The Asymptotic Safety Approach to Quantum Gravity. (Andreas Nink\, 
+ THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9339B8lAb6@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120127T123000
+DTEND;TZID=Europe/Berlin:20120127T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Computation of NLO Matrix Elements: The Unitarity Method. (Prof. Dr
+ . Stefan Weinzierl\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-93460eEKIs@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120203T123000
+DTEND;TZID=Europe/Berlin:20120203T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:Automated Computation of NLO Matrix Elements: A Fully Numerical App
+ roach. (Sebastian Becker\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9353Z5OVIO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120210T123000
+DTEND;TZID=Europe/Berlin:20120210T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discussion Session (NN\, )
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9358xJEo6j@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120217T123000
+DTEND;TZID=Europe/Berlin:20120217T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The NA62 Experiment: Search for New Physics in High Precision Flavo
+ ur Physics. (Dr. Rainer Wanke and Dr. Tobias Hurth\, ETAP and THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-93653Uvib3@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120420T123000
+DTEND;TZID=Europe/Berlin:20120420T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY: (n/a\, )
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9371mppzKo@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:During this blackboard presentation Martin will give us an intr
+ oduction to his current thesis work. To this aim he will give us an introd
+ uction to string theory and compactification\, to subsequently talk about 
+ the construction of Yang-Mills theories from string theory. In an applicat
+ ion to a specific orbifold we will see how a low energy limit\, that conta
+ ins the Standard Model\, can be derived.
+DTSTART;TZID=Europe/Berlin:20120427T123000
+DTEND;TZID=Europe/Berlin:20120427T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Phenomenology with D-Branes (Martin Ripka\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-93816vm6f5@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Martin will give us a brief overview on the most interesting [h
+ ot] topics from the Electroweak Sessions at the meeting in Moriond\, 2012.
+  The summary slides can be found at the bottom of the following web page: 
+ http://indico.in2p3.fr/conferenceOtherViews.py?view=standard&confId=6001 T
+ he talk of Martin can be found as pdf file under http://wwwthep.physik.uni
+ -mainz.de/~reuschle/Homepage/Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20120504T123000
+DTEND;TZID=Europe/Berlin:20120504T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Overview on the Electroweak Session of Moriond 2012 (Martin Bauer\,
+  THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9391ScxM8k@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Frank will give an overview on the contents of a recent paper b
+ y Bidin et al. on 'No evidence of dark matter in the solar neighborhood' -
+  arXiv:1204.3919. Other very related and more detailed papers can be found
+  under arXiv:1204.3924 and arXiv:1202.1799.
+DTSTART;TZID=Europe/Berlin:20120511T123000
+DTEND;TZID=Europe/Berlin:20120511T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:'No evidence of dark matter in the solar neighborhood' - A discussi
+ on of scientific results (Dr. Frank Saueressig\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9400gjSp5K@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120518T123000
+DTEND;TZID=Europe/Berlin:20120518T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY: (n/a\, )
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9406CXtLpN@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120525T123000
+DTEND;TZID=Europe/Berlin:20120525T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Event generation - Matching procedures and application to particle 
+ physics analyses. (Andrea Neusiedl and Daniel Götz\, ETAP and THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-94139LVnFW@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:In consideration of a recent Nature Letter by the IceCube Colla
+ boration\, with aforementioned title\, Lutz will explain to us the basic p
+ rinciples of the measurement as well as the associated analysis and implic
+ ations. The link to the Letter can be found under http://www.nature.com/na
+ ture/journal/v484/n7394/full/nature11068.html The talk of Lutz can be foun
+ d as pdf file under http://wwwthep.physik.uni-mainz.de/~reuschle/Homepage/
+ Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20120601T123000
+DTEND;TZID=Europe/Berlin:20120601T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:'An absence of neutrinos associated with cosmic-ray acceleration in
+  gamma-ray bursts' (Prof. Dr. Lutz Köpke\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9424sUDZsk@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Despite much recent progress\, the threshold resummation of a l
+ arge class of dijet observables at e^+ e^- colliders remains an open probl
+ em. The soft function for this class of dijet observables exhibits a non-g
+ lobal structure which can develop logarithmic singularities in particular 
+ regions of phase-space. This non-global structure is most clearly seen at 
+ the level of the soft function's contribution to the integrated dijet obse
+ rvable distribution and shows up there as a function which depends non-tri
+ vially on a ratio of dimensionful scales. It is also well-known that the n
+ on-global structure depends on the jet algorithm used to define the jets. 
+ In this talk we present recent results for the non-global structure which 
+ appears in a thrust-like jet mass observable when one employs a cone algor
+ ithm centered on the thrust axis. Furthermore\, we show that\, in the narr
+ ow-jet limit\, this non-global structure reduces to the non-global structu
+ re that appears when one uses the simpler hemisphere jet algorithm. This e
+ quivalence is somewhat surprising and suggests that it may ultimately be p
+ ossible to control the non-global structure that arises in the more realis
+ tic case of a thrust cone algorithm\, at least in the narrow-jet limit.
+DTSTART;TZID=Europe/Berlin:20120608T123000
+DTEND;TZID=Europe/Berlin:20120608T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:The Non-Global Structure of the Integrated Jet Mass Distribution in
+  e^+ e^- Collisions Using a Cone Jet Algorithm in Soft-Collinear Effective
+  Theory (Dr. Robert Schabinger\, Universidad Autónoma de Madrid)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9442jpoSdv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I will give an introduction in to how warped extra dimensions o
+ ffer a potential resolution to the gauge hierarchy problem and also a poss
+ ible explanation of the fermion mass hierarchy. I will look first at a bra
+ ne localised Higgs and then look at some recent work in which the Higgs pr
+ opagates in the bulk. The slides for the talk can be found on http://wwwth
+ ep.physik.uni-mainz.de/~reuschle/Homepage/Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20120615T123000
+DTEND;TZID=Europe/Berlin:20120615T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:'The Fermion Mass Hierarchy in Models with Warped Extra Dimensions 
+ and a Bulk Higgs' (Dr. Paul Archer\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9452e5Rv6m@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The slides for the talk can be found on http://wwwthep.physik.u
+ ni-mainz.de/~reuschle/Homepage/Pizzaseminar/pizzaseminar.html
+DTSTART;TZID=Europe/Berlin:20120622T123000
+DTEND;TZID=Europe/Berlin:20120622T133000
+LOCATION:Minkowski-Raum (05-119)
+SUMMARY:New physics with leptons or top quarks at the LHC (Dr. Ayres Freita
+ s\, University of Pittsburgh)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9460hEUljU@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Lucia and Susanne will present an updated overview on the top-q
+ uark asymmetry. As reference for the discussion there are three links that
+  can be looked up: http://cdsweb.cern.ch/record/1428152?ln=en \, http://ww
+ w-cdf.fnal.gov/physics/new/top/2012/LepJet_AFB_Winter2012/CDF10807.pdf \, 
+ http://arxiv.org/pdf/1109.6830.pdf . Please note the modified time and pla
+ ce for this Pizzaseminar!
+DTSTART;TZID=Europe/Berlin:20120629T143000
+DTEND;TZID=Europe/Berlin:20120629T153000
+LOCATION:Lorentz-Raum (05-127)
+SUMMARY:Top-quark asymmetry: What we know from Tevatron and LHC (Jun.-Prof.
+  Dr. Lucia Masetti and Dr. Susanne Westhoff\, ETAP and THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9470xcOUNr@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20120713T123000
+DTEND;TZID=Europe/Berlin:20120713T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:AdS/CFT from a Bottom-up Perspective (Martin Bauer\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9477fzGtPV@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Higgs pair production provides important information about the 
+ specific shape of the Higgs potential\, in particular about the triple-Hig
+ gs coupling. With the recent detection of a new particle at the CERN Large
+  Hadron Collider\, the experimental reconstruction of the Higgs potential 
+ will certainly present a crucial test of the Standard Model (SM) in the fu
+ ture. Therefore precise theoretical predictions for the different producti
+ on rates of Higgs pairs are mandatory. We focus on neutral Higgs pair prod
+ uction in association with an additional vector boson at the LHC within th
+ e SM and the Minimal Supersymmetric Standard Model (MSSM). We show results
+  for the total inclusive cross sections at next-to-leading order QCD and i
+ nvestigate contributions coming from enhanced b-quark Yukawa couplings wit
+ hin the MSSM.
+DTSTART;TZID=Europe/Berlin:20120720T123000
+DTEND;TZID=Europe/Berlin:20120720T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Higgs Pair Production at the LHC (Marina Billoni\, Universität Frei
+ burg)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9490JvE1W1@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I will discuss my recent paper\, arXiv: 1209.1489\, where we st
+ udied the prospects of discovering Higgs pair production using the bb WW m
+ ode (with the W decaying semileptonically). Evidence can be found with 600
+ /fb at the 14 TeV LHC.
+DTSTART;TZID=Europe/Berlin:20121102T123000
+DTEND;TZID=Europe/Berlin:20121102T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Higgs boson pair production at the LHC in the bbWW channel (Dr. Jos
+ é Francisco Zurita\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9499W6ApWN@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20121116T123000
+DTEND;TZID=Europe/Berlin:20121116T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Jet physics at ATLAS: Precision measurements and search for new phy
+ sics (Oliver Endner and Tobias Hülsing\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9505ZGEvZg@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20121123T123000
+DTEND;TZID=Europe/Berlin:20121123T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Slepton Pair Production in the POWHEG BOX (Stephan Thier\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-95125TLO4O@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20121130T123000
+DTEND;TZID=Europe/Berlin:20121130T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Technicolor and related concepts (Dr. Martin Bauer\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9518JhAoR3@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The discovery of a Higgs-like scalar particle with a mass of 12
+ 5 GeV has reinforced the need to address the gauge hierarchy problem: in t
+ he absence of supersymmetry\, a fundamental scalar particle would require 
+ an unnatural amount of fine-tuning. This problem can be solved if the Higg
+ s is a composite particle of a new strong interaction\, in particular if i
+ t arises as a pseudo Nambu-Goldstone boson. But even then\, a moderate deg
+ ree of fine-tuning calls for relatively light fermionic resonances. Apart 
+ from direct searches for such resonances\, such models are strongly constr
+ ained by electroweak precision observables and flavour physics. I will pre
+ sent an overview of electroweak\, flavour and collider constraints on comp
+ osite Higgs models\, considering several choices for the electroweak repre
+ sentations\, comparing flavour-symmetric models to flavour-anarchic ones a
+ nd identifying the least fine-tuned cases and their prospects.
+DTSTART;TZID=Europe/Berlin:20121207T123000
+DTEND;TZID=Europe/Berlin:20121207T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Indirect Constraints on Composite Higgs Models (Dr. David Straub\, 
+ THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9533wteuMT@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:http://cds.cern.ch/record/1499629
+DTSTART;TZID=Europe/Berlin:20130111T123000
+DTEND;TZID=Europe/Berlin:20130111T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Overview of latest Higgs results from ATLAS (Sebastian Moritz\, ETA
+ P)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9539DWbizP@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:We consider the ratio of cross sections of double-to-single Hig
+ gs boson production at the Large Hadron Collider at 14 TeV. Since both pro
+ cesses possess similar higher-order corrections\, leading to a cancellatio
+ n of uncertainties in the ratio\, this observable is well-suited to constr
+ ain the trilinear Higgs boson self-coupling. We consider the scale variati
+ on\, parton density function uncertainties and conservative estimates of e
+ xperimental uncertainties\, applied to the viable decay channels\, to cons
+ truct expected exclusion regions. We show that the trilinear self-coupling
+  can be constrained to be positive with a 600/ fb LHC dataset at 95% conde
+ nce. Moreover\, we demonstrate that we expect to obtain a +30% and -20% un
+ certainty on the self-coupling at 3000 / fb without statistical tting of d
+ ierential distributions. The present article outlines the most precise met
+ hod of determination of the Higgs trilinear coupling to date.
+DTSTART;TZID=Europe/Berlin:20130118T123000
+DTEND;TZID=Europe/Berlin:20130118T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Higgs boson self-coupling measurements using ratios of cross sectio
+ ns (Dr. José Francisco Zurita\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9556pZKUwo@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130125T123000
+DTEND;TZID=Europe/Berlin:20130125T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:5D Perspective on Higgs Production at the Boundary of a Warped Extr
+ a Dimension (Kristiane Novotny\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9563umwt3U@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130201T123000
+DTEND;TZID=Europe/Berlin:20130201T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discussion on statistical meaning of Higgs measurements and their g
+ raphical presentation (Jun.-Prof. Dr. Lucia Masetti\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9569EJmMmv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130208T123000
+DTEND;TZID=Europe/Berlin:20130208T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:A bit of Axions\, Strings and U(1)'s (Dr. Wieland Staessens\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9576jkp5rH@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130419T123000
+DTEND;TZID=Europe/Berlin:20130419T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:- (Discussion session\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9582L8c3TB@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:In this talk I will attempt to explain the equivalence between 
+ composite Higgs models in 4D and models of Gauge-Higgs unification in 5D. 
+ I will start with the 5D model and try to work back to the 4D model. Final
+ ly I will introduce the Minimal Composite Higgs model and discuss some of 
+ the possible phenomenological implications.
+DTSTART;TZID=Europe/Berlin:20130426T123000
+DTEND;TZID=Europe/Berlin:20130426T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Introduction to Composite Higgs Model from a Holographic Perspectiv
+ e (Paul Archer\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9592C4VDzl@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:An interesting observable in top quark physics is the top-antit
+ op invariant mass spectrum\, where resonances could be visible in case of 
+ new heavy particles. However\, top particles contributing to the large val
+ ues region of this spectrum are boosted. The products of their decay\, bei
+ ng collimated\, appear as an unique large jet in the detector. In order to
+  identify such events and to reconstruct the top momentum\, top-tagger tec
+ hniques\, based on large jet substructure\, have been developed. This talk
+  will present these techniques (ATLAS-CONF-2012-065) and their application
+ s in the case of the lepton+jets final state (ATLAS-CONF-2012-136).
+DTSTART;TZID=Europe/Berlin:20130503T123000
+DTEND;TZID=Europe/Berlin:20130503T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Top-tagging for Boosted Top studies with the Atlas detector. (Julie
+ n Caudron\, ETAP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9604REGO37@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130510T123000
+DTEND;TZID=Europe/Berlin:20130510T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to holiday on May\, 9th (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9610c5HBWO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130517T123000
+DTEND;TZID=Europe/Berlin:20130517T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to professorship appointment interviews (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9617con3ws@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130524T123000
+DTEND;TZID=Europe/Berlin:20130524T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to parallel seminar (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-96235h6Mzs@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130531T123000
+DTEND;TZID=Europe/Berlin:20130531T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to holiday on May\, 30th (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9629hOIfU7@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130607T123000
+DTEND;TZID=Europe/Berlin:20130607T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Angular distributions of higher order splitting functions in the va
+ cuum and in dense QCD matter (Michael Fickinger\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9636rWxtD6@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130614T123000
+DTEND;TZID=Europe/Berlin:20130614T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to graduate school prolongation procedure (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9642Za9Rtr@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130621T123000
+DTEND;TZID=Europe/Berlin:20130621T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:A Duality For The S Matrix (arXiv:0907.5418) (Robert Schabinger\, T
+ HEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-96490UOHug@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130628T123000
+DTEND;TZID=Europe/Berlin:20130628T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:New Physics in h -> gamma gamma (Martin Bauer\, EFI Chicago)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9655UZvc5V@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130705T123000
+DTEND;TZID=Europe/Berlin:20130705T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:No seminar due to 'Institutstreff' (-\, -)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9661gjrbSf@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130712T123000
+DTEND;TZID=Europe/Berlin:20130712T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:A new string in ten dimensions? (arXiv:1304.1551) (Michael Blaszczy
+ k\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9667l9zXhA@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20130719T123000
+DTEND;TZID=Europe/Berlin:20130719T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Top-Quark Charge Asymmetry Goes Forward: Two New Observables for Ha
+ dron Colliders (arXiv:1305.3272) (Stefan Berge\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9674wGU0DS@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20131025T123000
+DTEND;TZID=Europe/Berlin:20131025T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discussion (Everyone\, Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9680EDxDpb@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:We will discuss several papers briefly that are to be suggested
+  yet. We plan 15 Minutes per paper. If you have suggestions\, please send 
+ a mail to the organizer.
+DTSTART;TZID=Europe/Berlin:20131108T123000
+DTEND;TZID=Europe/Berlin:20131108T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Journal Club (Everyone\, Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9688ugRkju@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20131115T123000
+DTEND;TZID=Europe/Berlin:20131115T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Basic facts about the B->K* l+ l- anomaly (Sascha Turczyk\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9694LpVsIv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Bachelor Colloquium) 
+DTSTART;TZID=Europe/Berlin:20131122T123000
+DTEND;TZID=Europe/Berlin:20131122T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Charge Asymmetry in ttbar + jet Production - Effects of Heavy Colou
+ r-Octet States (Stefan Alte\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9701SVUGCO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The talk will be a discussion of the calculations presented in 
+ the classic Sterman-Weinberg paper (G. Sterman and S. Weinberg\, PRL 39\, 
+ 1436 (1977)) from a modern point of view.
+DTSTART;TZID=Europe/Berlin:20131129T123000
+DTEND;TZID=Europe/Berlin:20131129T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Sterman-Weinberg Jets From a Modern Perspective (Robert Schabinger\
+ , THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-970982fVaV@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20131206T123000
+DTEND;TZID=Europe/Berlin:20131206T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Search for Dark Matter with XENON (Christopher Geis\, Pierre Sissol
+ \, ETAP - Institut fuer Physik)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9716SBjkGU@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20140110T123000
+DTEND;TZID=Europe/Berlin:20140110T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Landau Ginzburg Orbifolds and Discrete Symmetries (Michael Blaszczy
+ k\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9722nuot6L@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Chargino and neutralino (electroweakino) searches at the LHC in
+  the multi-lepton plus missing energy topology lose sensitivity in the cas
+ e of small mass splitting between the mass eigenstates. In this talk I wil
+ l discuss (arXiv 1312.7350) how the monojet searches\, in combination with
+  the presence of soft leptons\, can be used to probe the parameter space. 
+ Electroweakino masses up to 200 GeV can be excluded with 300/fb at the 14 
+ TeV LHC\, and discovery is possible with 3000/fb in some regions of parame
+ ter space.
+DTSTART;TZID=Europe/Berlin:20140117T123000
+DTEND;TZID=Europe/Berlin:20140117T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Compressed electroweakino spectra at the LHC (José Zurita\, THEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9733XWoD7f@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:We construct F-theory GUT models without exotic matter\, leadin
+ g to the MSSM matter spectrum with potential singlet extensions. The inter
+ play of engineering explicit geometric setups\, absence of four-dimensiona
+ l anomalies\, and realistic phenomenology of the couplings places severe c
+ onstraints on the allowed local models in a given geometry. In constructio
+ ns based on the spectral cover we find no model satisfying all these requi
+ rements. We then provide a survey of models with additional U(1) symmetrie
+ s arising from rational sections of the elliptic fibration in toric constr
+ uctions and obtain phenomenologically appealing models based on SU(5) tops
+ . Furthermore we perform a bottom-up exploration beyond the toric section 
+ constructions discussed in the literature so far and identify benchmark mo
+ dels passing all our criteria\, which can serve as a guideline for future 
+ geometric engineering.
+DTSTART;TZID=Europe/Berlin:20140131T123000
+DTEND;TZID=Europe/Berlin:20140131T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Rational F-Theory GUTs without exotics (Paul Oehlmann\, BCTP Bonn)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9747EzVmOo@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20140207T123000
+DTEND;TZID=Europe/Berlin:20140207T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Diboson production at NNLO and algebraic techniques for Feynman int
+ egrals (Erich Weihs\, Uni Zürich)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9754uxkj3T@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20140425T123000
+DTEND;TZID=Europe/Berlin:20140425T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discussion session (N.N.\, ...)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9760SUVAF3@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20140502T123000
+DTEND;TZID=Europe/Berlin:20140502T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:entfällt (N.N.\, N.N.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9766ulZoUr@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:In this talk we will give a very basic introduction to string t
+ heory\, aimed mostly at Master and PhD students. Our presentation will be 
+ continued in the Pizza Seminar in the following week\, where we will conce
+ ntrate on the respective subjects of our doctoral work. The talk starts wi
+ th a short motivation and an historical overview\, followed by a presentat
+ ion of the basic objects in string theory. The next step consists in aspec
+ ts of string phenomenology\, in particular model building with D-branes an
+ d strings. Finally\, we will address some important mathematical aspects o
+ f string theory including moduli space and Hodge numbers.
+DTSTART;TZID=Europe/Berlin:20140509T123000
+DTEND;TZID=Europe/Berlin:20140509T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Part 1: An Introduction to Type II Superstring Theory (Jill Ecker\,
+  Isabel Koltermann\, ThEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9779wHOUas@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The first step consists in explaining in depth the procedure of
+  concrete model building in superstring theory. More precisely\, the diffi
+ culties arising in model building and their resolution are discussed. This
+  discussion is followed by a presentation of the models we desire to repro
+ duce\, which include the MSSM\, left-right symmetric models\, Pati-Salam m
+ odels and SU(5) models. In the second step the concrete deformation of orb
+ ifolds will be addressed. After a short explanation of conical singulariti
+ es\, a concrete deformation will be demonstrated for a very simple example
+ . This will be generalized to a typical model used in type IIA string theo
+ ry. Finally\, the method to compute the volume of '3-cycles' wrapped by 'D
+ 6-branes' will be explained. These volumes are proportional to the gauge c
+ ouplings and can be used to test the supersymmetry condition\, so it is in
+ teresting to find out how the volumes change while performing deformations
+  of the orbifold fixed points.
+DTSTART;TZID=Europe/Berlin:20140516T123000
+DTEND;TZID=Europe/Berlin:20140516T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Part II: Model building and deformation of orbifolds in type II str
+ ing theory (Jill Ecker\, Isabel Koltermann\, ThEP)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9794ImrfuU@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:In this talk\, I will discuss the recent NNLO prediction for th
+ e total Z pair production cross section at the LHC. A key element entering
+  the calculation is the analytical result for the two-loop corrections. St
+ arting from a pedagogical example\, I will describe how the masterintegral
+ s were obtained in terms of multiple polylogarithms using modern methods.
+DTSTART;TZID=Europe/Berlin:20140523T123000
+DTEND;TZID=Europe/Berlin:20140523T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:ZZ production at NNLO (Andreas von Manteuffel\, MITP\, PRISMA)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9804ldxJsx@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20140530T123000
+DTEND;TZID=Europe/Berlin:20140530T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:t.b.a. (t.b.a.\, N.N.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9810X6STUO@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Integration by parts reduction is a standard component of most 
+ modern multi-loop calculations in quantum field theory. We present a novel
+  integration by parts reduction strategy constructed to overcome limitatio
+ ns of currently available reduction programs based on Laporta`s algorithm.
+  As a specific feature\, the method allows for the effective usage of larg
+ e computer clusters. Our expectation is that the method will facilitate th
+ e evaluation of previously inaccessible higher-order corrections by simult
+ aneously improving both the run-time and the memory requirements of the re
+ duction procedure.
+DTSTART;TZID=Europe/Berlin:20140606T123000
+DTEND;TZID=Europe/Berlin:20140606T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:A Novel Approach To Integration By Parts Reduction (Robert Schabing
+ er\, MITP\, PRISMA)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9822fxJNbu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Randall-Sundrum (RS) models with a small and warped extra dimen
+ sion offer solutions to the gauge and Yukawa hierarchy problems of the Sta
+ ndard Model of Particle Physics. In this context\, loop induced scattering
+  processes are of particular interest for the search after the validity of
+  RS models\, because RS models predict an infinite amount of heavy Kaluza-
+ Klein particles that contribute as virtual particles in loops. The talk wi
+ ll begin with a short introduction to RS models. In a second part\, I will
+  explain some steps of the calculation of the loop-induced Higgs decay int
+ o two photons in RS models together with a phenomenological analysis that 
+ compares the theoretical results of the RS models with the latest LHC resu
+ lts.
+DTSTART;TZID=Europe/Berlin:20140613T123000
+DTEND;TZID=Europe/Berlin:20140613T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Higgs Decay into Two Photons in a Small and Warped Extra Dimension 
+ (Clara Hörner\, MITP\, PRISMA)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9835iVDKcu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The first run of the LHC has provided us with a Standard Model 
+ like Higgs\, still with room for BSM physics like supersymmetry or strongl
+ y coupled physics. At the LHC there are few dedicated searches for strongl
+ y coupled models like the composite Higgs and the little Higgs. In this ta
+ lk I will confront two specific models with LHC data and provide some ways
+  to look for them in future runs. Moreover\, I will discuss limits from ef
+ fective operators bounds at the LHC and their validity and applicability t
+ o strongly coupled models.
+DTSTART;TZID=Europe/Berlin:20140620T123000
+DTEND;TZID=Europe/Berlin:20140620T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Strongly coupled models versus the LHC (Maikel de Vries\, DESY)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-98465VwDSu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:We place perturbative unitarity constraints on both the dimensi
+ onful and dimensionless couplings in the Next-to-Minimum Supersymmetric St
+ andard Model Higgs Sector. These constraints plus the requirement that the
+  singlino and/or Higgsino constitutes (at least part) of the observed dark
+  matter relic abundance generate upper bounds on the Higgs and sparticle m
+ ass spectrum. We obtain an upper bound of about 10 TeV for the charginos\,
+  neutralinos and heavy Higgses outside the Higgs funnel regions. By using 
+ the NMSSM as a template\, the method we describe replaces traditional natu
+ ralness arguments with more rigorous perturbative unitarity arguments to g
+ et a firmer understanding of when new physics will appear.
+DTSTART;TZID=Europe/Berlin:20140627T123000
+DTEND;TZID=Europe/Berlin:20140627T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Perturbative Unitarity Constraints on a Supersymmetric Higgs Portal
+  (Sonia El Hedri\, SLAC)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9859RAe59t@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(2. p.m. - later due to Institustreff) In particle physics mode
+ l building discrete symmetries are often invoked for phenomenological reas
+ ons\, like forbidding unwanted or dangerous couplings\, or explaining and 
+ reproducing the matrices of masses and mixings of fermions in flavour phys
+ ics. While these discrete symmetries do their phenomenological job\, they 
+ are poorly motivated at a fundamental level in the context of field theory
+ . Moreover\, there are arguments suggesting that discrete global symmetrie
+ s are expected to be violated in consistent theories of quantum gravity\; 
+ therefore\, any exact symmetry of the theory should be gauge. This motivat
+ es the study of discrete gauge symmetries in string theory\, which is one 
+ of the most promising candidates for a complete theory of quantum gravity.
+  In this talk we will study different mechanisms that give rise to discret
+ e gauge symmetries in string theory\, specially in compactifications to fo
+ ur dimensions\, although we also explore several generalizations\, like co
+ mpactifications to a number of dimensions different from four\, or supercr
+ itical string theories.
+DTSTART;TZID=Europe/Berlin:20140704T140000
+DTEND;TZID=Europe/Berlin:20140704T150000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:Discrete gauge symmetries in string theory (Mikel Berasaluce Gonzál
+ ez\, Universidad Autónoma de Madrid)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9875cgVVZ4@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I report on the computation of vector-boson pair production at 
+ next-to-next-to-leading order in QCD perturbation theory by means of the q
+ T-subtraction method. This method\, which is applicable to achieve NNLO QC
+ D accuracy in the production of any colourless final-state\, is introduced
+ \, and the technical realization of the calculation in a Monte Carlo integ
+ rator is discussed. Finally\, I present numerical results on inclusive cro
+ ss sections and selected distributions for the production of Zgamma/Wgamma
+  pairs as well as first results on ZZ production.
+DTSTART;TZID=Europe/Berlin:20140711T123000
+DTEND;TZID=Europe/Berlin:20140711T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:NNLO QCD corrections to vector-boson pair production (Stefan Kallwe
+ it\, University of Zürich)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9887uRg3Co@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:We consider the possibility that atomic DM might produce mono-e
+ nergetic photon lines from the Galactic Center or other regions of high DM
+  density\, detectable in indirect detection experiments. Such a flux is ge
+ nerated along the lines of XDM\, when dark hydrogen atoms are excited to h
+ igher energy levels in collisions and subsequently de-excite to the ground
+  state\, or alternatively when free dark electrons and dark protons recomb
+ ine to form dark hydrogen atoms. The latter process is expected to be espe
+ cially relevant in scenarios where interactions in the dark sector freeze 
+ out before dark recombination is complete\, so that a relic density of fre
+ e dark protons and dark electrons still exists today. Our goal is to compu
+ te the dark hydrogen excitation and de-excitation rates in astrophysical e
+ nvironments and to predict the observable photon flux at Earth from the va
+ rious de-excitation lines. While our formulas will be largely independent 
+ of the masses and coupling strengths of the dark sector particles\, our ph
+ enomenological analysis will focus on dark hydrogen atoms with electroweak
+  scale masses and with binding energy of order keV\, so that de-excitation
+  lines lie in the X-ray band and are observable by satellite experiments l
+ ike Chandra\, Suzaku and XMM-Newton.
+DTSTART;TZID=Europe/Berlin:20140718T123000
+DTEND;TZID=Europe/Berlin:20140718T133000
+LOCATION:Sozialraum der WA THEP
+SUMMARY:X-Ray Lines From eXciting Atomic Dark Matter (Jia Lu\, NYU)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9904J24e2V@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(the talk will take place at MITP lecture hall\, Staudingerweg 
+ 9\, 02-430) We consider off-shell renormalization of the scalar sector of 
+ the effective electroweak Lagrangian for a dynamical Higgs\, up to four de
+ rivatives in the chiral expansion. We determine the complete set of indepe
+ ndent chiral invariant scalar counterterms required for consistency\, whic
+ h include bosonic operators often disregarded\, and we obtain new apparent
+  non chiral-invariant counterterms involving the Higgs particle and the lo
+ ngitudinal components of the gauge bosons. A new general parametrisation o
+ f the latter is proposed. The physical results translate into renormalisat
+ ion group equations which may be useful when comparing future Higgs data a
+ t different energies.
+DTSTART;TZID=Europe/Berlin:20140725T123000
+DTEND;TZID=Europe/Berlin:20140725T133000
+LOCATION:MITP lecture hall\, Staudingerweg 9\, 02-430
+SUMMARY:One-loop bosonic effective Lagrangian for a dynamical Higgs (Pedro 
+ Machado\, Universidad Autónoma de Madrid)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9917KUu8eS@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:ATLAS-CONF-2014-056 https://cds.cern.ch/record/1951325
+DTSTART;TZID=Europe/Berlin:20141031T123000
+DTEND;TZID=Europe/Berlin:20141031T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Light stops\, theory background and the new ATLAS result (Sonia El 
+ Hedri\, Jan Schäffer\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9925Zcw0A7@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20141107T123000
+DTEND;TZID=Europe/Berlin:20141107T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:W+W- cross section discussion (Andreas von Manteuffel\, Stefan Kall
+ weit\, Matthias Schott\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9932UulWXX@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:M. G. Aartsen et al. [IceCube Collaboration]\, ``Observation of
+  High-Energy Astrophysical Neutrinos in Three Years of IceCube Data\,' Phy
+ s. Rev. Lett. 113\, 101101 (2014) [arXiv:1405.5303 [astro-ph.HE]].
+DTSTART;TZID=Europe/Berlin:20141114T123000
+DTEND;TZID=Europe/Berlin:20141114T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:PeV neutrinos at IceCube (Jia Liu\, Kai Schatto\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9940bvgUPM@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:arXiv:1406.5053 [ATLAS Collaboration] ATLAS-PHYS-PUB-2014-019
+DTSTART;TZID=Europe/Berlin:20141121T123000
+DTEND;TZID=Europe/Berlin:20141121T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Double Higgs - theory review\, (HL-)LHC results and prospects (Clau
+ dia Bertella\, José Zurita\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9947GtGOMI@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Daya Bay - 1310.6732 RENO - 1410.7987
+DTSTART;TZID=Europe/Berlin:20141128T123000
+DTEND;TZID=Europe/Berlin:20141128T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Reactor neutrinos - energy spectrum bump (Jürgen Winter\, Joachim K
+ opp\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9955fiIsAu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:MAMI result: arXiv [1404.5502]
+DTSTART;TZID=Europe/Berlin:20141212T123000
+DTEND;TZID=Europe/Berlin:20141212T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Dark photons: theory review and search at MAMI (Benedikt Kloss\, An
+ drea Thamm\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9962VL8Lcv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150116T123000
+DTEND;TZID=Europe/Berlin:20150116T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The proton charge radius puzzle (Misha Gorshteyn\, Michael Distler\
+ , Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9968b005gz@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Bulbul\, et al [arXiv:1402.2301] Boyarsky\, et al [arXiv:1402.4
+ 119]
+DTSTART;TZID=Europe/Berlin:20150123T123000
+DTEND;TZID=Europe/Berlin:20150123T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:3.5 keV x-ray line (Christopher Hils and Xiaoping Wang\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9976Vtsa8L@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:arXiv: 1407.3683 CMS-PAS-EXO-12-041
+DTSTART;TZID=Europe/Berlin:20150130T123000
+DTEND;TZID=Europe/Berlin:20150130T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:CMS eejj anomalies (Maurice Becker\, Maikel de Vries\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9982UD9bw1@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:arXiv: 1411.4413
+DTSTART;TZID=Europe/Berlin:20150206T123000
+DTEND;TZID=Europe/Berlin:20150206T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:CMS and LHCb combination of B_s to mu+ mu- (Joachim Brod\, Rainer W
+ anke\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9989Zvlo9e@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150213T123000
+DTEND;TZID=Europe/Berlin:20150213T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Axions (and axion-like particles) - theory and current search statu
+ s (Gabriele Honecker\, Christoph Weinsheimer\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175018CET-9996w89SV0@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150220T123000
+DTEND;TZID=Europe/Berlin:20150220T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Fermi galactic center gamma ray excess (Matthias König\, Markus Arc
+ hinger\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0003mRutNX@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:http://arxiv.org/abs/1502.00612
+DTSTART;TZID=Europe/Berlin:20150424T123000
+DTEND;TZID=Europe/Berlin:20150424T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:BICEP 2 + Planck analysis on CMB polarization (Anna Kaminska\, Uwe 
+ Oberlack\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0010JPEVko@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:ATLAS result: arXiv:1501.03276 See also Grossman\, König\, Neub
+ ert: arXiv:1501.06569
+DTSTART;TZID=Europe/Berlin:20150522T123000
+DTEND;TZID=Europe/Berlin:20150522T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Higgs and Z decays to J/Psi gamma\, Upsilon gamma (Matthias König\,
+  Jakub Cuth\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0018L5ZUKv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:See Langenbruch\, Moriond EW 2015\, https://indico.in2p3.fr/eve
+ nt/10819/session/10/contribution/84/material/slides/0.pdf
+DTSTART;TZID=Europe/Berlin:20150529T123000
+DTEND;TZID=Europe/Berlin:20150529T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Anomalies in B meson decays to K^* mu+mu- and to K l+l- (Sascha Tur
+ czyk\, Simon Schmitz\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0026rlclFa@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150612T123000
+DTEND;TZID=Europe/Berlin:20150612T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Off-shell Higgs coupling measurements and the Higgs width at the LH
+ C (José Zurita\, Adam Kaluza\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0034VcPRGC@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150619T123000
+DTEND;TZID=Europe/Berlin:20150619T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:K to pi nu nubar\, NA62 prospects (Mario Vormstein\, Joachim Brod\,
+  Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0041BtLTBd@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:See 1502.03888 and references therein
+DTSTART;TZID=Europe/Berlin:20150710T123000
+DTEND;TZID=Europe/Berlin:20150710T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Dark energy: theory and tabletop probes (Felix Yu\, Arne Wickenbroc
+ k\, Lykourgos Bourgas\, Nathan Leefer\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0049cuzhFJ@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150717T123000
+DTEND;TZID=Europe/Berlin:20150717T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Neutrino mass hierarchy (Vedran Brdar\, Thomas Ehrhardt\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0055DDzSGc@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20150724T123000
+DTEND;TZID=Europe/Berlin:20150724T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The combined ATLAS+CMS Higgs mass measurement and the hierarchy pro
+ blem (Christian Schmitt\, Anna Kaminska\, Mainz U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0062OV7UUg@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:arXiv:1510.03434
+DTSTART;TZID=Europe/Berlin:20151023T123000
+DTEND;TZID=Europe/Berlin:20151023T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The Coannihilation Codex (Felix Yu\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0068V0SwRP@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20151106T123000
+DTEND;TZID=Europe/Berlin:20151106T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:GPU-accelerated calculation of Feynman Integrals (Jian Wang\, JGU M
+ ainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0075uax5oj@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Master's thesis presentation
+DTSTART;TZID=Europe/Berlin:20151113T123000
+DTEND;TZID=Europe/Berlin:20151113T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Very Rare\, Exclusive Decays of Z Bosons Into eta(') (Stefan Alte\,
+  JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0083tm3S9h@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:ATLAS-CONF-2015-045 arXiv:1506:08688
+DTSTART;TZID=Europe/Berlin:20151120T123000
+DTEND;TZID=Europe/Berlin:20151120T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Crosstalk: Diboson excesses from LHC Run I (Andrea Thamm\, Samuel W
+ ebb\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0090MMZABM@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20151127T123000
+DTEND;TZID=Europe/Berlin:20151127T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Crosstalk: A precision measurement of the weak mixing angle with th
+ e P2 experiment at MESA (Razvan-Daniel Bucoveanu\, Dominik Becker\, JGU Ma
+ inz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0097deMVFn@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Master's thesis presentation
+DTSTART;TZID=Europe/Berlin:20151204T123000
+DTEND;TZID=Europe/Berlin:20151204T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Mixed QCD-QED 2-Loop Corrections to the Drell-Yan Process (Matthias
+  Heller\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0104UWPzHa@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20151211T123000
+DTEND;TZID=Europe/Berlin:20151211T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Pentagon functions for scattering amplitudes (Johannes Henn\, JGU M
+ ainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0110HOzuEe@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20151218T123000
+DTEND;TZID=Europe/Berlin:20151218T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Crosstalk: ATLAS presentation of Run II results (Volker Buescher\, 
+ Joachim Kopp\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0117FLlfSu@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:The Weak Gravity Conjecture (WGC) very basically states that g
+ ravity is the weakest force\, which gives rise to many further implicatio
+ ns. It is considered as being maybe the most important criterion to distin
+ guish consistent theories of quantum gravity\, the landscape\, from the 
+ so-called swampland\, i.e. the space of consistent low-energy effective 
+ field theories which cannot be completed into gravitational theories\, and
+  the evidence in favor of the WGK and its consistency steadily grows. The 
+ conjecture addresses phenomenological questions as well as deep general qu
+ estions regarding the nature of quantum gravity and has appeared in differ
+ ent ways in recent papers.
+DTSTART;TZID=Europe/Berlin:20160115T123000
+DTEND;TZID=Europe/Berlin:20160115T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The Weak Gravity Conjecture (Isabel Koltermann\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0130uMhLif@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:I will briefly summarize the results for the calculation of the
+  Higgs decay into two photons in the framework of the Randall-Sundrum mode
+ l (extension of the Standard Model by a small and warped extra dimension).
+  I will mostly refer to a setup where the Higgs field can propagate into t
+ he extra dimension\, the 'bulk-Higgs' scenario.
+DTSTART;TZID=Europe/Berlin:20160122T123000
+DTEND;TZID=Europe/Berlin:20160122T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Higgs Decay into Two Photons in a Warped Extra Dimension with a Bul
+ k-Higgs Field (Clara Hörner\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-01403u31lK@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:There are many possibilities to realise semi-realistic particle
+  models in String Theory. I will provide a short introduction of model bui
+ lding in Type IIA where I make use of intersecting D-branes and briefly pr
+ esent my recent research.
+DTSTART;TZID=Europe/Berlin:20160129T123000
+DTEND;TZID=Europe/Berlin:20160129T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Model building with intersecting D-branes in Type IIA Superstring t
+ heory (Alexander Seifert\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0149CvHuKj@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20160219T123000
+DTEND;TZID=Europe/Berlin:20160219T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Gravitational Waves: theory background (Florian Scheck\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-01559vtmj3@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20160513T123000
+DTEND;TZID=Europe/Berlin:20160513T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Late decaying two component dark matter (LD2DM) explains the AMS-02
+  positron excess (Jatan Buch\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0162Uui6ts@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Theorie Palavar Seminar) We consider a tree-level meromorphic\
+ , unitary and crossing symmetric scattering amplitude. We set up bootstrap
+  equations and use them together with unitarity to constrain the asymptoti
+ c form of the leading Regge trajectory.
+DTSTART;TZID=Europe/Berlin:20160527T123000
+DTEND;TZID=Europe/Berlin:20160527T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The S-matrix Bootstrap and The Leading Regge Trajectory (Alexander 
+ Zhiboedov\, Harvard)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-01716mD73h@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Calculating gravity amplitudes from the square of gauge theory 
+ amplitudes has been a successful method to obtain results in perturbative 
+ quantum gravity otherwise unpractical to compute. Two equivalent approache
+ s are based on the Kawai-Lewellen-Tye (KLT) relations and the double copy 
+ procedure. We present a generalization of the KLT relations compatible wit
+ h the double copy procedure that uses QCD-like amplitudes to build gravity
+  amplitudes including massive double copies of fermions.
+DTSTART;TZID=Europe/Berlin:20160603T123000
+DTEND;TZID=Europe/Berlin:20160603T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Double copies of fermions and scattering amplitudes in gravity (Leo
+ nardo de la Cruz\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0183F6oJuL@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Feynman integrals are one of the most important tools of pertub
+ ation theory for high precision calculations in particle physics. Due to t
+ he presence of ultraviolet or infrared divergences these integrals may req
+ uire regularisation where the dimensional regularisation is commonly used 
+ (the regularisation parameter ε denotes the deviation from the number of s
+ pace-time dimensions). The result for a Feynman integral is then presented
+  as a Laurent series in ε. An interesting question to ask is which kind of
+  functions appears in the contributions of different ε-order. In the ε0-te
+ rm of one-loop integrals the logarithm and the dilogarithm occur. Many mul
+ ti-loop integrals can be expressed in terms of generalisations of the loga
+ rithm and the dilogarithm\, the so-called multiple polylogarithms. But the
+ re are some Feynman integrals which cannot be expressed within this class 
+ of functions of which the sunrise integral is the simplest one. In this ta
+ lk\, we show how the multiple polylogarithms can be generalised to express
+  ε-terms of the Laurent expansion of the sunrise integral (for arbitrary m
+ asses) around two and four space-time dimensions. For the two-dimensional 
+ equal mass case we will also explain an algorithm to compute an arbitrary 
+ ε-order of the Laurent expansion. Recently\, it has been shown that also t
+ he equal mass kite integral around four space-time dimensions with two mas
+ sless and three massive propagators can be expressed in terms of these gen
+ eralisations.
+DTSTART;TZID=Europe/Berlin:20160902T123000
+DTEND;TZID=Europe/Berlin:20160902T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The sunrise and the kite integral in terms of an elliptic generalis
+ ation of multiple polylogarithms (Luise Adams\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0203wVP1FH@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Sondertermin/raum: Thursday\, 11:00 am in THEP Sozial Raum) 
+DTSTART;TZID=Europe/Berlin:20161201T110000
+DTEND;TZID=Europe/Berlin:20161201T120000
+LOCATION:THEP Sozial Raum
+SUMMARY:Clockwork mechanism to generate hierarchies (Aqeel Ahmed\, Warsaw U
+ .)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0210dpLxhn@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Sondertermin/raum: Thursday\, 11:00 am in THEP Sozial Raum) 
+DTSTART;TZID=Europe/Berlin:20161215T110000
+DTEND;TZID=Europe/Berlin:20161215T120000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:TBA (Dave Sutherland\, UC Santa Barbara)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-02170am3Tc@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:
+DTSTART;TZID=Europe/Berlin:20170127T123000
+DTEND;TZID=Europe/Berlin:20170127T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Crosstalk: Higgs template cross sections\, Wh charge asymmetry (Chr
+ istian Schmitt\, Felix Yu\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0223je67GB@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Special Theorie Palavar) We introduce the CPF-group\, the grou
+ p whose elements consist of flavor and CP symmetries. We elucidate that th
+ e peculiarities of these symmetries are due to the fact that transformatio
+ n matrices acting on fields\, do not form a matrix representation of the C
+ PF-group. To construct such matrices\, we use the standard method that con
+ siders how the automorphism group of the flavor group is acting on the cor
+ responding transformation matrices. We also introduce a new method to obta
+ in transformation matrices that only uses real representations of the CPF-
+ group.
+DTSTART;TZID=Europe/Berlin:20170407T123000
+DTEND;TZID=Europe/Berlin:20170407T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Oddities in CP (Enrique Jimenez\, Colima U.\, Mexico)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0235iUwlWv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Special Theorie Palavar) arXiv:1702.06910 We study the longitu
+ dinal\, transverse\, and normal polarization components of the tau in the 
+ decays $bar{B}^0 to D^{(ast)}tau^-barnu_{tau}$ and discuss their role in s
+ earching for new physics (NP) beyond the standard model (SM). Starting wit
+ h a model-independent effective Hamiltonian including non-SM four-Fermi op
+ erators\, we obtain experimental constraints on different NP scenarios and
+  investigate their effects on the polarization observables. We also discus
+ s in some detail how the three polarization components of the tau lepton c
+ an be measured with the help of its subsequent leptonic and semihadronic d
+ ecays.
+DTSTART;TZID=Europe/Berlin:20170505T123000
+DTEND;TZID=Europe/Berlin:20170505T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Tau polarization as probe for New Physics in the decays $bar{B}^0 t
+ o D^{(ast)} tau^-barnu_{tau} (Chien-Thang Tran\, Bogolyubov Institute for 
+ Theoretical Physics\, Dubna)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0248sZUA46@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Special Theorie Palavar) Neutrino self-interactions are known 
+ to lead to non-linear collective flavor oscillations in a core-collapse su
+ pernova. In this talk\, I will point out new possible effects of non-stand
+ ard self-interactions (NSSI) of neutrinos on flavor conversions in a two-f
+ lavor framework. I will show that\, for a single-energy neutrino-antineutr
+ ino ensemble\, a flavor instability is gener- ated even in normal hierarch
+ y for large enough NSSI. Using a toy model for the neutrino spectra\, I wi
+ ll demonstrate that flavor-preserving NSSI lead to pinching of spectral sw
+ aps\, while flavor- violating NSSI cause swaps to develop away from a spec
+ tral crossing or even in the absence of a spectral crossing. Consequently\
+ , NSSI could give rise to collective oscillations and spectral splits even
+  during neutronization burst\, for both hierarchies.
+DTSTART;TZID=Europe/Berlin:20170623T123000
+DTEND;TZID=Europe/Berlin:20170623T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:New effects of non-standard self-interactions of neutrinos in a sup
+ ernova (Manibrata Sen\, TIFR)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0262MgG9bD@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Special Theorie Palavar) In this talk\, I will show two of my 
+ recent works (arXiv:1609.09078 and arXiv:1702.00395) regarding new physics
+  to accommodate the anomaly in b -> s mu mu which has been standing on the
+ se days. First\, I will discuss whether or not new physics scenarios can e
+ xplain the b -> s mu mu anomaly and simultaneously the R_D(*) measurement\
+ , which also has a large deviation from the SM prediction. Second\, I will
+  show some new physics scenario that includes a dark matter can explain th
+ e b -> s mu mu and the cosmic ray anomalies [AMS anti-proton excess]\, int
+ erpreted as dark matter annihilation. The possible explanation is consiste
+ nt with LHC direct searches and dark matter direct detection.
+DTSTART;TZID=Europe/Berlin:20171020T123000
+DTEND;TZID=Europe/Berlin:20171020T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:The recent anomaly in b -> s mu mu and possible correlations to oth
+ er observables (Ryoutaro Watanabe\, Osaka U.)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-02766pV59C@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Daya Bay collaboration [1704.01082] Dentler\, Hernandez-Cabezud
+ o\, Kopp\, Maltoni\, Schwetz [1709.04294]
+DTSTART;TZID=Europe/Berlin:20171103T123000
+DTEND;TZID=Europe/Berlin:20171103T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Constraint on sterile neutrinos from reactor spectra (Mona Dentler\
+ , Michael Wurm\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0284iDwuoT@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Masters Colloquium\, THEP Social Room) 
+DTSTART;TZID=Europe/Berlin:20171117T123000
+DTEND;TZID=Europe/Berlin:20171117T133000
+LOCATION:THEP Social Room
+SUMMARY:New Mechanisms for Dark Matter Production in the Early Universe (Lu
+ kas Mittnacht\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-02912vUgST@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:A sector with QCD-like strong dynamics is common in models of n
+ on-standard physics. Such a model could be accessible in LHC searches if b
+ oth confinement and big-quarks charged under the confining group are at th
+ e TeV scale. Big-quark masses at this scale can be explained if the new fe
+ rmions are chiral under a new U(1)′ gauge symmetry such that their bare ma
+ sses are related to the U(1)′-breaking and new confinement scales. I will 
+ present a study of a minimal GUT-motivated and gauge anomaly-free model wi
+ th implications for the LHC Run 2 searches. We find that the first signatu
+ res of such models could appear as two gauge boson resonances. The chiral 
+ nature of the model could be confirmed by observation of a Z′γ resonance\,
+  where the Z′ naturally has a large leptonic branching ratio because of it
+ s kinetic mixing with the hypercharge gauge boson.
+DTSTART;TZID=Europe/Berlin:20171201T123000
+DTEND;TZID=Europe/Berlin:20171201T133000
+LOCATION:Minkowski Raum\, 05-119
+SUMMARY:Strongly Coupled Chiral Gauge Theories at the LHC (Ben Stefanek\, J
+ GU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0305C9Ufom@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(THEP Social Room) In this talk\, I will give an overview of th
+ e work I have done so far for my master thesis. I will present a new model
+  for production of sterile neutrinos. In fact it is based on the Scotogeni
+ c model which enhances the SM with a second Higgs Doublet and three neutri
+ nos which are singlets under the SM gauge group. Additionally a Z2 symmetr
+ y is proposed which stabilizes the lightest neutrino and prevents mixing b
+ etween the two Higgs doublets. The mass of the lightest neutrino is chosen
+  to be O(keV) to have a candidate for WDM\, while the masses of the other 
+ neutrinos and the new scalars are around TeV scale. With this configuratio
+ n it is possible to explain not only DM relic density via Freeze In of the
+  lightest neutrino\, but also the masses of the active neutrino sector via
+  a radiative mass generation. Furthermore I will briefly discuss some poss
+ ible extensions of our model which we want to explore in the near future.
+DTSTART;TZID=Europe/Berlin:20171208T123000
+DTEND;TZID=Europe/Berlin:20171208T133000
+LOCATION:THEP Social Room
+SUMMARY:A new production mechanism for sterile neutrinos (Sven Baumholzer\,
+  JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0320agaErG@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Special Theorie Palavar) 
+DTSTART;TZID=Europe/Berlin:20171215T123000
+DTEND;TZID=Europe/Berlin:20171215T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:TBA (Gero von Gersdorff\, ICTP-SAIFR\, Brazil)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0326V6B8Sa@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:(Tentative) 
+DTSTART;TZID=Europe/Berlin:20180119T123000
+DTEND;TZID=Europe/Berlin:20180119T133000
+LOCATION:THEP Social Room
+SUMMARY:TBA (Kristiane Novotny\, JGU Mainz)
+END:VEVENT
+BEGIN:VEVENT
+UID:20171110T175019CET-0333gntiuv@30.seminar.physik.uni-mainz.de
+DTSTAMP:20171110T165018Z
+DESCRIPTION:Bauer\, Neubert\, Thamm [1704.08207\, 1708.00443]
+DTSTART;TZID=Europe/Berlin:20180126T123000
+DTEND;TZID=Europe/Berlin:20180126T133000
+LOCATION:Minkowski Raum\, Staudinger Weg 7\, 05-119
+SUMMARY:Higgs for ALPs Search (Martin Bauer\, Matthias Schott\, U. Heidelbe
+ rg\, JGU Mainz)
+END:VEVENT
+END:VCALENDAR

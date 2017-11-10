@@ -23,6 +23,12 @@ def ics_str_alt():
     return ics
 
 @pytest.fixture
+def ics_str3():
+    with open(os.path.dirname(__file__)+"/event_fixtures3.ics", "rt") as f:
+        ics = f.read()
+    return ics
+
+@pytest.fixture
 def app():
     db_fd, db_fn = tempfile.mkstemp()
     print(db_fn)
@@ -57,7 +63,7 @@ def test_update_events_import(ics_str, app, defsrc):
     
     cal = ics.Calendar.from_ical(ics_str)
 
-    exp_uids = [e.get("uid") for e in cal.subcomponents]
+    exp_uids = [e.get("uid") for e in cal.subcomponents if e.name == "VEVENT"]
 
     t._update_source(cal, defsrc)
 
@@ -126,3 +132,25 @@ def test_update_events_pattern(ics_str_alt, app, defsrc):
     
     with app.app_context():
         assert Event.query.filter_by(source=defsrc).count() == 15
+
+
+def test_update_events_scenario3(ics_str3, app, defsrc):
+    import coalics.tasks as t
+    
+    cal = ics.Calendar.from_ical(ics_str3)
+    # for ev in cal.subcomponents:
+        # if ev.name != "VEVENT": continue
+        # start = ev.decoded("dtstart")
+        # print(ev.get("summary"), start)
+
+    exp_uids = [e.get("uid") for e in cal.subcomponents if e.name == "VEVENT"]
+
+    t._update_source(cal, defsrc)
+
+    with app.app_context():
+        events = Event.query.all()
+    
+    act_uids = [e.uid for e in events]
+
+    assert len(events) == 177, "Not all events found"
+    assert act_uids == exp_uids, "Not all events found"
