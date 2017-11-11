@@ -29,9 +29,7 @@ logger.info("Scheduler launching")
 while True:
     try:
         logger.info("Begin schedule run")
-        if prev_job: print(prev_job.result)
-        if prev_job == None or prev_job.result != None:
-            prev_job = q.enqueue(tasks.update_sources, timeout=td.seconds*0.9)
+        q.enqueue(tasks.update_sources, timeout=td.seconds*0.9)
         logger.info("Scheduler: ran without error")
     except Exception as e:
         logger.error("Scheduler: caught error {}".format(str(e)))
