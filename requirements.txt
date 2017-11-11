@@ -25,3 +25,4 @@ tzlocal
 #py-postgresql
 PyGreSQL
 bcrypt
+python-dotenv

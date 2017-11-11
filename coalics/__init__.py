@@ -9,22 +9,24 @@ from functools import wraps
 import logging
 from redis import StrictRedis
 from rq import Queue
+import os
+from dotenv import load_dotenv
 
 import pytz
 from tzlocal import get_localzone
 
+dotenv_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env") 
+load_dotenv(dotenv_file)
 
 app = Flask(__name__)
 app.config.from_object("config")
-app.config.from_envvar('COALICS_CONFIG')
+if os.environ.get("COALICS_CONFIG"):
+    app.config.from_envvar('COALICS_CONFIG')
 
 if not app.debug:
     stream_handler = logging.StreamHandler()
     stream_handler.setLevel(logging.INFO)
     app.logger.addHandler(stream_handler)
-    # fh = logging.FileHandler("/app/log/app.log")
-    # fh.setLevel(logging.INFO)
-    # app.logger.addHandler(fh)
 
 def datetimefilter(value, format='%d.%m.%Y %H:%M:%S'):
     # this will have to come from the user sometime

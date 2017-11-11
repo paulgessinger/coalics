@@ -3,7 +3,10 @@ version: '3.2'
 services:
   app:
     environment:
-      - LANG=en_US.UTF-8
+      - FLASK_DEBUG=0
+      - FLASK_APP=app
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
     volumes: []
     command: circusd circus.ini 
     ports: []
