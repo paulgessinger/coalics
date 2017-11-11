@@ -16,7 +16,6 @@ services:
       - LANG=C.UTF-8
       - LC_ALL=C.UTF-8
     volumes:
-      - .:/app:rw
       - ./log:/app/log:rw
     command: ./dev.sh 
 
