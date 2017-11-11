@@ -16,6 +16,7 @@ from tzlocal import get_localzone
 
 app = Flask(__name__)
 app.config.from_object("config")
+app.config.from_envvar('COALICS_CONFIG')
 
 if not app.debug:
     stream_handler = logging.StreamHandler()

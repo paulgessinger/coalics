@@ -7,3 +7,5 @@ celerybeat-schedule
 /log
 /postgres-data
 /redis-data
+/config.debug.py
+/config.prod.py

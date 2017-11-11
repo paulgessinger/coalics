@@ -23,6 +23,9 @@ def update_sources():
 
     delta = end - start
     app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
+    
+    if not app.debug and "UPDATE_PING_URL" in app.config:
+        requests.get(app.config["UPDATE_PING_URL"])
 
     return True
 

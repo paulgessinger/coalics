@@ -13,6 +13,7 @@ services:
     environment:
       - FLASK_DEBUG=1
       - FLASK_APP=app
+      - COALICS_CONFIG=/app/config.debug.py
     volumes:
       - .:/app:rw
       - ./log:/app/log:rw
