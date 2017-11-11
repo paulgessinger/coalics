@@ -150,9 +150,9 @@ def calendar_ics(slug, name):
         event = ics.Event()
         event.add("summary", dbevent.summary)
         event.add("uid", dbevent.uid)
-        event.add("description", dbevent.description)
-        event.add("location", dbevent.location)
-        event.add("url", dbevent.url)
+        event.add("description", dbevent.description or "")
+        event.add("location", dbevent.location or "")
+        event.add("url", dbevent.url or "")
 
         dtstart = make_zulu(dbevent.start)
         event.add("dtstart", dtstart)
