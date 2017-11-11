@@ -17,7 +17,10 @@ logger = logging.getLogger("Scheduler")
 fh = logging.FileHandler("/app/log/scheduler.log")
 fh.setLevel(logging.INFO)
 logger.setLevel(logging.INFO)
-# app.logger.addHandler(fh)
+
+formatter = logging.Formatter("%(asctime)s %(levelname)s %(message)s")
+fh.setFormatter(formatter)
+
 logger.addHandler(fh)
 
 prev_job = None
