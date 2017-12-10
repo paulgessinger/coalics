@@ -7,10 +7,10 @@ test:
   image: python:3.6-alpine3.6
   variables: 
     PYTHONPATH: /usr/lib/python3.6/site-packages/
-    POSTGRES_PASSWORD:
-    POSTGRES_USER:
-    POSTGRES_DB:
-    COALICS_CSRF_KEY:
+    POSTGRES_PASSWORD: ""
+    POSTGRES_USER: ""
+    POSTGRES_DB: ""
+    COALICS_CSRF_KEY: ""
   script:
     - apk add --no-cache postgresql-dev libffi-dev build-base linux-headers
     - pip install -r requirements.txt
