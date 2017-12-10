@@ -17,8 +17,6 @@ test:
     - pip install -r requirements.txt
     - PYTHONPATH=$PWD:$PYTHONPATH pytest
 
-  variables:
-  DOCKER_DRIVER: overlay2
 
 
 
@@ -27,6 +25,8 @@ build_dev:
     - docker:dind
   stage: build
   image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
   tags:
     - docker
   script: 
@@ -40,6 +40,8 @@ build_prod:
     - docker:dind
   stage: build
   image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
   tags:
     - docker
   script: 
