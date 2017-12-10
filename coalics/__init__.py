@@ -16,7 +16,8 @@ import pytz
 from tzlocal import get_localzone
 
 dotenv_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env") 
-load_dotenv(dotenv_file)
+if os.path.exists(dotenv_file):
+    load_dotenv(dotenv_file)
 
 app = Flask(__name__)
 app.config.from_object("config")

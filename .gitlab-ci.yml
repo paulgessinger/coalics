@@ -1,0 +1,51 @@
+stages:
+  - test
+  - build
+
+
+test:
+  stage: test
+  image: python:3.6-alpine3.6
+  variables: 
+    PYTHONPATH: /usr/lib/python3.6/site-packages/
+    POSTGRES_PASSWORD: ""
+    POSTGRES_USER: ""
+    POSTGRES_DB: ""
+    COALICS_CSRF_KEY: ""
+  script:
+    - apk add --no-cache postgresql-dev libffi-dev build-base linux-headers
+    - pip install -r requirements.txt
+    - PYTHONPATH=$PWD:$PYTHONPATH pytest
+
+
+
+
+build_dev:
+  services:
+    - docker:dind
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
+  tags:
+    - docker-compose
+  script: 
+    - apk add --update py-pip && pip install docker-compose
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker-compose build app
+    - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose push app) || true 
+  
+build_prod:
+  services:
+    - docker:dind
+  stage: build
+  image: docker:latest
+  variables:
+    DOCKER_DRIVER: overlay2
+  tags:
+    - docker-compose
+  script: 
+    - apk add --update py-pip && pip install docker-compose
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker-compose -f docker-compose.yml -f production.yml build app
+    - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose -f docker-compose.yml -f production.yml push app) || true 

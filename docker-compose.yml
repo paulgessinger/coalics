@@ -3,6 +3,7 @@ version: '3.2'
 services:
   app:
     build: .
+    image: registry.gitlab.com/paulgessinger/coalics/app:dev
     user: nobody
     hostname: app
     depends_on:
