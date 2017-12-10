@@ -8,6 +8,6 @@ test:
   variables: 
     PYTHONPATH: /usr/lib/python3.6/site-packages/
   script:
-    - apk add --no-cache postgresql-dev libffi-dev build-base
+    - apk add --no-cache postgresql-dev libffi-dev build-base linux-headers
     - pip install -r requirements.txt
     - pytest
