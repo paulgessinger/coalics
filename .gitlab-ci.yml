@@ -6,7 +6,7 @@ test:
   stage: test
   image: python:3.6-alpine3.6
   variables: 
-    - PYTHONPATH: /usr/lib/python3.6/site-packages/
+    PYTHONPATH: /usr/lib/python3.6/site-packages/
   script:
     - apk add --no-cache postgresql-dev libffi-dev build-base
     - pip install -r requirements.txt
