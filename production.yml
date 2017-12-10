@@ -2,6 +2,7 @@ version: '3.2'
 
 services:
   app:
+    image: registry.gitlab.com/paulgessinger/coalics/app:prod
     environment:
       - FLASK_DEBUG=0
       - FLASK_APP=app

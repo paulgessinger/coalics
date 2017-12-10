@@ -1,5 +1,6 @@
 stages:
   - test
+  - build
 
 
 test:
@@ -15,3 +16,34 @@ test:
     - apk add --no-cache postgresql-dev libffi-dev build-base linux-headers
     - pip install -r requirements.txt
     - PYTHONPATH=$PWD:$PYTHONPATH pytest
+
+  variables:
+  DOCKER_DRIVER: overlay2
+
+
+
+build_dev:
+  services:
+    - docker:dind
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script: 
+    - apk add --update py-pip && pip install docker-compose
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker-compose build
+    - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose push app) || true 
+  
+build_prod:
+  services:
+    - docker:dind
+  stage: build
+  image: docker:latest
+  tags:
+    - docker
+  script: 
+    - apk add --update py-pip && pip install docker-compose
+    - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
+    - docker-compose -f docker-compose.yml -f production.yml build
+    - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose -f docker-compose.yml -f production.yml push app) || true 
