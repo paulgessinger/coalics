@@ -6,6 +6,6 @@ test:
   stage: test
   image: python:3.6-alpine3.6
   script:
-    - apk add postgresql-dev
+    - apk add --no-cache postgresql-dev
     - pip install -r requirements.txt
     - pytest
