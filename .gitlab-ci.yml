@@ -32,7 +32,7 @@ build_dev:
   script: 
     - apk add --update py-pip && pip install docker-compose
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
-    - docker-compose build
+    - docker-compose build app
     - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose push app) || true 
   
 build_prod:
@@ -47,5 +47,5 @@ build_prod:
   script: 
     - apk add --update py-pip && pip install docker-compose
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
-    - docker-compose -f docker-compose.yml -f production.yml build
+    - docker-compose -f docker-compose.yml -f production.yml build app
     - ([ $CI_COMMIT_REF_SLUG = "master" ] && docker-compose -f docker-compose.yml -f production.yml push app) || true 
