@@ -28,7 +28,7 @@ build_dev:
   variables:
     DOCKER_DRIVER: overlay2
   tags:
-    - docker-compose
+    - docker
   script: 
     - apk add --update py-pip && pip install docker-compose
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
@@ -43,7 +43,7 @@ build_prod:
   variables:
     DOCKER_DRIVER: overlay2
   tags:
-    - docker-compose
+    - docker
   script: 
     - apk add --update py-pip && pip install docker-compose
     - docker login -u gitlab-ci-token -p $CI_JOB_TOKEN registry.gitlab.com
