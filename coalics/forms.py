@@ -72,6 +72,9 @@ class RegisterForm(BaseForm):
     email = StringField("E-Mail", [validators.Length(min=4), validators.DataRequired()], widget=TextInput())
     password = PasswordField("Password", [validators.Length(min=4), validators.DataRequired()], widget=PasswordInput())
     password2 = PasswordField("Password confirmation", [validators.Length(min=4), validators.DataRequired()], widget=PasswordInput())
+    gdpr1 = BooleanField("E-Mail and Password", [validators.DataRequired(message="You must accept before registering")], description="I agree that this service stores my email address and password indefinitely, to allow me to log in. The password is stored using industry standard hashing.", default=False)
+
+    gdpr2 = BooleanField("Server logs", [validators.DataRequired(message="You must accept before registering")], description="I agree that this service stores basic server logs containing my IP address for the purpose of diagnosing application behaviour and performance. Logs are deleted after 60 days.", default=False)
 
     def validate(self):
         if not super().validate():

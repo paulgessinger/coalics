@@ -339,7 +339,7 @@ def register():
     email = request.form["email"]
     psw1 = request.form["password"]
     psw2 = request.form["password2"]
-
+    
     form = RegisterForm(request.form)
     if not form.validate():
         return render_template("register.html", form=form)
@@ -367,3 +367,13 @@ def logout():
         return flask.redirect("login")
     else:
         flask.abort(400)
+
+
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
+
+
+@app.route("/imprint")
+def imprint():
+    return render_template("imprint.html")

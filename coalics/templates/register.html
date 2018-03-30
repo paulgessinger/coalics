@@ -10,11 +10,42 @@
   <div class="card-body">
     <h4 class="card-title">Register</h4>
     <form novalidate method="POST">
+    <div class="form-row">
+      <div class="col">
     {{ input(form.email) }}
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
     {{ input(form.password) }}
+    </div>
+    </div>
+    <div class="form-row">
+      <div class="col">
     {{ input(form.password2) }}
+    </div>
+    </div>
+
+    {% for check in [form.gdpr1, form.gdpr2] %}
+    <div class="form-group">
+      <div class="form-check">
+        {{ check(required=check.flags.required, class=("form-check-input is-invalid" if check.errors else "form-check-input")) }}
+        {{ check.label(class="form-check-label") }}
+        {{ check.description }}
+        {% if check.errors %}
+        <div class="invalid-feedback">
+          <ul class="errors">{% for error in check.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+
+
+
+
     {{ form.csrf_token }}
-    <input type="submit" class="btn btn-primary mt-3" value="Login"/>
+    <input type="submit" class="btn btn-primary mt-3" value="Register"/>
     {#
       <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}"/>
       <div class="form-group">

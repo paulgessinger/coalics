@@ -11,3 +11,15 @@
   list-style-type:none;
   padding:0;
 }
+
+.form-check-input.is-invalid~.invalid-feedback, .form-check-input.is-invalid~.invalid-tooltip, .was-validated .form-check-input:invalid~.invalid-feedback, .was-validated .form-check-input:invalid~.invalid-tooltip {
+    display: block;
+}
+
+
+footer {
+  margin-top:5rem;
+  font-size:12px;
+  text-align:center;
+  padding-bottom:1rem;
+}
