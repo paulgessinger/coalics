@@ -18,16 +18,17 @@ app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
 
 @app.route("/")
 def home():
-    # r = q.enqueue(update_sources)
-    # while not r.result:
-        # time.sleep(0.1)
+    return "", 404
+    # # r = q.enqueue(update_sources)
+    # # while not r.result:
+        # # time.sleep(0.1)
 
-    # return ""
+    # # return ""
 
-    # update.delay()
-    if current_user.is_authenticated:
-        return flask.redirect(url_for("calendars"))
-    return render_template("home.html")
+    # # update.delay()
+    # if current_user.is_authenticated:
+        # return flask.redirect(url_for("calendars"))
+    # return render_template("home.html")
 
 @app.route("/calendar")
 @login_required
