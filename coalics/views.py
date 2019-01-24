@@ -30,6 +30,10 @@ def home():
         # return flask.redirect(url_for("calendars"))
     # return render_template("home.html")
 
+@app.route("/robots.txt")
+def robots():
+    return "User-agent: *\nDisallow: /"
+
 @app.route("/calendar")
 @login_required
 def calendars():
@@ -175,10 +179,11 @@ def calendar_ics(slug, name):
 
         root.add_component(event)
 
-    if wants_ics:
-        return root.to_ical()
-    else:
-        return "<pre>{}</pre>".format(str(root.to_ical(), "utf-8"))
+    return root.to_ical()
+    # if wants_ics:
+        # return root.to_ical()
+    # else:
+        # return "<pre>{}</pre>".format(str(root.to_ical(), "utf-8"))
 
 @app.route("/calendar/<int:cal_id>/source", methods=["GET", "POST"])
 @login_required
@@ -333,6 +338,8 @@ def login():
 
 @app.route("/register", methods=("GET", "POST"))
 def register():
+    return "", 404
+
     if request.method == "GET":
         form = RegisterForm()
         return render_template("register.html", form=form)
