@@ -9,7 +9,7 @@ services:
       - LANG=C.UTF-8
       - LC_ALL=C.UTF-8
     volumes: []
-    command: circusd circus.ini 
+    command: ./prod.sh
     ports: []
     expose:
       - "8080"
