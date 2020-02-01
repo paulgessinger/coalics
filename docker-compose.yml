@@ -16,15 +16,15 @@ services:
       - FLASK_APP=app
       - LANG=C.UTF-8
       - LC_ALL=C.UTF-8
-    volumes:
-      - ./log:/app/log:rw
+    #volumes:
+      #- ./log:/app/log:Z
     command: ./dev.sh 
 
   redis:
     image: 'redis:3.0-alpine'
     command: redis-server #--requirepass devpassword
-    volumes:
-      - ./redis-data:/data:rw
+    #volumes:
+      #- ./redis-data:/data:rw
     #ports:
       #- '6379:6379'
 

@@ -10,6 +10,6 @@ WORKDIR $APP_PATH
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-COPY . . 
+RUN mkdir $APP_PATH/log
 
-CMD circusd circus.ini
+COPY . . 

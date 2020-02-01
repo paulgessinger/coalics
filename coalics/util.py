@@ -114,12 +114,14 @@ class timeout:
     def handle_timeout(self, signum, frame):
         raise TimeoutException(self.error_message)
     def __enter__(self):
+        pass
 
-        if not app.debug:
-            # does not work in debug
-            signal.signal(signal.SIGALRM, self.handle_timeout)
-            signal.alarm(self.seconds)
+        # if not app.debug:
+            # # does not work in debug
+            # signal.signal(signal.SIGALRM, self.handle_timeout)
+            # signal.alarm(self.seconds)
     def __exit__(self, type, value, traceback):
-        if not app.debug:
-            signal.alarm(0)
+        # if not app.debug:
+            # signal.alarm(0)
+        pass
  

@@ -13,10 +13,11 @@ def update_sources():
     tasks = []
     start = datetime.now()
     for source in calendar_sources:
-        t = q.enqueue(update_source, source)
-        tasks.append(t)
+        #  t = q.enqueue(update_source, source)
+        #  tasks.append(t)
+        update_source(source)
 
-    wait_for(tasks)
+    #  wait_for(tasks)
     db.session.close()
     
     end = datetime.now()
