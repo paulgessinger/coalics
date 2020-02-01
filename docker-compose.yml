@@ -7,41 +7,29 @@ services:
     user: nobody
     hostname: app
     depends_on:
-      - redis
       - db
     ports:
       - "8080:8080"
-    environment:
-      - FLASK_DEBUG=1
-      - FLASK_APP=app
-      - LANG=C.UTF-8
-      - LC_ALL=C.UTF-8
-    #volumes:
-      #- ./log:/app/log:Z
-    command: ./dev.sh 
+    volumes:
+      - ./log:/app/log:Z
+    command: ["./wait-for-it.sh", "db:5432", "--", "python", "run.py"]
 
-  redis:
-    image: 'redis:3.0-alpine'
-    command: redis-server #--requirepass devpassword
-    #volumes:
-      #- ./redis-data:/data:rw
-    #ports:
-      #- '6379:6379'
+
+  worker:
+    build: .
+    image: registry.gitlab.com/paulgessinger/coalics/app:dev
+    user: nobody
+    hostname: app
+    depends_on:
+      - db
+      - app
+    volumes:
+      - ./log:/app/log:Z
+    command: ["./wait-for-it.sh", "db:5432", "--", "python", "coalics/schedule.py"]
+
 
   db:
     image: 'postgres:10.0-alpine'
-    #ports:
-      #- "5432:5432"
     env_file: .env
     volumes:
-      #- ./postgres:/var/lib/postgresql
       - ./postgres-data:/var/lib/postgresql/data
-  
-  #adminer:
-    #image: adminer
-    #restart: always
-    #ports:
-      #- 5000:8080
-
-#volumes:
-  #redis:

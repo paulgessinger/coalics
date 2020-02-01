@@ -1,18 +1,21 @@
 version: '3.2'
 
+
 services:
   app:
+    env_file: 
+     - .env
+     - .env.prod
     image: registry.gitlab.com/paulgessinger/coalics/app:prod
-    environment:
-      - FLASK_DEBUG=0
-      - FLASK_APP=app
-      - LANG=C.UTF-8
-      - LC_ALL=C.UTF-8
-    #volumes: []
-    command: ./prod.sh
     ports: []
     expose:
       - "8080"
+
+  worker:
+    image: registry.gitlab.com/paulgessinger/coalics/app:prod
+    env_file: 
+     - .env
+     - .env.prod
 
   nginx:
     build: 

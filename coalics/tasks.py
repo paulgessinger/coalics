@@ -3,7 +3,7 @@ import icalendar as ics
 import time
 from datetime import datetime
 
-from coalics import db, app, q
+from coalics import db, app
 from coalics.models import CalendarSource, Event
 from coalics.util import wait_for, event_acceptor, timeout, TimeoutException
 
@@ -13,8 +13,6 @@ def update_sources():
     tasks = []
     start = datetime.now()
     for source in calendar_sources:
-        #  t = q.enqueue(update_source, source)
-        #  tasks.append(t)
         update_source(source)
 
     #  wait_for(tasks)

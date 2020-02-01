@@ -10,6 +10,8 @@ WORKDIR $APP_PATH
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-RUN mkdir $APP_PATH/log
+# RUN mkdir $APP_PATH/log
 
 COPY . . 
+
+# CMD ["python", "run.py"]

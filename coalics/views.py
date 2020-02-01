@@ -12,13 +12,13 @@ from .models import User, Calendar, CalendarSource, Event
 from .forms import CalendarForm, CalendarSourceForm, DeleteForm, LoginForm, LogoutForm, EditForm, RegisterForm
 from .tasks import update_sources, update_source_id
 
-from coalics import app, q, db
+from coalics import app, db
 
 app.jinja_env.globals['logout_form'] = lambda: LogoutForm()
 
 @app.route("/")
 def home():
-    return "", 404
+    return "hi", 200
     # # r = q.enqueue(update_sources)
     # # while not r.result:
         # # time.sleep(0.1)
@@ -208,12 +208,7 @@ def add_source(cal_id):
     db.session.commit()
 
     # trigger update
-    task = q.enqueue(update_source_id, source.id)
-    try:
-        wait_for(task, timeout=5)
-    except TaskTimeout:
-        # timeout
-        flask.flash("Upstream source still being updated", "info")
+    update_source_id(source.id)
 
     return redirect(url_for("calendar_edit", cal_id=cal_id))
 
@@ -267,14 +262,7 @@ def edit_source(cal_id, source_id):
     # wait max 5 secs return early if longer
     # also add timeout on task itself to make sure
     # a bad regex does not kill everything
-    task = q.enqueue(update_source_id, source.id)
-    try:
-        wait_for(task, timeout=5)
-    except TaskTimeout:
-        # timeout
-        flask.flash("Upstream source still being updated", "info")
-        pass
-
+    update_source_id(source.id)
 
     return redirect(url_for("calendar_edit", cal_id=cal_id))
 
@@ -338,7 +326,7 @@ def login():
 
 @app.route("/register", methods=("GET", "POST"))
 def register():
-    return "", 404
+    #  return "", 404
 
     if request.method == "GET":
         form = RegisterForm()
