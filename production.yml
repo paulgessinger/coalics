@@ -12,10 +12,10 @@ services:
       - "8080"
 
   worker:
-    image: registry.gitlab.com/paulgessinger/coalics/app:prod
     env_file: 
      - .env
      - .env.prod
+    image: registry.gitlab.com/paulgessinger/coalics/app:prod
 
   nginx:
     build: 

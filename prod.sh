@@ -1,2 +1,2 @@
 #!/bin/bash
-exec docker-compose -f docker-compose.yml -f prod.yml $@
+exec docker-compose -f docker-compose.yml -f production.yml $@

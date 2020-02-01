@@ -2,6 +2,7 @@ import requests
 import icalendar as ics
 import time
 from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor
 
 from coalics import db, app
 from coalics.models import CalendarSource, Event
@@ -12,8 +13,11 @@ def update_sources():
     app.logger.info("Update {} sources".format(len(calendar_sources)))
     tasks = []
     start = datetime.now()
-    for source in calendar_sources:
-        update_source(source)
+
+    with ThreadPoolExecutor() as ex:
+        results = ex.map(update_source, calendar_sources)
+    #  for source in calendar_sources:
+        #  update_source(source)
 
     #  wait_for(tasks)
     db.session.close()
@@ -23,7 +27,8 @@ def update_sources():
     delta = end - start
     app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
     
-    if not app.debug and "UPDATE_PING_URL" in app.config:
+    if not app.debug and "UPDATE_PING_URL" in app.config and app.config["UPDATE_PING_URL"] is not None:
+        app.logger.info("Sending ping to %s", app.config["UPDATE_PING_URL"])
         requests.get(app.config["UPDATE_PING_URL"])
 
     return True
@@ -43,12 +48,12 @@ def update_source(source):
     # if state.detached:
         # db.session.add(source)
 
-    app.logger.debug("Updating source url {}".format(source.url))
+    app.logger.info("Updating source url {}".format(source.url))
     res = _update_source(build_ics(source), source)
 
     if app.debug:
         nevents = Event.query.filter_by(source=source).count()
-        app.logger.debug("Source now has {} events".format(nevents))
+        app.logger.info("Source now has {} events".format(nevents))
     return res
 
 class ICSEvent():

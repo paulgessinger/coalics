@@ -23,7 +23,7 @@ while True:
         tasks.update_sources()
         app.logger.info("Scheduler: ran without error")
     except Exception as e:
-        app.logger.error("Scheduler: caught error {}".format(str(e)))
+        app.logger.error("Scheduler: caught error {}".format(str(e)), exc_info=True)
     finally:
         app.logger.info("Scheduler: Sleeping for {}s".format(td.seconds))
         time.sleep(td.seconds)

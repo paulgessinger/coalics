@@ -11,7 +11,7 @@ services:
     ports:
       - "8080:8080"
     volumes:
-      - ./log:/app/log:Z
+      - ./logx:/app/log:rw
     command: ["./wait-for-it.sh", "db:5432", "--", "python", "run.py"]
 
 
@@ -24,7 +24,7 @@ services:
       - db
       - app
     volumes:
-      - ./log:/app/log:Z
+      - ./logx:/app/log:rw
     command: ["./wait-for-it.sh", "db:5432", "--", "python", "coalics/schedule.py"]
 
 

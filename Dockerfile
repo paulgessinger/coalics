@@ -10,8 +10,11 @@ WORKDIR $APP_PATH
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
-# RUN mkdir $APP_PATH/log
+# RUN mkdir $APP_PATH/log && chown -R root:root $APP_PATH/log
 
-COPY . . 
+COPY coalics coalics
+COPY config.py .
+COPY run.py .
+COPY wait-for-it.sh .
 
 # CMD ["python", "run.py"]
