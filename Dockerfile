@@ -14,5 +14,6 @@ COPY coalics coalics
 COPY config.py .
 COPY run.py .
 COPY wait-for-it.sh .
+COPY Procfile .
 
 # CMD ["python", "run.py"]
