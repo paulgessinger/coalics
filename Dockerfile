@@ -7,12 +7,13 @@ WORKDIR $APP_PATH
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
+RUN pip install uwsgi
 
 # RUN mkdir $APP_PATH/log && chown -R root:root $APP_PATH/log
 
 COPY coalics coalics
 COPY config.py .
-COPY run.py .
+COPY wsgi.py .
 COPY wait-for-it.sh .
 COPY Procfile .
 COPY manage.py .
