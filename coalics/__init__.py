@@ -76,9 +76,6 @@ from .util import string_shorten
 
 app.jinja_env.filters['shorten'] = string_shorten
 
-db.create_all()
-migrate = Migrate(app, db)
-
 lm = LoginManager()
 lm.login_view = "login"
 lm.init_app(app)
