@@ -26,3 +26,4 @@ psycopg2
 #PyGreSQL
 bcrypt
 python-dotenv
+Flask-Script
