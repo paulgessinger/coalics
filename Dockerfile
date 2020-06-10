@@ -16,5 +16,6 @@ COPY run.py .
 COPY wait-for-it.sh .
 COPY Procfile .
 COPY manage.py .
+COPY migrations .
 
 # CMD ["python", "run.py"]
