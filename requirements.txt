@@ -20,10 +20,6 @@ pytest
 pytz
 tzlocal
 psycopg2
-#MySQL-python
-#mysql-connector
-#py-postgresql
-#PyGreSQL
 bcrypt
 python-dotenv
 Flask-Script
