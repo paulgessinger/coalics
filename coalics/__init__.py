@@ -36,18 +36,12 @@ class HostnameFilter(logging.Filter):
 formatter = logging.Formatter('%(asctime)s - %(hostname)s - %(name)s - %(levelname)s: %(message)s', datefmt='%b %d %H:%M:%S')
 
 logger = logging.getLogger()
-
-handler = logging.handlers.RotatingFileHandler(os.path.join(os.path.dirname(__file__), "../log/coalics.log"), backupCount=5, maxBytes=5e6)
-handler.setFormatter(formatter)
+handler = logging.StreamHandler()
 handler.addFilter(HostnameFilter())
-logger.addHandler(handler)
-logger.setLevel(logging.INFO)
+handler.setFormatter(formatter)
 
+logger.setLevel(logging.INFO)
 if app.debug:
-  handler = logging.StreamHandler()
-  handler.addFilter(HostnameFilter())
-  handler.setFormatter(formatter)
-  logger.addHandler(handler)
   logger.setLevel(logging.DEBUG)
 
 
