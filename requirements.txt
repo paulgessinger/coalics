@@ -19,10 +19,10 @@ icalendar
 pytest
 pytz
 tzlocal
-#psycopg2
+psycopg2
 #MySQL-python
 #mysql-connector
 #py-postgresql
-PyGreSQL
+#PyGreSQL
 bcrypt
 python-dotenv
