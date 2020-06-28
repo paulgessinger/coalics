@@ -33,19 +33,27 @@ class HostnameFilter(logging.Filter):
         record.hostname = HostnameFilter.hostname
         return True
 
-formatter = logging.Formatter('%(asctime)s - %(hostname)s - %(name)s - %(levelname)s: %(message)s', datefmt='%b %d %H:%M:%S')
+from logging.config import dictConfig
+dictConfig({
+    'version': 1,
+    'formatters': {'default': {
+        'format': '[%(asctime)s] %(levelname)s in %(name)s/%(module)s: %(message)s',
+    }},
+    'handlers': {'wsgi': {
+        'class': 'logging.StreamHandler',
+        'formatter': 'default'
+    }},
+    'root': {
+        'level': 'INFO',
+        'handlers': ['wsgi']
+    }
+})
 
-logger = logging.getLogger()
-handler = logging.StreamHandler()
-handler.addFilter(HostnameFilter())
-handler.setFormatter(formatter)
-
-logger.setLevel(logging.INFO)
 if app.debug:
-  logger.setLevel(logging.DEBUG)
+  logging.getLogger().setLevel(logging.DEBUG)
 
 
-logging.getLogger("werkzeug").setLevel(logging.WARNING)
+# logging.getLogger("werkzeug").setLevel(logging.WARNING)
 
 #  logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
