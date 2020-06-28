@@ -14,13 +14,13 @@ def update_sources():
     tasks = []
     start = datetime.now()
 
-    with ThreadPoolExecutor() as ex:
-        results = ex.map(update_source, calendar_sources)
-    #  for source in calendar_sources:
-        #  update_source(source)
+    #with ThreadPoolExecutor() as ex:
+    #    results = ex.map(update_source, calendar_sources)
+    for source in calendar_sources:
+        update_source(source)
 
     #  wait_for(tasks)
-    db.session.close()
+    #db.session.close()
     
     end = datetime.now()
 
@@ -48,12 +48,12 @@ def update_source(source):
     # if state.detached:
         # db.session.add(source)
 
+    nevents_prev = Event.query.filter_by(source=source).count()
     app.logger.info("Updating source url {}".format(source.url))
     res = _update_source(build_ics(source), source)
 
-    if app.debug:
-        nevents = Event.query.filter_by(source=source).count()
-        app.logger.info("Source now has {} events".format(nevents))
+    nevents = Event.query.filter_by(source=source).count()
+    app.logger.info("Source %s had %d events now has %d events", source.url, nevents_prev, nevents)
     return res
 
 class ICSEvent():
@@ -70,6 +70,9 @@ class ICSEvent():
     def populate_obj(self, obj):
         for k, v in self.__dict__.items():
             setattr(obj, k, v)
+            
+    def __str__(self):
+        return "Event('{}', {}, {})".format(self.summary, self.start, self.uid)
 
 
 def _update_source(cal, source):
@@ -88,6 +91,7 @@ def _update_source(cal, source):
                       
     for event in matching_stored_events:
         if not event.uid in upstream_uids:
+            app.logger.debug("Event with uid %s was deleted upstream", event.uid)
             # was deleted upstream
             db.session.delete(event)
                       
@@ -97,8 +101,10 @@ def _update_source(cal, source):
         for event in upstream_events:
             dbevent = Event.query.filter_by(uid=event.uid, source=source).one_or_none()
             if not dbevent:
+                app.logger.debug("New event %s", event)
                 # this is a new one
                 if accept_event(event):
+                    app.logger.debug("Event %s is accepted, adding", event)
                     dbevent = Event(**event.__dict__)
                     dbevent.source = source
                     db.session.add(dbevent)
@@ -107,15 +113,18 @@ def _update_source(cal, source):
                 # check if event is still accepted by filters
                 if accept_event(event):
                     # yes: update
+                    app.logger.debug("Event %s exists and is accepted, update", event)
                     event.populate_obj(dbevent)
                 else:
                     # no: remove it
+                    app.logger.debug("Event %s exists and is NOT accepted, remove", event)
                     db.session.delete(dbevent)
+        app.logger.debug("Commit to database")
         db.session.commit()
     except TimeoutException:
         app.logger.error("Timeout on regex execution. Discontinue event checking for this one")
         db.session.rollback()
-        db.session.close()
+        #db.session.close()
 
         
 
