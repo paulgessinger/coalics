@@ -25,14 +25,6 @@ app.config.from_object("config")
 if os.environ.get("COALICS_CONFIG"):
     app.config.from_envvar('COALICS_CONFIG')
 
-
-class HostnameFilter(logging.Filter):
-    hostname = platform.node()
-
-    def filter(self, record):
-        record.hostname = HostnameFilter.hostname
-        return True
-
 from logging.config import dictConfig
 dictConfig({
     'version': 1,

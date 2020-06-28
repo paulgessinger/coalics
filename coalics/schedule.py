@@ -13,17 +13,18 @@ import time
 
 
 #  logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
+logger = logging.getLogger("schedule")
 
 prev_job = None
 td = timedelta(seconds=app.config["SOURCE_UPDATE_FREQUENCY"])
-app.logger.info("Scheduler launching")
+logger.info("Scheduler launching")
 while True:
     try:
-        app.logger.info("Begin schedule run")
+        logger.info("Begin schedule run")
         tasks.update_sources()
-        app.logger.info("Scheduler: ran without error")
+        logger.info("Scheduler: ran without error")
     except Exception as e:
-        app.logger.error("Scheduler: caught error {}".format(str(e)), exc_info=True)
+        logger.error("Scheduler: caught error {}".format(str(e)), exc_info=True)
     finally:
-        app.logger.info("Scheduler: Sleeping for {}s".format(td.seconds))
+        logger.info("Scheduler: Sleeping for {}s".format(td.seconds))
         time.sleep(td.seconds)
