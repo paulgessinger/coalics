@@ -1,6 +1,10 @@
-from coalics import app, db
+from dotenv import load_dotenv
 from flask_script import Manager
 from flask_migrate import Migrate, MigrateCommand
+
+load_dotenv()
+
+from coalics import app, db
 
 migrate = Migrate(app, db)
 
