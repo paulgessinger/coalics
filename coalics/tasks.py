@@ -27,8 +27,12 @@ def update_sources():
     delta = end - start
     app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
     
+    app.logger.info("Consider calling ping URL: is in config: %s", "UPDATE_PING_URL" in app.config)
+    if "UPDATE_PING_URL" in app.config:
+      app.logger.info("%s", app.config["UPDATE_PING_URL"])
     if not app.debug and "UPDATE_PING_URL" in app.config and app.config["UPDATE_PING_URL"] is not None:
         app.logger.info("Sending ping to %s", app.config["UPDATE_PING_URL"])
+
         requests.get(app.config["UPDATE_PING_URL"])
 
     return True
