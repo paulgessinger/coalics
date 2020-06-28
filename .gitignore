@@ -8,3 +8,4 @@ celerybeat-schedule
 /postgres-data
 /redis-data
 /.env
+postgres-datax
