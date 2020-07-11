@@ -9,6 +9,12 @@ from coalics.models import CalendarSource, Event
 from coalics.util import wait_for, event_acceptor, timeout, TimeoutException
 
 def update_sources():
+    update_ping_url = app.config["UPDATE_PING_URL"]
+
+    if update_ping_url is not None:
+        app.logger.info("Sending start ping to %s", update_ping_url)
+        requests.get(f"{update_ping_url}/start")
+
     calendar_sources = CalendarSource.query.all()
     app.logger.info("Update {} sources".format(len(calendar_sources)))
     tasks = []
@@ -27,13 +33,9 @@ def update_sources():
     delta = end - start
     app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
     
-    app.logger.info("Consider calling ping URL: is in config: %s", "UPDATE_PING_URL" in app.config)
-    if "UPDATE_PING_URL" in app.config:
-      app.logger.info("%s", app.config["UPDATE_PING_URL"])
-    if not app.debug and "UPDATE_PING_URL" in app.config and app.config["UPDATE_PING_URL"] is not None:
-        app.logger.info("Sending ping to %s", app.config["UPDATE_PING_URL"])
-
-        requests.get(app.config["UPDATE_PING_URL"])
+    if update_ping_url is not None:
+        app.logger.info("Sending ping to %s", update_ping_url)
+        requests.get(update_ping_url)
 
     return True
 
