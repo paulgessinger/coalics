@@ -1,0 +1,3915 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20170919T063000Z
+DTEND;VALUE=DATE-TIME:20170919T073000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666645@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666645/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666645/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W'->lnu/Z'->ll combination meeting
+DTSTART;VALUE=DATE-TIME:20170919T083000Z
+DTEND;VALUE=DATE-TIME:20170919T110000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666621@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666621/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/666621/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VBF H->inv: approval prepration
+DTSTART;VALUE=DATE-TIME:20170919T130000Z
+DTEND;VALUE=DATE-TIME:20170919T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667190@indico.cern.ch
+DESCRIPTION:Speakers: Ben Carlson (University of Pittsburgh)\nhttps://indi
+ co.cern.ch/event/667190/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/667190/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20170919T130000Z
+DTEND;VALUE=DATE-TIME:20170919T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664074@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/664074/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/664074/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20170919T130000Z
+DTEND;VALUE=DATE-TIME:20170919T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650918@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50918/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650918/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ttbar resonance searches
+DTSTART;VALUE=DATE-TIME:20170919T133000Z
+DTEND;VALUE=DATE-TIME:20170919T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667025@indico.cern.ch
+DESCRIPTION:Speakers: Danilo Enoque Ferreira De Lima (Ruprecht-Karls-Unive
+ rsitaet Heidelberg (DE))\, Masato Aoki (High Energy Accelerator Research O
+ rganization (JP))\, Christoph Falk Anders (Ruprecht-Karls-Universitaet Hei
+ delberg)\, Samuel Calvet (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Jame
+ s Edward Ferrando (Deutsches Elektronen-Synchrotron (DE))\nhttps://indico.
+ cern.ch/event/667025/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/667025/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL Prompt Trilepton Analysis - Meeting
+DTSTART;VALUE=DATE-TIME:20170919T140000Z
+DTEND;VALUE=DATE-TIME:20170919T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667198@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667198/
+LOCATION:
+URL:https://indico.cern.ch/event/667198/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting: single lept
+ on channel
+DTSTART;VALUE=DATE-TIME:20170919T140000Z
+DTEND;VALUE=DATE-TIME:20170919T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666948@indico.cern.ch
+DESCRIPTION:Speakers: Jose Enrique Garcia Navarro (Univ. of Valencia and C
+ SIC (ES))\nInformal meeting devoted to the single lepton channel of the mo
+ notop search.\nhttps://indico.cern.ch/event/666948/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666948/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20170919T150000Z
+DTEND;VALUE=DATE-TIME:20170919T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664272@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/664272/
+LOCATION:
+URL:https://indico.cern.ch/event/664272/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20170919T150000Z
+DTEND;VALUE=DATE-TIME:20170919T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612037@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612037/
+LOCATION:
+URL:https://indico.cern.ch/event/612037/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20170919T153000Z
+DTEND;VALUE=DATE-TIME:20170919T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663910@indico.cern.ch
+DESCRIPTION:Speakers: Thi Ngoc Loan Truong (Abdus Salam Int. Cent. Theor. 
+ Phys. (IT))\, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US)
+ )\, Will Buttinger (Brookhaven National Laboratory (US))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/663910/
+LOCATION:40-R-C10 (CERN)
+URL:https://indico.cern.ch/event/663910/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal Z->tau+lep LFV meeting
+DTSTART;VALUE=DATE-TIME:20170920T070000Z
+DTEND;VALUE=DATE-TIME:20170920T084500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667375@indico.cern.ch
+DESCRIPTION:Speakers: Geert Jan Besjes (University of Copenhagen (DK))\nht
+ tps://twiki.cern.ch/twiki/bin/view/AtlasProtected/LFVZtaulep2016\nhttps://
+ indico.cern.ch/event/667375/
+LOCATION:32-S-C22 (CERN)
+URL:https://indico.cern.ch/event/667375/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20170920T070000Z
+DTEND;VALUE=DATE-TIME:20170920T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667011@indico.cern.ch
+DESCRIPTION:Speakers: Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\, Marie-Helene Genest (Centre National de la Recherche Scientifiq
+ ue (FR))\nhttps://indico.cern.ch/event/667011/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/667011/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20170920T090000Z
+DTEND;VALUE=DATE-TIME:20170920T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640036@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640036/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640036/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20170920T110000Z
+DTEND;VALUE=DATE-TIME:20170920T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667273@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667273/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/667273/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 Jet+MET meeting
+DTSTART;VALUE=DATE-TIME:20170920T113000Z
+DTEND;VALUE=DATE-TIME:20170920T123000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666923@indico.cern.ch
+DESCRIPTION:Speakers: Valerio Ippolito (Harvard University (US))\, Kathari
+ na Bierwagen (Johannes-Gutenberg-Universitaet  Mainz (DE))\nRun-II Jet+MET
+  analysis meeting\n\nVidyo PIN: 2016\nhttps://indico.cern.ch/event/666923/
+LOCATION:1-1-025 (CERN)
+URL:https://indico.cern.ch/event/666923/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20170920T120000Z
+DTEND;VALUE=DATE-TIME:20170920T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664280@indico.cern.ch
+DESCRIPTION:Speakers: Laurie Mcclymont (University of London (GB))\, Rui W
+ ang (Argonne National Laboratory (US))\nhttps://indico.cern.ch/event/66428
+ 0/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/664280/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20170920T130000Z
+DTEND;VALUE=DATE-TIME:20170920T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667213@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667213/
+LOCATION:
+URL:https://indico.cern.ch/event/667213/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Top/Exotic same-sign dilepton 13 TeV analysis
+DTSTART;VALUE=DATE-TIME:20170920T130000Z
+DTEND;VALUE=DATE-TIME:20170920T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667424@indico.cern.ch
+DESCRIPTION:Speakers: Cecile Deterre (Deutsches Elektronen-Synchrotron (DE
+ ))\, Romain Madar (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Erich Ward 
+ Varnes (University of Arizona (US))\nWeekly meeting of the Top/Exotic same
+ -sign dilepton analysis using 13 TeV data.\nhttps://indico.cern.ch/event/6
+ 67424/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/667424/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20170920T150000Z
+DTEND;VALUE=DATE-TIME:20170920T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666918@indico.cern.ch
+DESCRIPTION:Speakers: Benjamin Michael Wynne (University of Edinburgh (GB)
+ )\, Debarati Roy (University of the Witwatersrand (ZA))\nhttps://indico.ce
+ rn.ch/event/666918/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/666918/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20170920T150000Z
+DTEND;VALUE=DATE-TIME:20170920T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666866@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666866/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666866/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2017 Vgamma Resonance Search weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170920T150000Z
+DTEND;VALUE=DATE-TIME:20170920T203000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667374@indico.cern.ch
+DESCRIPTION:Speakers: Shu Li (Duke University (US))\, Zhijun Liang (Chines
+ e Academy of Sciences (CN))\nhttps://indico.cern.ch/event/667374/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/667374/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170921T110000Z
+DTEND;VALUE=DATE-TIME:20170921T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667326@indico.cern.ch
+DESCRIPTION:Speakers: Magnar Kopangen Bugge (University of Oslo (NO))\nhtt
+ ps://indico.cern.ch/event/667326/
+LOCATION:42-R-406 (CERN)
+URL:https://indico.cern.ch/event/667326/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly Mono-V(qq) Meeting
+DTSTART;VALUE=DATE-TIME:20170921T120000Z
+DTEND;VALUE=DATE-TIME:20170921T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667760@indico.cern.ch
+DESCRIPTION:Speakers: Jike Wang (Deutsches Elektronen-Synchrotron (DE))\, 
+ Samuel Ross Meehan (University of Washington (US))\, Patrick Rieck (Max-Pl
+ anck-Institut fur Physik (DE))\nHOW TO MAKE A NEW CONTRIBUTION (If you pro
+ duce something and want to post it here\, even if a day does not exist whe
+ n you produced it\, then follow these directions) :\n\n\n	Go to "Edit" by 
+ clicking the little pencil at the top of the page On the left side of the 
+ page\, click on "Timetable". This will show the full timetable for this en
+ tire event\, with the current day coming up by default.\n	On the right sid
+ e\, click "Add New" and then "Contribution".\n	Fill this in with the name 
+ of your talk and you as a contributor\, and then you save.\n	You then need
+  to go back to the ordinary indico page via "Switch to display view"\, and
+  you can then see your new contribution and upload your slides.\n\nhttps:/
+ /indico.cern.ch/event/667760/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/667760/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prompt Lepton-Jet Meeting
+DTSTART;VALUE=DATE-TIME:20170921T130000Z
+DTEND;VALUE=DATE-TIME:20170921T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667706@indico.cern.ch
+DESCRIPTION:Speakers: Bernhard Meirose (University of Texas at Dallas (US)
+ )\nhttps://indico.cern.ch/event/667706/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/667706/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170921T130000Z
+DTEND;VALUE=DATE-TIME:20170921T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661301@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661301
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661301/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 VBF Higgs to Invisible
+DTSTART;VALUE=DATE-TIME:20170921T130000Z
+DTEND;VALUE=DATE-TIME:20170921T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667720@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667720/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/667720/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20170921T130000Z
+DTEND;VALUE=DATE-TIME:20170921T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661442@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661442/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661442/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20170921T150000Z
+DTEND;VALUE=DATE-TIME:20170921T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599120@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599120/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599120/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20170921T150000Z
+DTEND;VALUE=DATE-TIME:20170921T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667930@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667930/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/667930/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20170922T070000Z
+DTEND;VALUE=DATE-TIME:20170922T101000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667675@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667675/
+LOCATION:42-R-001 (CERN)
+URL:https://indico.cern.ch/event/667675/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20170922T120000Z
+DTEND;VALUE=DATE-TIME:20170922T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667546@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 667546/
+LOCATION:42-R-407 (CERN)
+URL:https://indico.cern.ch/event/667546/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20170922T130000Z
+DTEND;VALUE=DATE-TIME:20170922T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663368@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663368/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663368/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20170922T130000Z
+DTEND;VALUE=DATE-TIME:20170922T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666936@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666936/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666936/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20170922T140000Z
+DTEND;VALUE=DATE-TIME:20170922T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638753@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638753/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/638753/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20170922T140000Z
+DTEND;VALUE=DATE-TIME:20170922T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667043@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667043/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/667043/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AZH (mH>125) weekly
+DTSTART;VALUE=DATE-TIME:20170922T140000Z
+DTEND;VALUE=DATE-TIME:20170922T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668053@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668053/
+LOCATION:Vidyo (CERN)
+URL:https://indico.cern.ch/event/668053/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics HH-->4b Exotics Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20170922T140000Z
+DTEND;VALUE=DATE-TIME:20170922T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667882@indico.cern.ch
+DESCRIPTION:Speakers: Jana Schaarschmidt (University of Washington (US))\,
+  David Wardrope (University College London (UK))\nhttps://indico.cern.ch/e
+ vent/667882/
+LOCATION:304-1-001 (CERN)
+URL:https://indico.cern.ch/event/667882/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly W' Single Top Working Group Meeting
+DTSTART;VALUE=DATE-TIME:20170922T140000Z
+DTEND;VALUE=DATE-TIME:20170922T160500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668060@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668060/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/668060/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20170925T120000Z
+DTEND;VALUE=DATE-TIME:20170925T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-657089@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/657089/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/657089/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WZ -> lvll resonance weekly meeting
+DTSTART;VALUE=DATE-TIME:20170925T130000Z
+DTEND;VALUE=DATE-TIME:20170925T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663735@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/663735/
+LOCATION:
+URL:https://indico.cern.ch/event/663735/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dilepton Search - Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170925T140000Z
+DTEND;VALUE=DATE-TIME:20170925T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668271@indico.cern.ch
+DESCRIPTION:Speakers: Noam Tal Hod (TRIUMF (CA))\, Paolo Mastrandrea (Cent
+ re National de la Recherche Scientifique (FR))\nhttps://indico.cern.ch/eve
+ nt/668271/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/668271/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Analysis meeting: Searches in dijet plus lepton
+DTSTART;VALUE=DATE-TIME:20170925T140000Z
+DTEND;VALUE=DATE-TIME:20170925T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-654035@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel.\n\nGroup email: atlas
+ -phys-exotics-lepton-dijets@cern.ch\n\nCDS supporting note https://cds.cer
+ n.ch/record/2270559\n\n \nhttps://indico.cern.ch/event/654035/
+LOCATION:
+URL:https://indico.cern.ch/event/654035/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting - cancel
+ led
+DTSTART;VALUE=DATE-TIME:20170925T143000Z
+DTEND;VALUE=DATE-TIME:20170925T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663491@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663491/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663491/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20170926T063000Z
+DTEND;VALUE=DATE-TIME:20170926T073000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667944@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/667944/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/667944/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20170926T130000Z
+DTEND;VALUE=DATE-TIME:20170926T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664075@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/664075/
+LOCATION:
+URL:https://indico.cern.ch/event/664075/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20170926T130000Z
+DTEND;VALUE=DATE-TIME:20170926T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650919@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50919/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650919/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ttbar resonance searches (canceled)
+DTSTART;VALUE=DATE-TIME:20170926T133000Z
+DTEND;VALUE=DATE-TIME:20170926T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668766@indico.cern.ch
+DESCRIPTION:Speakers: James Edward Ferrando (Deutsches Elektronen-Synchrot
+ ron (DE))\, Samuel Calvet (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Chr
+ istoph Falk Anders (Ruprecht-Karls-Universitaet Heidelberg)\, Masato Aoki 
+ (High Energy Accelerator Research Organization (JP))\, Danilo Enoque Ferre
+ ira De Lima (Ruprecht-Karls-Universitaet Heidelberg (DE))\nhttps://indico.
+ cern.ch/event/668766/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/668766/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL Prompt Trilepton Analysis - Meeting
+DTSTART;VALUE=DATE-TIME:20170926T140000Z
+DTEND;VALUE=DATE-TIME:20170926T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668694@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668694/
+LOCATION:
+URL:https://indico.cern.ch/event/668694/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20170926T140000Z
+DTEND;VALUE=DATE-TIME:20170926T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668291@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668291/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/668291/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20170926T150000Z
+DTEND;VALUE=DATE-TIME:20170926T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664273@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/664273/
+LOCATION:
+URL:https://indico.cern.ch/event/664273/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20170926T150000Z
+DTEND;VALUE=DATE-TIME:20170926T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612038@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612038/
+LOCATION:
+URL:https://indico.cern.ch/event/612038/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20170926T153000Z
+DTEND;VALUE=DATE-TIME:20170926T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663911@indico.cern.ch
+DESCRIPTION:Speakers: Thi Ngoc Loan Truong (Abdus Salam Int. Cent. Theor. 
+ Phys. (IT))\, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US)
+ )\, Will Buttinger (Brookhaven National Laboratory (US))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/663911/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/663911/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20170927T070000Z
+DTEND;VALUE=DATE-TIME:20170927T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668317@indico.cern.ch
+DESCRIPTION:Speakers: Marie-Helene Genest (Centre National de la Recherche
+  Scientifique (FR))\, Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\nhttps://indico.cern.ch/event/668317/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/668317/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal Z->tau+lep LFV meeting
+DTSTART;VALUE=DATE-TIME:20170927T071500Z
+DTEND;VALUE=DATE-TIME:20170927T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669213@indico.cern.ch
+DESCRIPTION:Speakers: Geert Jan Besjes (University of Copenhagen (DK))\nht
+ tps://twiki.cern.ch/twiki/bin/view/AtlasProtected/LFVZtaulep2016\nhttps://
+ indico.cern.ch/event/669213/
+LOCATION:32-S-C22 (CERN)
+URL:https://indico.cern.ch/event/669213/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20170927T090000Z
+DTEND;VALUE=DATE-TIME:20170927T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640037@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640037/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640037/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20170927T110000Z
+DTEND;VALUE=DATE-TIME:20170927T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668908@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668908/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668908/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20170927T120000Z
+DTEND;VALUE=DATE-TIME:20170927T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664281@indico.cern.ch
+DESCRIPTION:Speakers: Laurie Mcclymont (University of London (GB))\, Rui W
+ ang (Argonne National Laboratory (US))\nhttps://indico.cern.ch/event/66428
+ 1/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/664281/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20170927T130000Z
+DTEND;VALUE=DATE-TIME:20170927T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667214@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667214/
+LOCATION:
+URL:https://indico.cern.ch/event/667214/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Top/Exotic same-sign dilepton 13 TeV analysis
+DTSTART;VALUE=DATE-TIME:20170927T130000Z
+DTEND;VALUE=DATE-TIME:20170927T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669210@indico.cern.ch
+DESCRIPTION:Speakers: Erich Ward Varnes (University of Arizona (US))\, Rom
+ ain Madar (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Cecile Deterre (Deu
+ tsches Elektronen-Synchrotron (DE))\nWeekly meeting of the Top/Exotic same
+ -sign dilepton analysis using 13 TeV data.\nhttps://indico.cern.ch/event/6
+ 69210/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669210/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20170927T150000Z
+DTEND;VALUE=DATE-TIME:20170927T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669078@indico.cern.ch
+DESCRIPTION:Speakers: Debarati Roy (University of the Witwatersrand (ZA))\
+ , Benjamin Michael Wynne (University of Edinburgh (GB))\nhttps://indico.ce
+ rn.ch/event/669078/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/669078/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20170927T150000Z
+DTEND;VALUE=DATE-TIME:20170927T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666867@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666867/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666867/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2017 Vgamma Resonance Search weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170927T150000Z
+DTEND;VALUE=DATE-TIME:20170927T203000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669191@indico.cern.ch
+DESCRIPTION:Speakers: Zhijun Liang (Chinese Academy of Sciences (CN))\, Sh
+ u Li (Duke University (US))\nhttps://indico.cern.ch/event/669191/
+LOCATION:Vidyo Only (CERN)
+URL:https://indico.cern.ch/event/669191/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly Mono-V(qq) Meeting
+DTSTART;VALUE=DATE-TIME:20170928T120000Z
+DTEND;VALUE=DATE-TIME:20170928T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669636@indico.cern.ch
+DESCRIPTION:Speakers: Patrick Rieck (Max-Planck-Institut fur Physik (DE))\
+ , Samuel Ross Meehan (University of Washington (US))\, Jike Wang (Deutsche
+ s Elektronen-Synchrotron (DE))\nHOW TO MAKE A NEW CONTRIBUTION (If you pro
+ duce something and want to post it here\, even if a day does not exist whe
+ n you produced it\, then follow these directions) :\n\n\n	Go to "Edit" by 
+ clicking the little pencil at the top of the page On the left side of the 
+ page\, click on "Timetable". This will show the full timetable for this en
+ tire event\, with the current day coming up by default.\n	On the right sid
+ e\, click "Add New" and then "Contribution".\n	Fill this in with the name 
+ of your talk and you as a contributor\, and then you save.\n	You then need
+  to go back to the ordinary indico page via "Switch to display view"\, and
+  you can then see your new contribution and upload your slides.\n\nhttps:/
+ /indico.cern.ch/event/669636/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669636/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20170928T120000Z
+DTEND;VALUE=DATE-TIME:20170928T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669684@indico.cern.ch
+DESCRIPTION:Speakers: Juan Pedro Araque Espinosa (LIP Laboratorio de Instr
+ umentacao e Fisica Experimental de Part)\, Johannes Erdmann (TU Dortmund)\
+ nhttps://indico.cern.ch/event/669684/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/669684/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prompt Lepton-Jet Meeting
+DTSTART;VALUE=DATE-TIME:20170928T130000Z
+DTEND;VALUE=DATE-TIME:20170928T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669544@indico.cern.ch
+DESCRIPTION:Speakers: Bernhard Meirose (University of Texas at Dallas (US)
+ )\nhttps://indico.cern.ch/event/669544/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/669544/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 VBF Higgs to Invisible
+DTSTART;VALUE=DATE-TIME:20170928T130000Z
+DTEND;VALUE=DATE-TIME:20170928T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669260@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669260/
+LOCATION:5-4-030 (CERN)
+URL:https://indico.cern.ch/event/669260/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20170928T130000Z
+DTEND;VALUE=DATE-TIME:20170928T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661443@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661443/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661443/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20170928T150000Z
+DTEND;VALUE=DATE-TIME:20170928T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599121@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599121/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599121/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20170928T150000Z
+DTEND;VALUE=DATE-TIME:20170928T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669581@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669581/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/669581/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH  meeting
+DTSTART;VALUE=DATE-TIME:20170928T153000Z
+DTEND;VALUE=DATE-TIME:20170928T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669402@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669402/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669402/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20170929T120000Z
+DTEND;VALUE=DATE-TIME:20170929T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669821@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 669821/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669821/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20170929T123000Z
+DTEND;VALUE=DATE-TIME:20170929T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661302@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661302
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661302/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20170929T130000Z
+DTEND;VALUE=DATE-TIME:20170929T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663369@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663369/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663369/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20170929T130000Z
+DTEND;VALUE=DATE-TIME:20170929T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666937@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666937/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666937/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20170929T140000Z
+DTEND;VALUE=DATE-TIME:20170929T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669867@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669867/
+LOCATION:
+URL:https://indico.cern.ch/event/669867/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20170929T140000Z
+DTEND;VALUE=DATE-TIME:20170929T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638754@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638754/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/638754/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly W' Single Top Working Group Meeting
+DTSTART;VALUE=DATE-TIME:20170929T140000Z
+DTEND;VALUE=DATE-TIME:20170929T160500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669837@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669837/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669837/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20171002T120000Z
+DTEND;VALUE=DATE-TIME:20171002T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670508@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/670508/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/670508/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171002T120000Z
+DTEND;VALUE=DATE-TIME:20171002T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668992@indico.cern.ch
+DESCRIPTION:Speakers: Magnar Kopangen Bugge (University of Oslo (NO))\nhtt
+ ps://indico.cern.ch/event/668992/
+LOCATION:42-R-406 (CERN)
+URL:https://indico.cern.ch/event/668992/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WZ -> lvll resonance weekly meeting
+DTSTART;VALUE=DATE-TIME:20171002T130000Z
+DTEND;VALUE=DATE-TIME:20171002T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663736@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/663736/
+LOCATION:
+URL:https://indico.cern.ch/event/663736/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dilepton Search - Discussion
+DTSTART;VALUE=DATE-TIME:20171002T140000Z
+DTEND;VALUE=DATE-TIME:20171002T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670538@indico.cern.ch
+DESCRIPTION:Speakers: Paolo Mastrandrea (Centre National de la Recherche S
+ cientifique (FR))\, Noam Tal Hod (TRIUMF (CA))\nhttps://indico.cern.ch/eve
+ nt/670538/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/670538/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171002T143000Z
+DTEND;VALUE=DATE-TIME:20171002T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663492@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663492/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663492/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20171002T150000Z
+DTEND;VALUE=DATE-TIME:20171002T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669926@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669926/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669926/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20171002T150000Z
+DTEND;VALUE=DATE-TIME:20171002T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669781@indico.cern.ch
+DESCRIPTION:Speakers: Benjamin Michael Wynne (University of Edinburgh (GB)
+ )\, Debarati Roy (University of the Witwatersrand (ZA))\nhttps://indico.ce
+ rn.ch/event/669781/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/669781/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171003T130000Z
+DTEND;VALUE=DATE-TIME:20171003T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-664076@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/664076/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/664076/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171003T130000Z
+DTEND;VALUE=DATE-TIME:20171003T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650920@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50920/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650920/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ttbar resonance searches
+DTSTART;VALUE=DATE-TIME:20171003T133000Z
+DTEND;VALUE=DATE-TIME:20171003T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670665@indico.cern.ch
+DESCRIPTION:Speakers: Danilo Enoque Ferreira De Lima (Ruprecht-Karls-Unive
+ rsitaet Heidelberg (DE))\, Masato Aoki (High Energy Accelerator Research O
+ rganization (JP))\, Christoph Falk Anders (Ruprecht-Karls-Universitaet Hei
+ delberg)\, Samuel Calvet (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Jame
+ s Edward Ferrando (Deutsches Elektronen-Synchrotron (DE))\nhttps://indico.
+ cern.ch/event/670665/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/670665/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL Prompt Trilepton Analysis - Meeting
+DTSTART;VALUE=DATE-TIME:20171003T140000Z
+DTEND;VALUE=DATE-TIME:20171003T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670844@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/670844/
+LOCATION:
+URL:https://indico.cern.ch/event/670844/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20171003T140000Z
+DTEND;VALUE=DATE-TIME:20171003T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669413@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669413/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/669413/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DBL VV semileptonic meeting
+DTSTART;VALUE=DATE-TIME:20171003T150000Z
+DTEND;VALUE=DATE-TIME:20171003T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669431@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669431/
+LOCATION:61-1-017 - Room D (CERN)
+URL:https://indico.cern.ch/event/669431/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171003T153000Z
+DTEND;VALUE=DATE-TIME:20171003T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663912@indico.cern.ch
+DESCRIPTION:Speakers: Thi Ngoc Loan Truong (Abdus Salam Int. Cent. Theor. 
+ Phys. (IT))\, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US)
+ )\, Will Buttinger (Brookhaven National Laboratory (US))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/663912/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/663912/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20171004T070000Z
+DTEND;VALUE=DATE-TIME:20171004T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670313@indico.cern.ch
+DESCRIPTION:Speakers: Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\nhttps://indico.cern.ch/event/670313/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/670313/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal Z->tau+lep LFV meeting
+DTSTART;VALUE=DATE-TIME:20171004T071500Z
+DTEND;VALUE=DATE-TIME:20171004T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671056@indico.cern.ch
+DESCRIPTION:Speakers: Geert Jan Besjes (University of Copenhagen (DK))\nht
+ tps://twiki.cern.ch/twiki/bin/view/AtlasProtected/LFVZtaulep2016\nhttps://
+ indico.cern.ch/event/671056/
+LOCATION:32-S-C22 (CERN)
+URL:https://indico.cern.ch/event/671056/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20171004T090000Z
+DTEND;VALUE=DATE-TIME:20171004T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640038@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640038/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640038/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171004T110000Z
+DTEND;VALUE=DATE-TIME:20171004T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668909@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668909/
+LOCATION:Video only (CERN)
+URL:https://indico.cern.ch/event/668909/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20171004T120000Z
+DTEND;VALUE=DATE-TIME:20171004T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671224@indico.cern.ch
+DESCRIPTION:Speakers: Rui Wang (Argonne National Laboratory (US))\, Laurie
+  Mcclymont (University of London (GB))\nhttps://indico.cern.ch/event/67122
+ 4/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/671224/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Top/Exotic same-sign dilepton 13 TeV analysis
+DTSTART;VALUE=DATE-TIME:20171004T130000Z
+DTEND;VALUE=DATE-TIME:20171004T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671030@indico.cern.ch
+DESCRIPTION:Speakers: Cecile Deterre (Deutsches Elektronen-Synchrotron (DE
+ ))\, Romain Madar (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Erich Ward 
+ Varnes (University of Arizona (US))\nWeekly meeting of the Top/Exotic same
+ -sign dilepton analysis using 13 TeV data.\nhttps://indico.cern.ch/event/6
+ 71030/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/671030/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171004T140000Z
+DTEND;VALUE=DATE-TIME:20171004T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661303@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661303
+ /
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661303/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171004T140000Z
+DTEND;VALUE=DATE-TIME:20171004T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667215@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667215/
+LOCATION:
+URL:https://indico.cern.ch/event/667215/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171004T150000Z
+DTEND;VALUE=DATE-TIME:20171004T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638756@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638756/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638756/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20171004T150000Z
+DTEND;VALUE=DATE-TIME:20171004T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671261@indico.cern.ch
+DESCRIPTION:Speakers: Debarati Roy (University of the Witwatersrand (ZA))\
+ , Benjamin Michael Wynne (University of Edinburgh (GB))\nhttps://indico.ce
+ rn.ch/event/671261/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/671261/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171004T150000Z
+DTEND;VALUE=DATE-TIME:20171004T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666868@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666868/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/666868/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2017 Vgamma Resonance Search weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171004T150000Z
+DTEND;VALUE=DATE-TIME:20171004T203000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-670877@indico.cern.ch
+DESCRIPTION:Speakers: Zhijun Liang (Chinese Academy of Sciences (CN))\, Sh
+ u Li (Duke University (US))\nhttps://indico.cern.ch/event/670877/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/670877/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20171005T120000Z
+DTEND;VALUE=DATE-TIME:20171005T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671533@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Juan Pedro Araque E
+ spinosa (LIP Laboratorio de Instrumentacao e Fisica Experimental de Part)\
+ nhttps://indico.cern.ch/event/671533/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/671533/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W'->lnu/Z'->ll combination meeting
+DTSTART;VALUE=DATE-TIME:20171005T123000Z
+DTEND;VALUE=DATE-TIME:20171005T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669871@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669871/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/669871/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prompt Lepton-Jet Meeting
+DTSTART;VALUE=DATE-TIME:20171005T130000Z
+DTEND;VALUE=DATE-TIME:20171005T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671183@indico.cern.ch
+DESCRIPTION:Speakers: Bernhard Meirose (University of Texas at Dallas (US)
+ )\nhttps://indico.cern.ch/event/671183/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/671183/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 VBF Higgs to Invisible
+DTSTART;VALUE=DATE-TIME:20171005T130000Z
+DTEND;VALUE=DATE-TIME:20171005T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671027@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671027/
+LOCATION:40-R-C10 (CERN)
+URL:https://indico.cern.ch/event/671027/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20171005T130000Z
+DTEND;VALUE=DATE-TIME:20171005T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661444@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661444/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661444/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171005T150000Z
+DTEND;VALUE=DATE-TIME:20171005T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599122@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599122/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599122/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171005T150000Z
+DTEND;VALUE=DATE-TIME:20171005T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671446@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671446/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/671446/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AZH (mH>125) weekly
+DTSTART;VALUE=DATE-TIME:20171006T120000Z
+DTEND;VALUE=DATE-TIME:20171006T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671231@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671231/
+LOCATION:Vidyo (CERN)
+URL:https://indico.cern.ch/event/671231/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171006T120000Z
+DTEND;VALUE=DATE-TIME:20171006T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671695@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 671695/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/671695/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171006T130000Z
+DTEND;VALUE=DATE-TIME:20171006T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663370@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663370/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663370/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171006T130000Z
+DTEND;VALUE=DATE-TIME:20171006T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666938@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666938/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666938/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics HH-->4b Exotics Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171006T133000Z
+DTEND;VALUE=DATE-TIME:20171006T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671684@indico.cern.ch
+DESCRIPTION:Speakers: David Wardrope (University College London (UK))\, Ja
+ na Schaarschmidt (University of Washington (US))\nhttps://indico.cern.ch/e
+ vent/671684/
+LOCATION:304-1-001 (CERN)
+URL:https://indico.cern.ch/event/671684/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20171006T140000Z
+DTEND;VALUE=DATE-TIME:20171006T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669868@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669868/
+LOCATION:
+URL:https://indico.cern.ch/event/669868/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly W' Single Top Working Group Meeting
+DTSTART;VALUE=DATE-TIME:20171006T140000Z
+DTEND;VALUE=DATE-TIME:20171006T160500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671690@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671690/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/671690/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DBL hadronic meeting
+DTSTART;VALUE=DATE-TIME:20171009T120000Z
+DTEND;VALUE=DATE-TIME:20171009T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671829@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671829/
+LOCATION:13-1-017 (CERN)
+URL:https://indico.cern.ch/event/671829/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171009T120000Z
+DTEND;VALUE=DATE-TIME:20171009T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671486@indico.cern.ch
+DESCRIPTION:Speakers: Magnar Kopangen Bugge (University of Oslo (NO))\nhtt
+ ps://indico.cern.ch/event/671486/
+LOCATION:42-R-406 (CERN)
+URL:https://indico.cern.ch/event/671486/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20171009T121500Z
+DTEND;VALUE=DATE-TIME:20171009T141500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672098@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672098/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/672098/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CANCELLED: WZ -> lvll resonance weekly meeting
+DTSTART;VALUE=DATE-TIME:20171009T130000Z
+DTEND;VALUE=DATE-TIME:20171009T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672090@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672090/
+LOCATION:
+URL:https://indico.cern.ch/event/672090/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171009T140000Z
+DTEND;VALUE=DATE-TIME:20171009T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612039@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612039/
+LOCATION:
+URL:https://indico.cern.ch/event/612039/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dilepton Search - Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171009T140000Z
+DTEND;VALUE=DATE-TIME:20171009T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671863@indico.cern.ch
+DESCRIPTION:Speakers: Paolo Mastrandrea (Centre National de la Recherche S
+ cientifique (FR))\, Noam Tal Hod (TRIUMF (CA))\nhttps://indico.cern.ch/eve
+ nt/671863/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/671863/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171009T143000Z
+DTEND;VALUE=DATE-TIME:20171009T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663493@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663493/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663493/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20171009T150000Z
+DTEND;VALUE=DATE-TIME:20171009T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671917@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671917/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/671917/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20171009T150000Z
+DTEND;VALUE=DATE-TIME:20171009T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671378@indico.cern.ch
+DESCRIPTION:Speakers: Benjamin Michael Wynne (University of Edinburgh (GB)
+ )\, Debarati Roy (University of the Witwatersrand (ZA))\nhttps://indico.ce
+ rn.ch/event/671378/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/671378/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W'->lnu/Z'->ll combination meeting
+DTSTART;VALUE=DATE-TIME:20171010T080000Z
+DTEND;VALUE=DATE-TIME:20171010T103000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671876@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671876/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/671876/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171010T130000Z
+DTEND;VALUE=DATE-TIME:20171010T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650921@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50921/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650921/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ttbar resonance searches
+DTSTART;VALUE=DATE-TIME:20171010T133000Z
+DTEND;VALUE=DATE-TIME:20171010T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672207@indico.cern.ch
+DESCRIPTION:Speakers: James Edward Ferrando (Deutsches Elektronen-Synchrot
+ ron (DE))\, Samuel Calvet (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Chr
+ istoph Falk Anders (Ruprecht-Karls-Universitaet Heidelberg)\, Masato Aoki 
+ (High Energy Accelerator Research Organization (JP))\, Danilo Enoque Ferre
+ ira De Lima (Ruprecht-Karls-Universitaet Heidelberg (DE))\nhttps://indico.
+ cern.ch/event/672207/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/672207/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL Prompt Trilepton Analysis - Meeting
+DTSTART;VALUE=DATE-TIME:20171010T140000Z
+DTEND;VALUE=DATE-TIME:20171010T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672437@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672437/
+LOCATION:
+URL:https://indico.cern.ch/event/672437/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171010T150000Z
+DTEND;VALUE=DATE-TIME:20171010T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612040@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612040/
+LOCATION:
+URL:https://indico.cern.ch/event/612040/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171010T153000Z
+DTEND;VALUE=DATE-TIME:20171010T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669470@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669470/
+LOCATION:40-R-C10 (CERN)
+URL:https://indico.cern.ch/event/669470/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dijets Weekly meeting
+DTSTART;VALUE=DATE-TIME:20171010T153000Z
+DTEND;VALUE=DATE-TIME:20171010T165500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671976@indico.cern.ch
+DESCRIPTION:Speakers: Benjamin William Allen (University of Oregon (US))\,
+  Matteo Bauce (Universita e INFN\, Roma I (IT))\nhttps://indico.cern.ch/ev
+ ent/671976/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/671976/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20171011T070000Z
+DTEND;VALUE=DATE-TIME:20171011T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672160@indico.cern.ch
+DESCRIPTION:Speakers: Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\nhttps://indico.cern.ch/event/672160/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/672160/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal Z->tau+lep LFV meeting
+DTSTART;VALUE=DATE-TIME:20171011T071500Z
+DTEND;VALUE=DATE-TIME:20171011T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672545@indico.cern.ch
+DESCRIPTION:Speakers: Geert Jan Besjes (University of Copenhagen (DK))\nht
+ tps://twiki.cern.ch/twiki/bin/view/AtlasProtected/LFVZtaulep2016\nhttps://
+ indico.cern.ch/event/672545/
+LOCATION:32-S-C22 (CERN)
+URL:https://indico.cern.ch/event/672545/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20171011T090000Z
+DTEND;VALUE=DATE-TIME:20171011T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640039@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640039/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640039/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171011T110000Z
+DTEND;VALUE=DATE-TIME:20171011T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668910@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668910/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668910/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20171011T120000Z
+DTEND;VALUE=DATE-TIME:20171011T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671225@indico.cern.ch
+DESCRIPTION:Speakers: Rui Wang (Argonne National Laboratory (US))\, Laurie
+  Mcclymont (University of London (GB))\nhttps://indico.cern.ch/event/67122
+ 5/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/671225/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Prompt Lepton-Jet Meeting
+DTSTART;VALUE=DATE-TIME:20171011T130000Z
+DTEND;VALUE=DATE-TIME:20171011T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672448@indico.cern.ch
+DESCRIPTION:Speakers: Bernhard Meirose (University of Texas at Dallas (US)
+ )\nhttps://indico.cern.ch/event/672448/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/672448/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171011T130000Z
+DTEND;VALUE=DATE-TIME:20171011T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667216@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667216/
+LOCATION:
+URL:https://indico.cern.ch/event/667216/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20171011T140000Z
+DTEND;VALUE=DATE-TIME:20171011T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671055@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/671055/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/671055/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171011T150000Z
+DTEND;VALUE=DATE-TIME:20171011T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638757@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638757/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638757/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171011T150000Z
+DTEND;VALUE=DATE-TIME:20171011T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666869@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666869/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666869/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2017 Vgamma Resonance Search weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171011T150000Z
+DTEND;VALUE=DATE-TIME:20171011T203000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672320@indico.cern.ch
+DESCRIPTION:Speakers: Shu Li (Duke University (US))\, Zhijun Liang (Chines
+ e Academy of Sciences (CN))\nhttps://indico.cern.ch/event/672320/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/672320/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly Mono-V(qq) Meeting
+DTSTART;VALUE=DATE-TIME:20171012T120000Z
+DTEND;VALUE=DATE-TIME:20171012T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672605@indico.cern.ch
+DESCRIPTION:Speakers: Jike Wang (Deutsches Elektronen-Synchrotron (DE))\, 
+ Samuel Ross Meehan (University of Washington (US))\, Patrick Rieck (Max-Pl
+ anck-Institut fur Physik (DE))\nHOW TO MAKE A NEW CONTRIBUTION (If you pro
+ duce something and want to post it here\, even if a day does not exist whe
+ n you produced it\, then follow these directions) :\n\n\n	Go to "Edit" by 
+ clicking the little pencil at the top of the page On the left side of the 
+ page\, click on "Timetable". This will show the full timetable for this en
+ tire event\, with the current day coming up by default.\n	On the right sid
+ e\, click "Add New" and then "Contribution".\n	Fill this in with the name 
+ of your talk and you as a contributor\, and then you save.\n	You then need
+  to go back to the ordinary indico page via "Switch to display view"\, and
+  you can then see your new contribution and upload your slides.\n\nhttps:/
+ /indico.cern.ch/event/672605/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/672605/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20171012T120000Z
+DTEND;VALUE=DATE-TIME:20171012T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671534@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Juan Pedro Araque E
+ spinosa (LIP Laboratorio de Instrumentacao e Fisica Experimental de Part)\
+ nhttps://indico.cern.ch/event/671534/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/671534/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171012T130000Z
+DTEND;VALUE=DATE-TIME:20171012T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661304@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661304
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661304/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 VBF Higgs to Invisible
+DTSTART;VALUE=DATE-TIME:20171012T130000Z
+DTEND;VALUE=DATE-TIME:20171012T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672648@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672648/
+LOCATION:40-4-C01 (CERN)
+URL:https://indico.cern.ch/event/672648/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20171012T130000Z
+DTEND;VALUE=DATE-TIME:20171012T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661445@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661445/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661445/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171012T150000Z
+DTEND;VALUE=DATE-TIME:20171012T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599123@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599123/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599123/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171012T150000Z
+DTEND;VALUE=DATE-TIME:20171012T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672941@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672941/
+LOCATION:4-3-001 (CERN)
+URL:https://indico.cern.ch/event/672941/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171013T120000Z
+DTEND;VALUE=DATE-TIME:20171013T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673057@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 673057/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/673057/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171013T130000Z
+DTEND;VALUE=DATE-TIME:20171013T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663371@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663371/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663371/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171013T130000Z
+DTEND;VALUE=DATE-TIME:20171013T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666939@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Nuno Filipe Castro 
+ (LIP\, University of Minho and University of Porto (PT))\nAnalyses searchi
+ ng for new physics in single top + MET topologies. Mono-top effective mode
+ ls\, as well as single production of T quarks decaying into tZ (Z->invisib
+ le)\, are searched for. Depending on the decay of the W (from the top) ful
+ ly hadronic or single lepton topologies are explored.\n\nTwiki: https://tw
+ iki.cern.ch/twiki/bin/viewauth/AtlasProtected/HQTRun2MonoTop\n\nMailing li
+ st: monotop-atlas@cernSPAMNOT.ch (please add [mono-top / single T->tZ] to 
+ the subject of the email for easier tracking)\n\n \nhttps://indico.cern.c
+ h/event/666939/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666939/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20171013T140000Z
+DTEND;VALUE=DATE-TIME:20171013T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669869@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669869/
+LOCATION:
+URL:https://indico.cern.ch/event/669869/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AZH (mH>125) weekly
+DTSTART;VALUE=DATE-TIME:20171013T140000Z
+DTEND;VALUE=DATE-TIME:20171013T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672650@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672650/
+LOCATION:Vidyo (CERN)
+URL:https://indico.cern.ch/event/672650/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly W' Single Top Working Group Meeting
+DTSTART;VALUE=DATE-TIME:20171013T140000Z
+DTEND;VALUE=DATE-TIME:20171013T160500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672923@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672923/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/672923/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VBF H->inv daily chat
+DTSTART;VALUE=DATE-TIME:20171016T120000Z
+DTEND;VALUE=DATE-TIME:20171016T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673576@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/673576/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/673576/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171016T120000Z
+DTEND;VALUE=DATE-TIME:20171016T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673034@indico.cern.ch
+DESCRIPTION:Speakers: Magnar Kopangen Bugge (University of Oslo (NO))\nhtt
+ ps://indico.cern.ch/event/673034/
+LOCATION:42-R-406 (CERN)
+URL:https://indico.cern.ch/event/673034/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20171016T121500Z
+DTEND;VALUE=DATE-TIME:20171016T141500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672099@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672099/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/672099/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:WZ -> lvll resonance weekly meeting
+DTSTART;VALUE=DATE-TIME:20171016T130000Z
+DTEND;VALUE=DATE-TIME:20171016T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672091@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672091/
+LOCATION:
+URL:https://indico.cern.ch/event/672091/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dilepton Search - Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171016T140000Z
+DTEND;VALUE=DATE-TIME:20171016T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673386@indico.cern.ch
+DESCRIPTION:Speakers: Noam Tal Hod (TRIUMF (CA))\, Paolo Mastrandrea (Cent
+ re National de la Recherche Scientifique (FR))\nhttps://indico.cern.ch/eve
+ nt/673386/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/673386/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171016T140000Z
+DTEND;VALUE=DATE-TIME:20171017T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612041@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612041/
+LOCATION:
+URL:https://indico.cern.ch/event/612041/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171016T143000Z
+DTEND;VALUE=DATE-TIME:20171016T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663494@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663494/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663494/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20171016T150000Z
+DTEND;VALUE=DATE-TIME:20171016T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672847@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672847/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/672847/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Atlas Heavyneutrino search
+DTSTART;VALUE=DATE-TIME:20171016T150000Z
+DTEND;VALUE=DATE-TIME:20171016T163000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673786@indico.cern.ch
+DESCRIPTION:Speakers: Debarati Roy (University of the Witwatersrand (ZA))\
+ , Benjamin Michael Wynne (University of Edinburgh (GB))\nhttps://indico.ce
+ rn.ch/event/673786/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/673786/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171016T160000Z
+DTEND;VALUE=DATE-TIME:20171016T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673059@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 673059/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/673059/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:EB meeting for VBF H->inv
+DTSTART;VALUE=DATE-TIME:20171017T120000Z
+DTEND;VALUE=DATE-TIME:20171017T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668414@indico.cern.ch
+DESCRIPTION:Speakers: Pierre-Hugues Beauchemin (Tufts University (US))\nht
+ tps://indico.cern.ch/event/668414/
+LOCATION:40-4-C01 (CERN)
+URL:https://indico.cern.ch/event/668414/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171017T130000Z
+DTEND;VALUE=DATE-TIME:20171017T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673997@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/673997/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/673997/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171017T130000Z
+DTEND;VALUE=DATE-TIME:20171017T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650922@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50922/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650922/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ttbar resonance searches
+DTSTART;VALUE=DATE-TIME:20171017T133000Z
+DTEND;VALUE=DATE-TIME:20171017T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673829@indico.cern.ch
+DESCRIPTION:Speakers: Danilo Enoque Ferreira De Lima (Ruprecht-Karls-Unive
+ rsitaet Heidelberg (DE))\, Masato Aoki (High Energy Accelerator Research O
+ rganization (JP))\, Christoph Falk Anders (Ruprecht-Karls-Universitaet Hei
+ delberg)\, Samuel Calvet (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Jame
+ s Edward Ferrando (Deutsches Elektronen-Synchrotron (DE))\nhttps://indico.
+ cern.ch/event/673829/
+LOCATION:vidyo only (CERN)
+URL:https://indico.cern.ch/event/673829/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL Prompt Trilepton Analysis - Meeting
+DTSTART;VALUE=DATE-TIME:20171017T140000Z
+DTEND;VALUE=DATE-TIME:20171017T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674152@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674152/
+LOCATION:
+URL:https://indico.cern.ch/event/674152/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20171017T140000Z
+DTEND;VALUE=DATE-TIME:20171017T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672872@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672872/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/672872/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly Mono-V(qq) Meeting
+DTSTART;VALUE=DATE-TIME:20171017T150000Z
+DTEND;VALUE=DATE-TIME:20171017T164000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674052@indico.cern.ch
+DESCRIPTION:Speakers: Patrick Rieck (Max-Planck-Institut fur Physik (DE))\
+ , Samuel Ross Meehan (University of Washington (US))\, Jike Wang (Deutsche
+ s Elektronen-Synchrotron (DE))\nHOW TO MAKE A NEW CONTRIBUTION (If you pro
+ duce something and want to post it here\, even if a day does not exist whe
+ n you produced it\, then follow these directions) :\n\n\n	Go to "Edit" by 
+ clicking the little pencil at the top of the page On the left side of the 
+ page\, click on "Timetable". This will show the full timetable for this en
+ tire event\, with the current day coming up by default.\n	On the right sid
+ e\, click "Add New" and then "Contribution".\n	Fill this in with the name 
+ of your talk and you as a contributor\, and then you save.\n	You then need
+  to go back to the ordinary indico page via "Switch to display view"\, and
+  you can then see your new contribution and upload your slides.\n\nhttps:/
+ /indico.cern.ch/event/674052/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/674052/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DBL VV semileptonic meeting
+DTSTART;VALUE=DATE-TIME:20171017T150000Z
+DTEND;VALUE=DATE-TIME:20171017T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673203@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/673203/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/673203/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171017T153000Z
+DTEND;VALUE=DATE-TIME:20171017T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669471@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669471/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669471/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dijets Weekly meeting
+DTSTART;VALUE=DATE-TIME:20171017T153000Z
+DTEND;VALUE=DATE-TIME:20171017T172000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673985@indico.cern.ch
+DESCRIPTION:Speakers: Matteo Bauce (Universita e INFN\, Roma I (IT))\, Ben
+ jamin William Allen (University of Oregon (US))\nhttps://indico.cern.ch/ev
+ ent/673985/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/673985/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:[Cancelled] DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20171018T070000Z
+DTEND;VALUE=DATE-TIME:20171018T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673636@indico.cern.ch
+DESCRIPTION:Speakers: Marie-Helene Genest (Centre National de la Recherche
+  Scientifique (FR))\, Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\nhttps://indico.cern.ch/event/673636/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/673636/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ht+X/4tops/HBSM informal meeting
+DTSTART;VALUE=DATE-TIME:20171018T084500Z
+DTEND;VALUE=DATE-TIME:20171018T094500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674442@indico.cern.ch
+DESCRIPTION:Speakers: Michele Pinamonti (INFN e Universita Roma Tor Vergat
+ a (IT))\, Nicola Orlando (University of Hong Kong (HK))\, Trisha Farooque 
+ (Michigan State University (US))\, Loic Valery (Universitat Autonoma de Ba
+ rcelona (ES))\nhttps://indico.cern.ch/event/674442/
+LOCATION:
+URL:https://indico.cern.ch/event/674442/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20171018T090000Z
+DTEND;VALUE=DATE-TIME:20171018T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640040@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640040/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640040/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171018T111500Z
+DTEND;VALUE=DATE-TIME:20171018T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668911@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668911/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668911/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20171018T120000Z
+DTEND;VALUE=DATE-TIME:20171018T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671226@indico.cern.ch
+DESCRIPTION:Speakers: Rui Wang (Argonne National Laboratory (US))\, Laurie
+  Mcclymont (University of London (GB))\nhttps://indico.cern.ch/event/67122
+ 6/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/671226/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171018T130000Z
+DTEND;VALUE=DATE-TIME:20171018T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667230@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667230/
+LOCATION:
+URL:https://indico.cern.ch/event/667230/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171018T130000Z
+DTEND;VALUE=DATE-TIME:20171018T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667217@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667217/
+LOCATION:
+URL:https://indico.cern.ch/event/667217/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Top/Exotic same-sign dilepton 13 TeV analysis
+DTSTART;VALUE=DATE-TIME:20171018T130000Z
+DTEND;VALUE=DATE-TIME:20171018T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674310@indico.cern.ch
+DESCRIPTION:Speakers: Erich Ward Varnes (University of Arizona (US))\, Rom
+ ain Madar (Univ. Blaise Pascal Clermont-Fe. II (FR))\, Cecile Deterre (Deu
+ tsches Elektronen-Synchrotron (DE))\nWeekly meeting of the Top/Exotic same
+ -sign dilepton analysis using 13 TeV data.\nhttps://indico.cern.ch/event/6
+ 74310/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/674310/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171018T140000Z
+DTEND;VALUE=DATE-TIME:20171018T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661305@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661305
+ /
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661305/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171018T150000Z
+DTEND;VALUE=DATE-TIME:20171018T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638758@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638758/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638758/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171018T150000Z
+DTEND;VALUE=DATE-TIME:20171018T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666870@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666870/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666870/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:2017 Vgamma Resonance Search weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171018T150000Z
+DTEND;VALUE=DATE-TIME:20171018T203000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674361@indico.cern.ch
+DESCRIPTION:Speakers: Shu Li (Duke University (US))\, Zhijun Liang (Chines
+ e Academy of Sciences (CN))\nhttps://indico.cern.ch/event/674361/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/674361/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20171019T080000Z
+DTEND;VALUE=DATE-TIME:20171019T112000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661446@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661446/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661446/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20171019T120000Z
+DTEND;VALUE=DATE-TIME:20171019T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671535@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Juan Pedro Araque E
+ spinosa (LIP Laboratorio de Instrumentacao e Fisica Experimental de Part)\
+ nhttps://indico.cern.ch/event/671535/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/671535/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W'->lnu/Z'->ll combination meeting
+DTSTART;VALUE=DATE-TIME:20171019T123000Z
+DTEND;VALUE=DATE-TIME:20171019T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674246@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674246/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/674246/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171019T130000Z
+DTEND;VALUE=DATE-TIME:20171019T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674679@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674679/
+LOCATION:Vidyo only (CERN)
+URL:https://indico.cern.ch/event/674679/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 VBF Higgs to Invisible
+DTSTART;VALUE=DATE-TIME:20171019T133000Z
+DTEND;VALUE=DATE-TIME:20171019T144500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674345@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674345/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/674345/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly Mono-V(qq) Meeting
+DTSTART;VALUE=DATE-TIME:20171019T150000Z
+DTEND;VALUE=DATE-TIME:20171019T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674611@indico.cern.ch
+DESCRIPTION:Speakers: Jike Wang (Deutsches Elektronen-Synchrotron (DE))\, 
+ Samuel Ross Meehan (University of Washington (US))\, Patrick Rieck (Max-Pl
+ anck-Institut fur Physik (DE))\nHOW TO MAKE A NEW CONTRIBUTION (If you pro
+ duce something and want to post it here\, even if a day does not exist whe
+ n you produced it\, then follow these directions) :\n\n\n	Go to "Edit" by 
+ clicking the little pencil at the top of the page On the left side of the 
+ page\, click on "Timetable". This will show the full timetable for this en
+ tire event\, with the current day coming up by default.\n	On the right sid
+ e\, click "Add New" and then "Contribution".\n	Fill this in with the name 
+ of your talk and you as a contributor\, and then you save.\n	You then need
+  to go back to the ordinary indico page via "Switch to display view"\, and
+  you can then see your new contribution and upload your slides.\n\nhttps:/
+ /indico.cern.ch/event/674611/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/674611/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171019T150000Z
+DTEND;VALUE=DATE-TIME:20171019T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599124@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599124/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599124/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Trigger Level Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171020T120000Z
+DTEND;VALUE=DATE-TIME:20171020T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674643@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Boveia (CERN)\nhttps://indico.cern.ch/event/
+ 674643/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/674643/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics HH-->4b Exotics Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171020T130000Z
+DTEND;VALUE=DATE-TIME:20171020T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674991@indico.cern.ch
+DESCRIPTION:Speakers: Jana Schaarschmidt (University of Washington (US))\,
+  David Wardrope (University College London (UK))\nhttps://indico.cern.ch/e
+ vent/674991/
+LOCATION:304-1-001 (CERN)
+URL:https://indico.cern.ch/event/674991/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171020T130000Z
+DTEND;VALUE=DATE-TIME:20171020T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663372@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663372/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663372/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:AZH (mH>125) weekly
+DTSTART;VALUE=DATE-TIME:20171020T130000Z
+DTEND;VALUE=DATE-TIME:20171020T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674624@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674624/
+LOCATION:Vidyo (CERN)
+URL:https://indico.cern.ch/event/674624/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171020T130000Z
+DTEND;VALUE=DATE-TIME:20171020T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666940@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666940/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666940/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CalRatio LLP analysis meeting
+DTSTART;VALUE=DATE-TIME:20171020T140000Z
+DTEND;VALUE=DATE-TIME:20171020T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669870@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/669870/
+LOCATION:
+URL:https://indico.cern.ch/event/669870/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Weekly W' Single Top Working Group Meeting
+DTSTART;VALUE=DATE-TIME:20171020T140000Z
+DTEND;VALUE=DATE-TIME:20171020T160500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-675033@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/675033/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/675033/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171023T120000Z
+DTEND;VALUE=DATE-TIME:20171023T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674831@indico.cern.ch
+DESCRIPTION:Speakers: Magnar Kopangen Bugge (University of Oslo (NO))\nhtt
+ ps://indico.cern.ch/event/674831/
+LOCATION:42-R-406 (CERN)
+URL:https://indico.cern.ch/event/674831/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20171023T121500Z
+DTEND;VALUE=DATE-TIME:20171023T141500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672100@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672100/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/672100/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotic Dilepton Search - Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171023T140000Z
+DTEND;VALUE=DATE-TIME:20171023T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674883@indico.cern.ch
+DESCRIPTION:Speakers: Noam Tal Hod (TRIUMF (CA))\, Paolo Mastrandrea (Cent
+ re National de la Recherche Scientifique (FR))\nhttps://indico.cern.ch/eve
+ nt/674883/
+LOCATION:42-R-403 (CERN)
+URL:https://indico.cern.ch/event/674883/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171023T143000Z
+DTEND;VALUE=DATE-TIME:20171023T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663495@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663495/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663495/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HNL search with displaced vertex
+DTSTART;VALUE=DATE-TIME:20171023T150000Z
+DTEND;VALUE=DATE-TIME:20171023T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-675252@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/675252/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/675252/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:W'->lnu/Z'->ll combination meeting
+DTSTART;VALUE=DATE-TIME:20171024T080000Z
+DTEND;VALUE=DATE-TIME:20171024T103000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-675104@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/675104/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/675104/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171024T130000Z
+DTEND;VALUE=DATE-TIME:20171024T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673998@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/673998/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/673998/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171024T130000Z
+DTEND;VALUE=DATE-TIME:20171024T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650923@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50923/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650923/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run 2 Highly ionising particles
+DTSTART;VALUE=DATE-TIME:20171024T140000Z
+DTEND;VALUE=DATE-TIME:20171024T153000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674255@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674255/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/674255/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171024T150000Z
+DTEND;VALUE=DATE-TIME:20171024T180000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612042@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612042/
+LOCATION:
+URL:https://indico.cern.ch/event/612042/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171024T153000Z
+DTEND;VALUE=DATE-TIME:20171024T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669472@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669472/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669472/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:DM summary paper meeting
+DTSTART;VALUE=DATE-TIME:20171025T070000Z
+DTEND;VALUE=DATE-TIME:20171025T090000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674773@indico.cern.ch
+DESCRIPTION:Speakers: Janna Katharina Behr (Deutsches Elektronen-Synchrotr
+ on (DE))\nhttps://indico.cern.ch/event/674773/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/674773/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Same-sign dilepton internal meeting
+DTSTART;VALUE=DATE-TIME:20171025T090000Z
+DTEND;VALUE=DATE-TIME:20171025T121000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-640041@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/640041/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/640041/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171025T110000Z
+DTEND;VALUE=DATE-TIME:20171025T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668912@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668912/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668912/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:bTagged Dijets Meeting
+DTSTART;VALUE=DATE-TIME:20171025T120000Z
+DTEND;VALUE=DATE-TIME:20171025T133000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671227@indico.cern.ch
+DESCRIPTION:Speakers: Rui Wang (Argonne National Laboratory (US))\, Laurie
+  Mcclymont (University of London (GB))\nhttps://indico.cern.ch/event/67122
+ 7/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/671227/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171025T130000Z
+DTEND;VALUE=DATE-TIME:20171025T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667231@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667231/
+LOCATION:
+URL:https://indico.cern.ch/event/667231/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171025T130000Z
+DTEND;VALUE=DATE-TIME:20171025T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667218@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667218/
+LOCATION:
+URL:https://indico.cern.ch/event/667218/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171025T150000Z
+DTEND;VALUE=DATE-TIME:20171025T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638759@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638759/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638759/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171025T150000Z
+DTEND;VALUE=DATE-TIME:20171025T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666871@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666871/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666871/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20171026T120000Z
+DTEND;VALUE=DATE-TIME:20171026T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671536@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Juan Pedro Araque E
+ spinosa (LIP Laboratorio de Instrumentacao e Fisica Experimental de Part)\
+ nhttps://indico.cern.ch/event/671536/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/671536/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171026T130000Z
+DTEND;VALUE=DATE-TIME:20171026T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661306@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661306
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661306/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20171026T130000Z
+DTEND;VALUE=DATE-TIME:20171026T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661447@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661447/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661447/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171026T150000Z
+DTEND;VALUE=DATE-TIME:20171026T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599125@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599125/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599125/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171027T130000Z
+DTEND;VALUE=DATE-TIME:20171027T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663373@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663373/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663373/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171027T130000Z
+DTEND;VALUE=DATE-TIME:20171027T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666941@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666941/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666941/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monojet/VBF MET+j(j) meeting
+DTSTART;VALUE=DATE-TIME:20171030T121500Z
+DTEND;VALUE=DATE-TIME:20171030T141500Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-672101@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/672101/
+LOCATION:Vidyo
+URL:https://indico.cern.ch/event/672101/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171030T143000Z
+DTEND;VALUE=DATE-TIME:20171030T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663496@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663496/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663496/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171031T130000Z
+DTEND;VALUE=DATE-TIME:20171031T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-673999@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/673999/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/673999/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171031T130000Z
+DTEND;VALUE=DATE-TIME:20171031T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650924@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50924/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650924/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171031T153000Z
+DTEND;VALUE=DATE-TIME:20171031T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669473@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669473/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669473/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171031T160000Z
+DTEND;VALUE=DATE-TIME:20171031T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612043@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612043/
+LOCATION:
+URL:https://indico.cern.ch/event/612043/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171101T110000Z
+DTEND;VALUE=DATE-TIME:20171101T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668913@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668913/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668913/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171101T130000Z
+DTEND;VALUE=DATE-TIME:20171101T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667232@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667232/
+LOCATION:
+URL:https://indico.cern.ch/event/667232/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171101T130000Z
+DTEND;VALUE=DATE-TIME:20171101T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667219@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667219/
+LOCATION:
+URL:https://indico.cern.ch/event/667219/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171101T150000Z
+DTEND;VALUE=DATE-TIME:20171101T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638760@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638760/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638760/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171101T150000Z
+DTEND;VALUE=DATE-TIME:20171101T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666872@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666872/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666872/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:HQT VLQ multilepton OS informal meeting
+DTSTART;VALUE=DATE-TIME:20171102T120000Z
+DTEND;VALUE=DATE-TIME:20171102T135000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-671537@indico.cern.ch
+DESCRIPTION:Speakers: Johannes Erdmann (TU Dortmund)\, Juan Pedro Araque E
+ spinosa (LIP Laboratorio de Instrumentacao e Fisica Experimental de Part)\
+ nhttps://indico.cern.ch/event/671537/
+LOCATION:Vidyo only
+URL:https://indico.cern.ch/event/671537/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171102T130000Z
+DTEND;VALUE=DATE-TIME:20171102T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661307@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661307
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661307/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:single production VLQ meeting
+DTSTART;VALUE=DATE-TIME:20171102T130000Z
+DTEND;VALUE=DATE-TIME:20171102T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661448@indico.cern.ch
+DESCRIPTION:Speakers: Janet Dietrich (Humboldt-University Berlin)\nhttps:/
+ /indico.cern.ch/event/661448/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/661448/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171102T160000Z
+DTEND;VALUE=DATE-TIME:20171102T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599126@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599126/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599126/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171103T130000Z
+DTEND;VALUE=DATE-TIME:20171103T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663374@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663374/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663374/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171103T130000Z
+DTEND;VALUE=DATE-TIME:20171103T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666942@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666942/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666942/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171106T143000Z
+DTEND;VALUE=DATE-TIME:20171106T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663497@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663497/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663497/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171107T130000Z
+DTEND;VALUE=DATE-TIME:20171107T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674000@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674000/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674000/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171107T130000Z
+DTEND;VALUE=DATE-TIME:20171107T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650925@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50925/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650925/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171107T153000Z
+DTEND;VALUE=DATE-TIME:20171107T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669474@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669474/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669474/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171107T160000Z
+DTEND;VALUE=DATE-TIME:20171107T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612044@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612044/
+LOCATION:
+URL:https://indico.cern.ch/event/612044/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171108T110000Z
+DTEND;VALUE=DATE-TIME:20171108T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668914@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668914/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668914/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171108T130000Z
+DTEND;VALUE=DATE-TIME:20171108T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667233@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667233/
+LOCATION:
+URL:https://indico.cern.ch/event/667233/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171108T130000Z
+DTEND;VALUE=DATE-TIME:20171108T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667220@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667220/
+LOCATION:
+URL:https://indico.cern.ch/event/667220/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171108T150000Z
+DTEND;VALUE=DATE-TIME:20171108T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638761@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638761/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638761/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171108T150000Z
+DTEND;VALUE=DATE-TIME:20171108T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666873@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666873/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666873/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171109T130000Z
+DTEND;VALUE=DATE-TIME:20171109T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661308@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661308
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661308/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171109T160000Z
+DTEND;VALUE=DATE-TIME:20171109T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599127@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599127/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599127/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171110T130000Z
+DTEND;VALUE=DATE-TIME:20171110T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663375@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663375/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663375/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Monotop and VLQ T->tZ (Z->invisible) informal meeting
+DTSTART;VALUE=DATE-TIME:20171110T130000Z
+DTEND;VALUE=DATE-TIME:20171110T152000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666943@indico.cern.ch
+DESCRIPTION:Speakers: Nuno Filipe Castro (LIP\, University of Minho and Un
+ iversity of Porto (PT))\nAnalyses searching for new physics in single top 
+ + MET topologies. Mono-top effective models\, as well as single production
+  of T quarks decaying into tZ (Z->invisible)\, are searched for. Depending
+  on the decay of the W (from the top) fully hadronic or single lepton topo
+ logies are explored.\n\nTwiki: https://twiki.cern.ch/twiki/bin/viewauth/At
+ lasProtected/HQTRun2MonoTop\n\nMailing list: monotop-atlas@cernSPAMNOT.ch 
+ (please add [mono-top / single T->tZ] to the subject of the email for easi
+ er tracking)\n\n \nhttps://indico.cern.ch/event/666943/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/666943/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171113T143000Z
+DTEND;VALUE=DATE-TIME:20171113T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663498@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663498/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663498/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171114T130000Z
+DTEND;VALUE=DATE-TIME:20171114T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674001@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674001/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674001/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171114T130000Z
+DTEND;VALUE=DATE-TIME:20171114T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650926@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50926/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650926/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Run-2 H > ZdZd > 4l Analysis Meeting
+DTSTART;VALUE=DATE-TIME:20171114T153000Z
+DTEND;VALUE=DATE-TIME:20171114T165000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-669475@indico.cern.ch
+DESCRIPTION:Speakers: Will Buttinger (Brookhaven National Laboratory (US))
+ \, Ketevi Adikle Assamagan (Brookhaven National Laboratory (US))\, Thi Ngo
+ c Loan Truong (Abdus Salam Int. Cent. Theor. Phys. (IT))\nhttps://twiki.ce
+ rn.ch/twiki/bin/viewauth/AtlasProtected/HiddenAbelianHiggsModel2015\nhttps
+ ://indico.cern.ch/event/669475/
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/669475/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171114T160000Z
+DTEND;VALUE=DATE-TIME:20171114T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612045@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612045/
+LOCATION:
+URL:https://indico.cern.ch/event/612045/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171115T110000Z
+DTEND;VALUE=DATE-TIME:20171115T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668915@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668915/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668915/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171115T130000Z
+DTEND;VALUE=DATE-TIME:20171115T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667234@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667234/
+LOCATION:
+URL:https://indico.cern.ch/event/667234/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171115T130000Z
+DTEND;VALUE=DATE-TIME:20171115T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667221@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667221/
+LOCATION:
+URL:https://indico.cern.ch/event/667221/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171115T150000Z
+DTEND;VALUE=DATE-TIME:20171115T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638762@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638762/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638762/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171115T150000Z
+DTEND;VALUE=DATE-TIME:20171115T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666874@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666874/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666874/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171116T130000Z
+DTEND;VALUE=DATE-TIME:20171116T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661309@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661309
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661309/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171116T160000Z
+DTEND;VALUE=DATE-TIME:20171116T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599128@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599128/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599128/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171117T130000Z
+DTEND;VALUE=DATE-TIME:20171117T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663376@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663376/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663376/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171120T143000Z
+DTEND;VALUE=DATE-TIME:20171120T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663499@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663499/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663499/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171121T130000Z
+DTEND;VALUE=DATE-TIME:20171121T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674002@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674002/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674002/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171121T130000Z
+DTEND;VALUE=DATE-TIME:20171121T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650927@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50927/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650927/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171121T160000Z
+DTEND;VALUE=DATE-TIME:20171121T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612046@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612046/
+LOCATION:
+URL:https://indico.cern.ch/event/612046/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171122T110000Z
+DTEND;VALUE=DATE-TIME:20171122T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668916@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668916/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668916/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171122T130000Z
+DTEND;VALUE=DATE-TIME:20171122T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667235@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667235/
+LOCATION:
+URL:https://indico.cern.ch/event/667235/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171122T130000Z
+DTEND;VALUE=DATE-TIME:20171122T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667222@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667222/
+LOCATION:
+URL:https://indico.cern.ch/event/667222/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171122T150000Z
+DTEND;VALUE=DATE-TIME:20171122T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638763@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638763/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638763/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VV/VH Combination meeting
+DTSTART;VALUE=DATE-TIME:20171122T150000Z
+DTEND;VALUE=DATE-TIME:20171122T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-666875@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/666875/
+LOCATION:104-R-B09 (CERN)
+URL:https://indico.cern.ch/event/666875/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171123T130000Z
+DTEND;VALUE=DATE-TIME:20171123T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661310@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661310
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661310/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171123T160000Z
+DTEND;VALUE=DATE-TIME:20171123T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599129@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599129/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599129/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171124T130000Z
+DTEND;VALUE=DATE-TIME:20171124T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663377@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663377/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663377/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171127T143000Z
+DTEND;VALUE=DATE-TIME:20171127T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663500@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663500/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663500/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171128T130000Z
+DTEND;VALUE=DATE-TIME:20171128T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674003@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674003/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674003/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171128T130000Z
+DTEND;VALUE=DATE-TIME:20171128T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650928@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50928/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650928/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171128T160000Z
+DTEND;VALUE=DATE-TIME:20171128T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612047@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612047/
+LOCATION:
+URL:https://indico.cern.ch/event/612047/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LQ3 Meeting
+DTSTART;VALUE=DATE-TIME:20171129T110000Z
+DTEND;VALUE=DATE-TIME:20171129T130000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-668917@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/668917/
+LOCATION:4-3-004 - TH Discussion Room (CERN)
+URL:https://indico.cern.ch/event/668917/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171129T130000Z
+DTEND;VALUE=DATE-TIME:20171129T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667236@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667236/
+LOCATION:
+URL:https://indico.cern.ch/event/667236/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171129T130000Z
+DTEND;VALUE=DATE-TIME:20171129T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667223@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667223/
+LOCATION:
+URL:https://indico.cern.ch/event/667223/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171129T150000Z
+DTEND;VALUE=DATE-TIME:20171129T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638764@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638764/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638764/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171130T130000Z
+DTEND;VALUE=DATE-TIME:20171130T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661311@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661311
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661311/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171130T160000Z
+DTEND;VALUE=DATE-TIME:20171130T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599130@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599130/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599130/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171201T130000Z
+DTEND;VALUE=DATE-TIME:20171201T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663378@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663378/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663378/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171204T143000Z
+DTEND;VALUE=DATE-TIME:20171204T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663501@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663501/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663501/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171205T130000Z
+DTEND;VALUE=DATE-TIME:20171205T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674004@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674004/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674004/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171205T130000Z
+DTEND;VALUE=DATE-TIME:20171205T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650929@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50929/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650929/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171205T160000Z
+DTEND;VALUE=DATE-TIME:20171205T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612048@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612048/
+LOCATION:
+URL:https://indico.cern.ch/event/612048/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171206T130000Z
+DTEND;VALUE=DATE-TIME:20171206T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667237@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667237/
+LOCATION:
+URL:https://indico.cern.ch/event/667237/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171206T130000Z
+DTEND;VALUE=DATE-TIME:20171206T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667224@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667224/
+LOCATION:
+URL:https://indico.cern.ch/event/667224/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Emerging jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171206T150000Z
+DTEND;VALUE=DATE-TIME:20171206T160000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-638765@indico.cern.ch
+DESCRIPTION:Speakers: James Beacham (Ohio State University (US))\, Colleen
+  Jennifer Treado (New York University (US))\, Lene Kristian Bryngemark (De
+ utsches Elektronen-Synchrotron (DE))\nhttps://indico.cern.ch/event/638765/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/638765/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171207T130000Z
+DTEND;VALUE=DATE-TIME:20171207T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661312@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661312
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661312/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171207T160000Z
+DTEND;VALUE=DATE-TIME:20171207T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599131@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599131/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599131/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171208T130000Z
+DTEND;VALUE=DATE-TIME:20171208T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663379@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663379/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663379/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171211T143000Z
+DTEND;VALUE=DATE-TIME:20171211T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663502@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663502/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663502/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171212T130000Z
+DTEND;VALUE=DATE-TIME:20171212T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674005@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674005/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674005/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171212T130000Z
+DTEND;VALUE=DATE-TIME:20171212T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650930@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50930/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650930/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171212T160000Z
+DTEND;VALUE=DATE-TIME:20171212T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612049@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612049/
+LOCATION:
+URL:https://indico.cern.ch/event/612049/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171213T130000Z
+DTEND;VALUE=DATE-TIME:20171213T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667238@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667238/
+LOCATION:
+URL:https://indico.cern.ch/event/667238/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171213T130000Z
+DTEND;VALUE=DATE-TIME:20171213T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667225@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667225/
+LOCATION:
+URL:https://indico.cern.ch/event/667225/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171214T130000Z
+DTEND;VALUE=DATE-TIME:20171214T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661313@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661313
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661313/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171214T160000Z
+DTEND;VALUE=DATE-TIME:20171214T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599132@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599132/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599132/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171215T130000Z
+DTEND;VALUE=DATE-TIME:20171215T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663380@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663380/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663380/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics displaced hadronic jets informal analysis meeting
+DTSTART;VALUE=DATE-TIME:20171218T143000Z
+DTEND;VALUE=DATE-TIME:20171218T162000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663503@indico.cern.ch
+DESCRIPTION:PIN 1243\nhttps://indico.cern.ch/event/663503/
+LOCATION:14-4-002 (CERN)
+URL:https://indico.cern.ch/event/663503/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Exotics Boosted Dijet + ISR
+DTSTART;VALUE=DATE-TIME:20171219T130000Z
+DTEND;VALUE=DATE-TIME:20171219T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-674006@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/674006/
+LOCATION:4-S-020 (CERN)
+URL:https://indico.cern.ch/event/674006/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171219T130000Z
+DTEND;VALUE=DATE-TIME:20171219T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650931@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50931/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650931/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171219T160000Z
+DTEND;VALUE=DATE-TIME:20171219T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612050@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612050/
+LOCATION:
+URL:https://indico.cern.ch/event/612050/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171220T130000Z
+DTEND;VALUE=DATE-TIME:20171220T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667239@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667239/
+LOCATION:
+URL:https://indico.cern.ch/event/667239/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Leptoquark Weekly
+DTSTART;VALUE=DATE-TIME:20171220T130000Z
+DTEND;VALUE=DATE-TIME:20171220T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-667226@indico.cern.ch
+DESCRIPTION:Speakers: Ruth Pottgen (Lund University (SE))\nhttps://indico.
+ cern.ch/event/667226/
+LOCATION:
+URL:https://indico.cern.ch/event/667226/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LFV Z' Weekly Meeting
+DTSTART;VALUE=DATE-TIME:20171221T130000Z
+DTEND;VALUE=DATE-TIME:20171221T140000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-661314@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Salvucci (The Hong Kong Universities Cluster
+  (HK))\nHigh Mass LFV working meeting\nhttps://indico.cern.ch/event/661314
+ /
+LOCATION:42-R-402 (CERN)
+URL:https://indico.cern.ch/event/661314/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal General Search analysis meeting
+DTSTART;VALUE=DATE-TIME:20171221T160000Z
+DTEND;VALUE=DATE-TIME:20171221T170000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-599133@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/599133/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/599133/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171222T130000Z
+DTEND;VALUE=DATE-TIME:20171222T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663381@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663381/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663381/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20171226T130000Z
+DTEND;VALUE=DATE-TIME:20171226T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650932@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50932/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650932/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20171226T160000Z
+DTEND;VALUE=DATE-TIME:20171226T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612051@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612051/
+LOCATION:
+URL:https://indico.cern.ch/event/612051/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:VLQ: All-Hadronic Final State
+DTSTART;VALUE=DATE-TIME:20171229T130000Z
+DTEND;VALUE=DATE-TIME:20171229T143000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-663382@indico.cern.ch
+DESCRIPTION:Speakers: Allison Renae Mc Carn (University of Michigan (US))\
+ , Daniel Marley (University of Michigan (US))\nMeeting to discuss the stat
+ us of analyses searching for vector-like quarks in the all-hadronic final 
+ state.\nhttps://indico.cern.ch/event/663382/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/663382/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20180102T130000Z
+DTEND;VALUE=DATE-TIME:20180102T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650933@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50933/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650933/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180102T160000Z
+DTEND;VALUE=DATE-TIME:20180102T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612052@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612052/
+LOCATION:
+URL:https://indico.cern.ch/event/612052/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20180109T130000Z
+DTEND;VALUE=DATE-TIME:20180109T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650934@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50934/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650934/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180109T160000Z
+DTEND;VALUE=DATE-TIME:20180109T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612053@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612053/
+LOCATION:
+URL:https://indico.cern.ch/event/612053/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20180116T130000Z
+DTEND;VALUE=DATE-TIME:20180116T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650935@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50935/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650935/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180116T160000Z
+DTEND;VALUE=DATE-TIME:20180116T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612054@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612054/
+LOCATION:
+URL:https://indico.cern.ch/event/612054/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20180123T130000Z
+DTEND;VALUE=DATE-TIME:20180123T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650936@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50936/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650936/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180123T160000Z
+DTEND;VALUE=DATE-TIME:20180123T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612055@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612055/
+LOCATION:
+URL:https://indico.cern.ch/event/612055/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Informal displaced LJ meeting
+DTSTART;VALUE=DATE-TIME:20180130T130000Z
+DTEND;VALUE=DATE-TIME:20180130T150000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-650937@indico.cern.ch
+DESCRIPTION:Speakers: Antonio Policicchio (INFN Cosenza)\, Daniela Salvato
+ re (Universita della Calabria (IT) - INFN)\nhttps://indico.cern.ch/event/6
+ 50937/
+LOCATION:CERN
+URL:https://indico.cern.ch/event/650937/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180130T160000Z
+DTEND;VALUE=DATE-TIME:20180130T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612056@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612056/
+LOCATION:
+URL:https://indico.cern.ch/event/612056/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180206T160000Z
+DTEND;VALUE=DATE-TIME:20180206T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612057@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612057/
+LOCATION:
+URL:https://indico.cern.ch/event/612057/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dijet plus lepton analysis meeting
+DTSTART;VALUE=DATE-TIME:20180213T160000Z
+DTEND;VALUE=DATE-TIME:20180213T190000Z
+DTSTAMP;VALUE=DATE-TIME:20171020T162200Z
+UID:indico-event-612058@indico.cern.ch
+DESCRIPTION:Speakers: Sergei Chekanov (Argonne National Laboratory (US))\n
+ Discussion of searches in DiJet plus lepton channel\nhttps://indico.cern.c
+ h/event/612058/
+LOCATION:
+URL:https://indico.cern.ch/event/612058/
+END:VEVENT
+END:VCALENDAR

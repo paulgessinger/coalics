@@ -9,3 +9,6 @@ celerybeat-schedule
 /redis-data
 /.env
 postgres-datax
+.venv
+.idea
+*.egg-info

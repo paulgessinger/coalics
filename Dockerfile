@@ -1,23 +1,12 @@
 FROM python:3.8
 MAINTAINER Paul Gessinger <hello@paulgessinger.com>
 
-ENV APP_PATH /app
-ENV PYTHONPATH /app
-WORKDIR $APP_PATH
+RUN pip install --no-cache-dir poetry
 
-COPY requirements.txt .
-RUN pip install -r requirements.txt
-RUN pip install uwsgi
+COPY src src
+COPY pyproject.toml .
+COPY poetry.lock .
 
-# RUN mkdir $APP_PATH/log && chown -R root:root $APP_PATH/log
+RUN poetry install
 
-COPY coalics coalics
-COPY config.py .
-COPY wsgi.py .
-COPY wait-for-it.sh .
-COPY Procfile .
-COPY manage.py .
-COPY migrations migrations
-COPY CHECKS .
-
-# CMD ["python", "run.py"]
+COPY . .

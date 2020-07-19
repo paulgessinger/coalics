@@ -1,7 +1,0 @@
-/srv/coalics/log/*.log {
-        su pagessin pagessin
-        compress
-        missingok
-        monthly
-        rotate 2
-}

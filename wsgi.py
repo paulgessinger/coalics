@@ -1,4 +1,1 @@
-from coalics import app
-import config
-
-application = app
+from coalics import app as application

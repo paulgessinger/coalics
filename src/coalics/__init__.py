@@ -14,16 +14,15 @@ from dotenv import load_dotenv
 import pytz
 from tzlocal import get_localzone
 from flask.logging import default_handler
-import platform 
+import platform
+from . import config
 
 #  dotenv_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env") 
 #  if os.path.exists(dotenv_file):
     #  load_dotenv(dotenv_file)
 
 app = Flask(__name__)
-app.config.from_object("config")
-if os.environ.get("COALICS_CONFIG"):
-    app.config.from_envvar('COALICS_CONFIG')
+app.config.from_object(config)
 
 from logging.config import dictConfig
 dictConfig({
@@ -65,6 +64,7 @@ def datetimefilter(value, format='%d.%m.%Y %H:%M:%S'):
 app.jinja_env.filters['localdate'] = datetimefilter
 
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 app.session_interface = SqlAlchemySessionInterface(app, db, app.config["SESSION_TABLE"], key_prefix="coalics")
 
@@ -78,6 +78,7 @@ app.jinja_env.filters['shorten'] = string_shorten
 
 lm = LoginManager()
 lm.login_view = "login"
+lm.login_message = None
 lm.init_app(app)
 
 
@@ -87,3 +88,4 @@ def load_user(user_id):
 
 
 import coalics.views
+

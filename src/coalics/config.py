@@ -9,7 +9,7 @@ SESSION_TABLE="sessions"
 SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
 
-CSRF_SECRET_KEY = os.environ.get("COALICS_CSRF_KEY").encode("utf-8")
+CSRF_SECRET_KEY = os.environ.get("COALICS_CSRF_KEY", "blub").encode("utf-8")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 APP_PORT=os.environ.get("COALICS_APP_PORT", os.environ.get("PORT", 8080))

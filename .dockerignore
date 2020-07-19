@@ -1,4 +1,4 @@
-.git
-.dockerignore
-log
-logx
+.venv
+.pytext_cache
+*.egg-info
+postgres-*
