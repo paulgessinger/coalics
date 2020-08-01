@@ -63,9 +63,11 @@ def is_int(val):
 
 class BaseForm(Form):
     class Meta:
-        csrf = True
         csrf_class = SessionCSRF
-        # csrf_secret = current_app.config["CSRF_SECRET_KEY"]
+
+        @property
+        def csrf(self):
+            return not current_app.testing
 
         @property
         def csrf_secret(self):

@@ -3,7 +3,6 @@ from flask import Flask
 from flask_migrate import Migrate
 from flask_login import LoginManager
 
-# from flask_session import Session
 import pytz
 from logging.config import dictConfig
 import logging

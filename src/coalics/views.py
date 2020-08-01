@@ -290,9 +290,6 @@ def init_views(app):
             form = LoginForm()
             return render_template("login.html", form=form)
 
-        # POST
-        # return str(request.form)
-
         email = request.form["email"]
         psw = request.form["password"]
 
@@ -302,17 +299,18 @@ def init_views(app):
             flask.flash("Invalid request", "danger")
             return render_template("login.html", form=form)
 
+        msg = "Invalid login info"
+
         try:
             user = User.query.filter_by(email=email).one()
             app.logger.debug(user)
         except sqlalchemy.orm.exc.NoResultFound:
-            flask.flash("Invalid login info", "danger")
-            return render_template("login.html", form=form)
+            flask.flash(msg, "danger")
+            return render_template("login.html", form=form), 403
 
         if user.password != psw:
-            flask.flash("Invalid password", "danger")
-            return render_template("login.html", form=form)
-            # return render_template("login.html"), 401
+            flask.flash(msg, "danger")
+            return render_template("login.html", form=form), 403
 
         login_user(user)
         return flask.redirect(url_for("calendars"))
@@ -331,7 +329,8 @@ def init_views(app):
 
         form = RegisterForm(request.form)
         if not form.validate():
-            return render_template("register.html", form=form)
+            flask.flash("Error creating account", "danger")
+            return render_template("register.html", form=form), 400
 
         user = User(email=email, password=psw1)
         db.session.add(user)
@@ -340,7 +339,7 @@ def init_views(app):
             db.session.commit()
         except sqlalchemy.exc.IntegrityError:
             flask.flash("Error creating account", "danger")
-            return render_template("register.html", form=form)
+            return render_template("register.html", form=form), 400
 
         login_user(user)
         flask.flash("Account created", "success")

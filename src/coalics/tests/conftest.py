@@ -9,6 +9,8 @@ from coalics.models import CalendarSource, Calendar, User
 @pytest.fixture
 def app():
     app = coalics.create_app()
+    app.secret_key = "hurz"
+
     db_fd, db_fn = tempfile.mkstemp()
     app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///" + db_fn
     app.testing = True
@@ -26,3 +28,9 @@ def app():
         coalics.db.session.commit()
 
         yield app
+
+
+@pytest.fixture
+def client(app):
+    with app.test_client() as client:
+        yield client
