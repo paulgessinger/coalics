@@ -1,7 +1,8 @@
 from flask import Flask
 from flask_migrate import Migrate
 from flask_login import LoginManager
-from flask_session import Session
+
+# from flask_session import Session
 import pytz
 from logging.config import dictConfig
 import logging
@@ -46,7 +47,7 @@ def create_app():
     db.init_app(app)
 
     Migrate(app, db)
-    Session(app)
+    # Session(app)
 
     from .models import User, Calendar, CalendarSource
     from .forms import (

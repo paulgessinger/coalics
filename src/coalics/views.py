@@ -25,17 +25,9 @@ def init_views(app):
 
     @app.route("/")
     def home():
-        return "hi", 200
-        # # r = q.enqueue(update_sources)
-        # # while not r.result:
-        # # time.sleep(0.1)
-
-        # # return ""
-
-        # # update.delay()
-        # if current_user.is_authenticated:
-        # return flask.redirect(url_for("calendars"))
-        # return render_template("home.html")
+        if current_user.is_authenticated:
+            return flask.redirect(url_for("calendars"))
+        return render_template("home.html")
 
     @app.route("/robots.txt")
     def robots():
