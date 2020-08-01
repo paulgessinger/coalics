@@ -116,16 +116,16 @@ class RegisterForm(BaseForm):
         default=False,
     )
 
-    gdpr2 = BooleanField(
-        "Server logs",
-        [validators.DataRequired(message="You must accept before registering")],
-        description=(
-            "I agree that this service stores basic server logs "
-            "containing my IP address for the purpose of diagnosing "
-            "application behaviour and performance. Logs are deleted after 60 days."
-        ),
-        default=False,
-    )
+    # gdpr2 = BooleanField(
+    #     "Server logs",
+    #     [validators.DataRequired(message="You must accept before registering")],
+    #     description=(
+    #         "I agree that this service stores basic server logs "
+    #         "containing my IP address for the purpose of diagnosing "
+    #         "application behaviour and performance. Logs are deleted after 60 days."
+    #     ),
+    #     default=False,
+    # )
 
     def validate(self):
         if not super().validate():
