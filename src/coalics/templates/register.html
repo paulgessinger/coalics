@@ -26,7 +26,7 @@
     </div>
     </div>
 
-    {% for check in [form.gdpr1, form.gdpr2] %}
+    {% for check in [form.gdpr1] %}
     <div class="form-group">
       <div class="form-check">
         {{ check(required=check.flags.required, class=("form-check-input is-invalid" if check.errors else "form-check-input")) }}
