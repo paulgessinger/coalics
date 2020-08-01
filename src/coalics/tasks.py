@@ -8,6 +8,7 @@ from coalics import db, app
 from coalics.models import CalendarSource, Event
 from coalics.util import wait_for, event_acceptor, timeout, TimeoutException
 
+
 def update_sources():
     update_ping_url = app.config["UPDATE_PING_URL"]
 
@@ -20,49 +21,55 @@ def update_sources():
     tasks = []
     start = datetime.now()
 
-    #with ThreadPoolExecutor() as ex:
+    # with ThreadPoolExecutor() as ex:
     #    results = ex.map(update_source, calendar_sources)
     for source in calendar_sources:
         update_source(source)
 
     #  wait_for(tasks)
-    #db.session.close()
-    
+    # db.session.close()
+
     end = datetime.now()
 
     delta = end - start
     app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
-    
+
     if update_ping_url is not None:
         app.logger.info("Sending ping to %s", update_ping_url)
         requests.get(update_ping_url)
 
     return True
 
+
 def build_ics(source):
     r = requests.get(source.url)
     cal = ics.Calendar.from_ical(r.text)
     return cal
 
+
 def update_source_id(id):
     return update_source(CalendarSource.query.get(id))
+
 
 def update_source(source):
 
     # we might have to attach
     # state = inspect(source)
     # if state.detached:
-        # db.session.add(source)
+    # db.session.add(source)
 
     nevents_prev = Event.query.filter_by(source=source).count()
     app.logger.info("Updating source url {}".format(source.url))
     res = _update_source(build_ics(source), source)
 
     nevents = Event.query.filter_by(source=source).count()
-    app.logger.info("Source %s had %d events now has %d events", source.url, nevents_prev, nevents)
+    app.logger.info(
+        "Source %s had %d events now has %d events", source.url, nevents_prev, nevents
+    )
     return res
 
-class ICSEvent():
+
+class ICSEvent:
     def __init__(self, event):
         self.uid = event.get("UID")
         self.summary = event.get("SUMMARY")
@@ -76,7 +83,7 @@ class ICSEvent():
     def populate_obj(self, obj):
         for k, v in self.__dict__.items():
             setattr(obj, k, v)
-            
+
     def __str__(self):
         return "Event('{}', {}, {})".format(self.summary, self.start, self.uid)
 
@@ -84,7 +91,7 @@ class ICSEvent():
 def _update_source(cal, source):
 
     upstream_events = [ICSEvent(e) for e in cal.subcomponents if e.name == "VEVENT"]
-    
+
     if len(upstream_events) == 0:
         app.logger.debug("Source did not contain any events")
         return True
@@ -92,15 +99,16 @@ def _update_source(cal, source):
     first_event = min(upstream_events, key=lambda e: e.start)
     upstream_uids = [e.uid for e in upstream_events]
 
-    
-    matching_stored_events = Event.query.filter(Event.start >= first_event.start, Event.source == source).all()
-                      
+    matching_stored_events = Event.query.filter(
+        Event.start >= first_event.start, Event.source == source
+    ).all()
+
     for event in matching_stored_events:
         if not event.uid in upstream_uids:
             app.logger.debug("Event with uid %s was deleted upstream", event.uid)
             # was deleted upstream
             db.session.delete(event)
-                      
+
     accept_event = event_acceptor(source, to=app.config["REGEX_TIMEOUT"])
 
     try:
@@ -123,15 +131,17 @@ def _update_source(cal, source):
                     event.populate_obj(dbevent)
                 else:
                     # no: remove it
-                    app.logger.debug("Event %s exists and is NOT accepted, remove", event)
+                    app.logger.debug(
+                        "Event %s exists and is NOT accepted, remove", event
+                    )
                     db.session.delete(dbevent)
         app.logger.debug("Commit to database")
         db.session.commit()
     except TimeoutException:
-        app.logger.error("Timeout on regex execution. Discontinue event checking for this one")
+        app.logger.error(
+            "Timeout on regex execution. Discontinue event checking for this one"
+        )
         db.session.rollback()
-        #db.session.close()
-
-        
+        # db.session.close()
 
     return True

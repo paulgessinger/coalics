@@ -11,14 +11,17 @@ from datetime import timedelta
 
 from coalics import app
 
+
 def get_or_abort(model, object_id, code=404):
     result = model.query.get(object_id)
     if result is None:
         abort(code)
     return result
 
+
 class TaskTimeout(RuntimeError):
     pass
+
 
 def wait_for(tasks, timeout=None, tick=0.1):
     start = datetime.now()
@@ -33,7 +36,7 @@ def wait_for(tasks, timeout=None, tick=0.1):
                 if delta.seconds > timeout:
                     raise TaskTimeout()
 
-            
+
 def parse_from(s):
     unit = s[-1:]
     length = int(s[:-1])
@@ -70,7 +73,8 @@ def event_acceptor(source, to=10):
 
     return accept_event
 
-class BcryptPassword():
+
+class BcryptPassword:
     def __init__(self, **kwargs):
 
         if "hash" in kwargs and "password" in kwargs:
@@ -79,7 +83,9 @@ class BcryptPassword():
         if "hash" in kwargs:
             self.hash = kwargs["hash"]
         elif "password" in kwargs:
-            self.hash = bcrypt.hashpw(kwargs["password"].encode("utf-8"), bcrypt.gensalt())
+            self.hash = bcrypt.hashpw(
+                kwargs["password"].encode("utf-8"), bcrypt.gensalt()
+            )
         else:
             raise ValueError("Create with either hash or pw")
 
@@ -89,39 +95,43 @@ class BcryptPassword():
     def __neq__(self, test):
         return not self.__eq__()
 
+
 def string_shorten(string, max_length, repl=" (…) "):
     if type(string) != str:
         string = str(string)
-    if len(string) <= max_length+len(repl):
+    if len(string) <= max_length + len(repl):
         return string
-    
+
     length = len(string)
     repll = len(repl)
 
-    a = string[0:int(math.floor(max_length/2)) - int(math.ceil(repll/2))]
-    b = string[-int(math.ceil(max_length/2)) + int(math.floor(repll/2)):]
+    a = string[0 : int(math.floor(max_length / 2)) - int(math.ceil(repll / 2))]
+    b = string[-int(math.ceil(max_length / 2)) + int(math.floor(repll / 2)) :]
 
     return a + repl + b
- 
 
 
-class TimeoutException(Exception): pass
+class TimeoutException(Exception):
+    pass
+
 
 class timeout:
-    def __init__(self, seconds=1, error_message='Timeout'):
+    def __init__(self, seconds=1, error_message="Timeout"):
         self.seconds = seconds
         self.error_message = error_message
+
     def handle_timeout(self, signum, frame):
         raise TimeoutException(self.error_message)
+
     def __enter__(self):
         pass
 
         # if not app.debug:
-            # # does not work in debug
-            # signal.signal(signal.SIGALRM, self.handle_timeout)
-            # signal.alarm(self.seconds)
+        # # does not work in debug
+        # signal.signal(signal.SIGALRM, self.handle_timeout)
+        # signal.alarm(self.seconds)
+
     def __exit__(self, type, value, traceback):
         # if not app.debug:
-            # signal.alarm(0)
+        # signal.alarm(0)
         pass
- 
