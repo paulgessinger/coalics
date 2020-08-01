@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, abort
+from flask import render_template, request, redirect, url_for, abort
 import flask
 from flask_login import login_required, login_user, current_user, logout_user
 import sqlalchemy
@@ -135,20 +135,10 @@ def init_views(app):
 
     @app.route("/ics/<slug>/<name>.ics")
     def calendar_ics(slug, name):
-        # return slug + name
-        best = request.accept_mimetypes.best_match(["text/calendar", "text/html"])
-        wants_ics = (
-            best == "text/calendar"
-            and request.accept_mimetypes[best] > request.accept_mimetypes["text/html"]
-        )
-
         try:
             cal = Calendar.query.filter_by(slug=slug).one()
         except sqlalchemy.orm.exc.NoResultFound:
             abort(404)
-
-        # if not cal.owner == current_user:
-        # abort(404)
 
         root = ics.Calendar()
 
@@ -158,9 +148,7 @@ def init_views(app):
 
         fromstr = parse_from(request.args.get("from") or "-31d")
         fromdt = datetime.now() + fromstr
-        # app.logger.debug(fromdt)
 
-        # events = Event.query.join(CalendarSource).filter_by(calendar=cal).order_by(Event.start.desc())
         events = (
             Event.query.join(CalendarSource)
             .filter_by(calendar=cal)
@@ -182,12 +170,7 @@ def init_views(app):
 
             # add alarms
             for mins in dbevent.source.alerts.split(";"):
-                # app.logger.debug(mins)
-                # td = timedelta(minutes=int(mins))
-                # alarmtime = dtstart - td
                 alarm = ics.Alarm()
-                # alarm.add("trigger", alarmtime)
-                # alarm.add("trigger", "-PT{}M".format(mins))
                 alarm["TRIGGER"] = "-PT{}M".format(mins)
                 alarm.add("action", "DISPLAY")
                 event.add_component(alarm)
@@ -195,10 +178,6 @@ def init_views(app):
             root.add_component(event)
 
         return root.to_ical()
-        # if wants_ics:
-        # return root.to_ical()
-        # else:
-        # return "<pre>{}</pre>".format(str(root.to_ical(), "utf-8"))
 
     @app.route("/calendar/<int:cal_id>/source", methods=["GET", "POST"])
     @login_required
@@ -234,7 +213,6 @@ def init_views(app):
         if not source or source.calendar.owner != current_user:
             abort(404)
 
-        # events = Event.query.join(CalendarSource).filter_by(calendar=cal).order_by(Event.start.desc()).paginate(max_per_page=10)
         events = (
             Event.query.filter_by(source=source)
             .order_by(Event.start.desc())
@@ -350,7 +328,6 @@ def init_views(app):
 
         email = request.form["email"]
         psw1 = request.form["password"]
-        psw2 = request.form["password2"]
 
         form = RegisterForm(request.form)
         if not form.validate():

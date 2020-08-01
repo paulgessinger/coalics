@@ -4,8 +4,8 @@ from datetime import datetime
 
 from flask import current_app
 
-from .models import CalendarSource, Event
-from .util import wait_for, event_acceptor, timeout, TimeoutException
+from .models import CalendarSource, Event, db
+from .util import event_acceptor, TimeoutException
 
 
 def update_sources():
@@ -18,7 +18,6 @@ def update_sources():
 
     calendar_sources = CalendarSource.query.all()
     log.info("Update {} sources".format(len(calendar_sources)))
-    tasks = []
     start = datetime.now()
 
     # with ThreadPoolExecutor() as ex:
@@ -52,11 +51,7 @@ def update_source_id(id):
 
 
 def update_source(source):
-
-    # we might have to attach
-    # state = inspect(source)
-    # if state.detached:
-    # db.session.add(source)
+    log = current_app.logger
 
     nevents_prev = Event.query.filter_by(source=source).count()
     log.info("Updating source url {}".format(source.url))
@@ -89,6 +84,7 @@ class ICSEvent:
 
 
 def _update_source(cal, source):
+    log = current_app.logger
 
     upstream_events = [ICSEvent(e) for e in cal.subcomponents if e.name == "VEVENT"]
 
@@ -104,7 +100,7 @@ def _update_source(cal, source):
     ).all()
 
     for event in matching_stored_events:
-        if not event.uid in upstream_uids:
+        if event.uid not in upstream_uids:
             log.debug("Event with uid %s was deleted upstream", event.uid)
             # was deleted upstream
             db.session.delete(event)

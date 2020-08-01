@@ -1,3 +1,4 @@
+from coalics.util import string_shorten
 from flask import Flask
 from flask_migrate import Migrate
 from flask_login import LoginManager
@@ -8,7 +9,7 @@ from logging.config import dictConfig
 import logging
 
 from . import config
-from .models import db
+from .models import db, User
 from .views import init_views
 
 
@@ -22,7 +23,10 @@ def create_app():
             "version": 1,
             "formatters": {
                 "default": {
-                    "format": "[%(asctime)s] %(levelname)s in %(name)s/%(module)s: %(message)s"
+                    "format": (
+                        "[%(asctime)s] %(levelname)s in",
+                        " %(name)s/%(module)s: %(message)s",
+                    )
                 }
             },
             "handlers": {
@@ -47,18 +51,6 @@ def create_app():
     db.init_app(app)
 
     Migrate(app, db)
-    # Session(app)
-
-    from .models import User, Calendar, CalendarSource
-    from .forms import (
-        CalendarForm,
-        CalendarSourceForm,
-        DeleteForm,
-        LoginForm,
-        LogoutForm,
-        EditForm,
-    )
-    from .util import string_shorten
 
     app.jinja_env.filters["shorten"] = string_shorten
 

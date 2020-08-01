@@ -1,19 +1,15 @@
-import os.path
-import sys
-
-sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 import logging
 
 
-from coalics import tasks, app
-from datetime import datetime
+from coalics import tasks, create_app
 
-from datetime import datetime, timedelta
+from datetime import timedelta
 import time
 
 
-#  logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 logger = logging.getLogger("schedule")
+
+app = create_app()
 
 prev_job = None
 td = timedelta(seconds=app.config["SOURCE_UPDATE_FREQUENCY"])

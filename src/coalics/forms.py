@@ -108,14 +108,22 @@ class RegisterForm(BaseForm):
     gdpr1 = BooleanField(
         "E-Mail and Password",
         [validators.DataRequired(message="You must accept before registering")],
-        description="I agree that this service stores my email address and password indefinitely, to allow me to log in. The password is stored using industry standard hashing.",
+        description=(
+            "I agree that this service stores my email address and password "
+            "indefinitely, to allow me to log in. The password is stored "
+            "using industry standard hashing."
+        ),
         default=False,
     )
 
     gdpr2 = BooleanField(
         "Server logs",
         [validators.DataRequired(message="You must accept before registering")],
-        description="I agree that this service stores basic server logs containing my IP address for the purpose of diagnosing application behaviour and performance. Logs are deleted after 60 days.",
+        description=(
+            "I agree that this service stores basic server logs "
+            "containing my IP address for the purpose of diagnosing "
+            "application behaviour and performance. Logs are deleted after 60 days."
+        ),
         default=False,
     )
 

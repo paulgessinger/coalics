@@ -25,7 +25,7 @@ def wait_for(tasks, timeout=None, tick=0.1):
     for task in tasks:
         while not task.result:
             time.sleep(tick)
-            if timeout != None:
+            if timeout is not None:
                 now = datetime.now()
                 delta = now - start
                 if delta.seconds > timeout:
@@ -60,11 +60,11 @@ def event_acceptor(source, to=10):
 
             # print("pos", posmatch)
             if len(source.negative_pattern) == 0:
-                return posmatch != None
+                return posmatch is not None
             else:
                 negmatch = negreg.match(summary)
                 # print("neg", negmatch)
-                return posmatch != None and negmatch == None
+                return posmatch is not None and negmatch is None
 
     return accept_event
 
@@ -97,7 +97,6 @@ def string_shorten(string, max_length, repl=" (…) "):
     if len(string) <= max_length + len(repl):
         return string
 
-    length = len(string)
     repll = len(repl)
 
     a = string[0 : int(math.floor(max_length / 2)) - int(math.ceil(repll / 2))]
