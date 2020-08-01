@@ -1,18 +1,7 @@
-from wtforms import (
-    Form,
-    BooleanField,
-    StringField,
-    validators,
-    SelectMultipleField,
-    ValidationError,
-    widgets,
-    HiddenField,
-    SubmitField,
-    PasswordField,
-)
+from flask import current_app
+from wtforms import Form, BooleanField, StringField, validators, widgets, PasswordField
 import flask
 from wtforms.csrf.session import SessionCSRF
-from . import app
 
 
 def bootstrap(cls):
@@ -76,7 +65,11 @@ class BaseForm(Form):
     class Meta:
         csrf = True
         csrf_class = SessionCSRF
-        csrf_secret = app.config["CSRF_SECRET_KEY"]
+        # csrf_secret = current_app.config["CSRF_SECRET_KEY"]
+
+        @property
+        def csrf_secret(self):
+            return current_app.config["CSRF_SECRET_KEY"]
 
         @property
         def csrf_context(self):

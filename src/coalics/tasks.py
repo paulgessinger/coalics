@@ -1,23 +1,23 @@
 import requests
 import icalendar as ics
-import time
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
 
-from coalics import db, app
-from coalics.models import CalendarSource, Event
-from coalics.util import wait_for, event_acceptor, timeout, TimeoutException
+from flask import current_app
+
+from .models import CalendarSource, Event
+from .util import wait_for, event_acceptor, timeout, TimeoutException
 
 
 def update_sources():
-    update_ping_url = app.config["UPDATE_PING_URL"]
+    update_ping_url = current_app.config["UPDATE_PING_URL"]
+    log = current_app.logger
 
     if update_ping_url is not None:
-        app.logger.info("Sending start ping to %s", update_ping_url)
+        log.info("Sending start ping to %s", update_ping_url)
         requests.get(f"{update_ping_url}/start")
 
     calendar_sources = CalendarSource.query.all()
-    app.logger.info("Update {} sources".format(len(calendar_sources)))
+    log.info("Update {} sources".format(len(calendar_sources)))
     tasks = []
     start = datetime.now()
 
@@ -32,10 +32,10 @@ def update_sources():
     end = datetime.now()
 
     delta = end - start
-    app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
+    log.info("Task update_sources successful after {}s".format(delta.seconds))
 
     if update_ping_url is not None:
-        app.logger.info("Sending ping to %s", update_ping_url)
+        log.info("Sending ping to %s", update_ping_url)
         requests.get(update_ping_url)
 
     return True
@@ -59,11 +59,11 @@ def update_source(source):
     # db.session.add(source)
 
     nevents_prev = Event.query.filter_by(source=source).count()
-    app.logger.info("Updating source url {}".format(source.url))
+    log.info("Updating source url {}".format(source.url))
     res = _update_source(build_ics(source), source)
 
     nevents = Event.query.filter_by(source=source).count()
-    app.logger.info(
+    log.info(
         "Source %s had %d events now has %d events", source.url, nevents_prev, nevents
     )
     return res
@@ -93,7 +93,7 @@ def _update_source(cal, source):
     upstream_events = [ICSEvent(e) for e in cal.subcomponents if e.name == "VEVENT"]
 
     if len(upstream_events) == 0:
-        app.logger.debug("Source did not contain any events")
+        log.debug("Source did not contain any events")
         return True
 
     first_event = min(upstream_events, key=lambda e: e.start)
@@ -105,20 +105,20 @@ def _update_source(cal, source):
 
     for event in matching_stored_events:
         if not event.uid in upstream_uids:
-            app.logger.debug("Event with uid %s was deleted upstream", event.uid)
+            log.debug("Event with uid %s was deleted upstream", event.uid)
             # was deleted upstream
             db.session.delete(event)
 
-    accept_event = event_acceptor(source, to=app.config["REGEX_TIMEOUT"])
+    accept_event = event_acceptor(source, to=current_app.config["REGEX_TIMEOUT"])
 
     try:
         for event in upstream_events:
             dbevent = Event.query.filter_by(uid=event.uid, source=source).one_or_none()
             if not dbevent:
-                app.logger.debug("New event %s", event)
+                log.debug("New event %s", event)
                 # this is a new one
                 if accept_event(event):
-                    app.logger.debug("Event %s is accepted, adding", event)
+                    log.debug("Event %s is accepted, adding", event)
                     dbevent = Event(**event.__dict__)
                     dbevent.source = source
                     db.session.add(dbevent)
@@ -127,20 +127,16 @@ def _update_source(cal, source):
                 # check if event is still accepted by filters
                 if accept_event(event):
                     # yes: update
-                    app.logger.debug("Event %s exists and is accepted, update", event)
+                    log.debug("Event %s exists and is accepted, update", event)
                     event.populate_obj(dbevent)
                 else:
                     # no: remove it
-                    app.logger.debug(
-                        "Event %s exists and is NOT accepted, remove", event
-                    )
+                    log.debug("Event %s exists and is NOT accepted, remove", event)
                     db.session.delete(dbevent)
-        app.logger.debug("Commit to database")
+        log.debug("Commit to database")
         db.session.commit()
     except TimeoutException:
-        app.logger.error(
-            "Timeout on regex execution. Discontinue event checking for this one"
-        )
+        log.error("Timeout on regex execution. Discontinue event checking for this one")
         db.session.rollback()
         # db.session.close()
 

@@ -1,8 +1,10 @@
+from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_utils import types
-from coalics import db
 import flask_login
 from coalics.util import BcryptPassword
 import uuid
+
+db = SQLAlchemy()
 
 
 class User(db.Model, flask_login.mixins.UserMixin):

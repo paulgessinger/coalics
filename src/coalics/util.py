@@ -1,15 +1,10 @@
 from flask import abort
 from datetime import datetime
-import time
 import re
 import bcrypt
 import math
 import time
-import signal
-from contextlib import contextmanager
 from datetime import timedelta
-
-from coalics import app
 
 
 def get_or_abort(model, object_id, code=404):

@@ -1,1 +1,3 @@
-from coalics import app as application
+from coalics import create_app
+
+application = create_app()
