@@ -1,5 +1,4 @@
 import os
-import tempfile
 
 import pytest
 
@@ -9,8 +8,7 @@ from coalics.models import CalendarSource, Calendar, User
 
 @pytest.fixture
 def app():
-    db_fd, db_fn = tempfile.mkstemp()
-    os.environ["DATABASE_URL"] = "sqlite:///" + db_fn
+    os.environ["DATABASE_URL"] = "sqlite:///:memory:"
     os.environ["EMAIL_SALT"] = "$2b$12$xePh6QJ0c06AcqCtGuWNbO"
     app = coalics.create_app()
     app.secret_key = "hurz"
