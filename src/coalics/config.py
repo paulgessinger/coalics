@@ -16,3 +16,4 @@ REGEX_TIMEOUT = 10
 UPDATE_PING_URL = os.environ.get("UPDATE_PING_URL", None)
 
 REGISTER_ENABLED = os.environ.get("REGISTER_ENABLED", "True") == "True"
+EMAIL_SALT = os.environ.get("EMAIL_SALT").encode("utf-8")

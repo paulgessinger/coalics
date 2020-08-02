@@ -302,13 +302,14 @@ def init_views(app):
         msg = "Invalid login info"
 
         try:
-            user = User.query.filter_by(email=email).one()
-            app.logger.debug(user)
+            user = User.find_by_email(email)
+            app.logger.debug("Found user: %s", str(user))
         except sqlalchemy.orm.exc.NoResultFound:
             flask.flash(msg, "danger")
             return render_template("login.html", form=form), 403
 
         if user.password != psw:
+            app.logger.debug("Password is wrong")
             flask.flash(msg, "danger")
             return render_template("login.html", form=form), 403
 

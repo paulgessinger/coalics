@@ -7,15 +7,13 @@ import pytz
 from logging.config import dictConfig
 import logging
 
-from . import config
 from .models import db, User
 from .views import init_views
 
 
 def create_app():
-
     app = Flask(__name__)
-    app.config.from_object(config)
+    app.config.from_object("coalics.config")
 
     dictConfig(
         {
@@ -23,8 +21,8 @@ def create_app():
             "formatters": {
                 "default": {
                     "format": (
-                        "[%(asctime)s] %(levelname)s in",
-                        " %(name)s/%(module)s: %(message)s",
+                        "[%(asctime)s] %(levelname)s in"
+                        " %(name)s/%(module)s: %(message)s"
                     )
                 }
             },

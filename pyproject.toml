@@ -26,6 +26,7 @@ tzlocal = "^2.1"
 psycopg2 = "^2.8.5"
 python-dotenv = "^0.14.0"
 bcrypt = "^3.1.7"
+passlib = "^1.7.2"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

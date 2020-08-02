@@ -1,21 +1,42 @@
+from flask import current_app
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_utils import types
 import flask_login
-from coalics.util import BcryptPassword
+from passlib.context import CryptContext
 import uuid
 
 db = SQLAlchemy()
 
+crypt_context = CryptContext(
+    schemes=["bcrypt", "pbkdf2_sha256"], default="pbkdf2_sha256"
+)
+
+
+class HashedPassword:
+    def __init__(self, hash):
+        self.hash = hash
+
+    @classmethod
+    def from_password(cls, password):
+        return cls(hash=crypt_context.hash(password))
+
+    def __eq__(self, test):
+        if isinstance(test, HashedPassword):
+            return test.hash == self.hash
+        elif isinstance(test, str):
+            return crypt_context.verify(test, self.hash)
+        else:
+            raise TypeError("Must be HashedPassword or str")
+
+    def __neq__(self, test):
+        return not self.__eq__()
+
 
 class User(db.Model, flask_login.mixins.UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    # username = db.Column(db.String(80), unique=True)
-    email = db.Column(db.String(120), unique=True)
+    _email = db.Column("email", db.String(255), unique=True)
     _password = db.Column("password", db.String(255), nullable=False)
     active = db.Column(db.Boolean(), nullable=False, default=True, server_default="1")
-    # password = db.Column(types.password.PasswordType(schemes=[
-    # 'bcrypt',
-    # ]), nullable=False)
 
     def __init__(self, email, password):
         self.email = email
@@ -23,19 +44,34 @@ class User(db.Model, flask_login.mixins.UserMixin):
 
     @property
     def password(self):
-        return BcryptPassword(hash=self._password.encode("utf-8"))
+        return HashedPassword(hash=self._password)
 
     @password.setter
     def password(self, value):
-        pw = BcryptPassword(password=value)
-        self._password = pw.hash.decode("utf-8")
+        pw = HashedPassword.from_password(password=value)
+        self._password = pw.hash
+
+    @property
+    def email(self):
+        return self._email
+
+    @email.setter
+    def email(self, value):
+        self._email = self.hash_email(value)
 
     @property
     def is_active(self):
         return self.active
 
-    # def __repr__(self):
-    # return '<User %r>' % self.username
+    @classmethod
+    def find_by_email(cls, email):
+        hash = cls.hash_email(email)
+        return cls.query.filter(cls._email == hash).one()
+
+    @staticmethod
+    def hash_email(value):
+        scheme = crypt_context.handler()
+        return scheme.using(salt=current_app.config["EMAIL_SALT"]).hash(value)
 
 
 class Calendar(db.Model):
