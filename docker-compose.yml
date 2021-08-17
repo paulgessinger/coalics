@@ -14,7 +14,6 @@ services:
     env_file: .env
     environment:
       - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
-      - COALICS_CSRF_KEY=DUMMYDEBUGVALUE
     working_dir: /src
     volumes:
       - ./:/src
@@ -35,7 +34,12 @@ services:
 
 
   db:
-    image: 'postgres:10.0-alpine'
+    image: 'postgres:10-buster'
     env_file: .env
+    environment:
+      - PGDATA=/pgdata
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      - pgdata:/pgdata
+
+volumes:
+  pgdata:

@@ -6,9 +6,15 @@ services:
      - .env.dev
     volumes:
       - .:/app:rw
-  worker:
-    env_file: 
-     - .env
-     - .env.dev
-    volumes:
-      - .:/app:rw
+  # worker:
+  #   env_file: 
+  #    - .env
+  #    - .env.dev
+  #   volumes:
+  #     - .:/app:rw
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 3000:8080

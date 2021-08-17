@@ -1,4 +1,7 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()
+
 #  PQ_PW=os.environ.get("POSTGRES_PASSWORD")
 #  PQ_USER=os.environ.get("POSTGRES_USER")
 #  PQ_DB=os.environ.get("POSTGRES_DB")
@@ -6,10 +9,10 @@ import os
 SESSION_TABLE="sessions"
 
 #  SQLALCHEMY_DATABASE_URI = 'postgresql+pygresql://'+PQ_USER+':'+PQ_PW+'@db/'+PQ_DB
-SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+SQLALCHEMY_DATABASE_URI = os.environ["DATABASE_URL"]
 
 
-CSRF_SECRET_KEY = os.environ.get("COALICS_CSRF_KEY").encode("utf-8")
+CSRF_SECRET_KEY = os.environ["COALICS_CSRF_KEY"].encode("utf-8")
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 APP_PORT=os.environ.get("COALICS_APP_PORT", os.environ.get("PORT", 8080))
