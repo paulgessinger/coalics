@@ -1,7 +1,7 @@
 {% from "macros.html" import input, subnav_back, render_pagination, render_event %}
 {% extends "calendars.html" %}
 {% block subnav %}
-{{ subnav_back(url_for("calendars")) }}
+{{ subnav_back(url_for("calendars"), label="Back to calendars") }}
 {% endblock %}
 
 
@@ -35,12 +35,12 @@
             {% for source in sources %}
             <tr>
               <td>
-                <a href="{{ url_for("view_source", source_id=source.id) }}">{{ source.url | shorten(90) }}</a>
+                <a href="{{ url_for("edit_source", cal_id=cal.id, source_id=source.id) }}">{{ source.url | shorten(90) }}</a>
               </td>
               <td>
                 <form method="post" action="{{ url_for("delete_source", cal_id=cal.id, source_id=source.id) }}">
                   <div class="btn-group" role="group">
-                    <a href="{{ url_for("edit_source", cal_id=cal.id, source_id=source.id) }}" class="btn btn-outline-secondary">Edit</a>
+                    {# <a href="{{ url_for("edit_source", cal_id=cal.id, source_id=source.id) }}" class="btn btn-outline-secondary">Edit</a> #}
                     <button type="submit" class="btn btn-outline-danger">Delete</button>
                   </div>
                   {{ delete_form.csrf_token }}

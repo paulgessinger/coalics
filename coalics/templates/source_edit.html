@@ -1,8 +1,8 @@
-{% from "macros.html" import input, back, subnav, subnav_back %}
+{% from "macros.html" import input, back, subnav, subnav_back, render_event, render_pagination %}
 {% extends "base.html" %}
 
 {% block subnav %}
-{{ subnav_back(url_for("calendar_edit", cal_id=cal_id)) }}
+{{ subnav_back(url_for("calendar_edit", cal_id=cal.id), label="Back to calendar " + cal.name) }}
 {% endblock %}
 
 {% block content %}
@@ -16,15 +16,33 @@
     {%- endif %}
   </h4>
   <div class="card-body">
-<form novalidate method="POST" action="" class="">
-    {{ input(form.url, classes=["form-control-lg"]) }}
-    {{ input(form.positive_pattern, label=True) }}
-    {{ input(form.negative_pattern, label=True) }}
-    {{ input(form.alerts, label=True) }}
-    {{ form.csrf_token }}
-  <button class="btn btn-primary" type="submit">Save</button>
-</form>
+    <form novalidate method="POST" action="" class="">
+      {{ input(form.url, classes=["form-control-lg"]) }}
+      {{ input(form.positive_pattern, label=True) }}
+      {{ input(form.negative_pattern, label=True) }}
+      {{ input(form.all_day_override, label=True) }}
+      {{ input(form.alerts, label=True) }}
+      {{ form.csrf_token }}
+      <button class="btn btn-primary" type="submit">Save</button>
+    </form>
+  </div>
 </div>
-</div>
-{% endblock %}
 
+{% if events.items|length > 0 %}
+<div class="card mt-5" id="events-card">
+
+  <div class="card-body">
+    <h4 class="card-title">Events</h4>
+
+    {% for event in events.items %}
+    {{ render_event(event) }}
+    {% endfor %}
+
+    {%- call(page) render_pagination(events) %}
+    {{- url_for("edit_source", cal_id=cal.id, source_id=source.id, page=page, _anchor="events-card") }}
+    {%- endcall %}
+
+  </div>
+</div>
+{% endif %}
+{% endblock %}
