@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from coalics import app
 import config
 
