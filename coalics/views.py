@@ -244,11 +244,11 @@ def add_source(cal_id):
 
     if request.method == "GET":
         form = CalendarSourceForm()
-        return render_template("source_edit.html", form=form, cal_id=cal_id)
+        return render_template("source_edit.html", form=form, cal=cal)
 
     form = CalendarSourceForm(request.form)
     if not form.validate():
-        return render_template("source_edit.html", form=form, cal_id=cal_id)
+        return render_template("source_edit.html", form=form, cal=cal)
 
     source = CalendarSource()
     source.calendar = cal
