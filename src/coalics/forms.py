@@ -11,8 +11,8 @@ from wtforms import (
     PasswordField,
 )
 import flask
+from flask import current_app
 from wtforms.csrf.session import SessionCSRF
-from . import app
 
 
 def bootstrap(cls):
@@ -74,9 +74,15 @@ def is_int(val):
 
 class BaseForm(Form):
     class Meta:
-        csrf = True
         csrf_class = SessionCSRF
-        csrf_secret = app.config["CSRF_SECRET_KEY"]
+
+        @property
+        def csrf(self):
+            return not current_app.testing
+
+        @property
+        def csrf_secret(self):
+            return current_app.config["CSRF_SECRET_KEY"]
 
         @property
         def csrf_context(self):

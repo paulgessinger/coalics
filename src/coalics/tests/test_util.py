@@ -25,16 +25,6 @@ def test_event_acceptor():
         assert event_acceptor(src)(event) == res, (summary, pos, neg, res)
 
 
-def test_password_container():
-    from coalics.util import BcryptPassword as PSW
-
-    pw = "HALLO"
-
-    c = PSW(password=pw)
-    assert c == pw
-    assert c != "WRONG"
-
-
 def test_string_shorten():
 
     assert string_shorten(100 * "a", 10, "x") == 4 * "a" + "x" + 5 * "a"

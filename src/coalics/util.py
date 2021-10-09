@@ -9,8 +9,6 @@ import signal
 from contextlib import contextmanager
 from datetime import timedelta
 
-from coalics import app
-
 
 def get_or_abort(model, object_id, code=404):
     result = model.query.get(object_id)

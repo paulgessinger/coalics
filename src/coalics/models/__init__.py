@@ -34,7 +34,7 @@ class HashedPassword:
 
 class User(db.Model, flask_login.mixins.UserMixin):
     id = db.Column(db.Integer, primary_key=True)
-    email = db.Column("email", db.String(255), unique=True)
+    _email = db.Column("email", db.String(255), unique=True)
     _password = db.Column("password", db.String(255), nullable=False)
     active = db.Column(db.Boolean(), nullable=False, default=True, server_default="1")
 
@@ -52,8 +52,26 @@ class User(db.Model, flask_login.mixins.UserMixin):
         self._password = pw.hash
 
     @property
+    def email(self):
+        return self._email
+
+    @email.setter
+    def email(self, value):
+        self._email = self.hash_email(value)
+
+    @property
     def is_active(self):
         return self.active
+
+    @classmethod
+    def find_by_email(cls, email):
+        hash = cls.hash_email(email)
+        return cls.query.filter(cls._email == hash).one()
+
+    @staticmethod
+    def hash_email(value):
+        scheme = crypt_context.handler()
+        return scheme.using(salt=current_app.config["EMAIL_SALT"]).hash(value)
 
 
 class Calendar(db.Model):

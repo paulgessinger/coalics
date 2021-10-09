@@ -10,6 +10,7 @@ from flask_login import (
     logout_user,
 )
 from flask_session import SqlAlchemySessionInterface
+from flask.cli import AppGroup
 import uuid
 from functools import wraps
 import logging
@@ -22,87 +23,79 @@ from tzlocal import get_localzone
 from flask.logging import default_handler
 import platform
 
-#  dotenv_file = os.path.join(os.path.dirname(os.path.dirname(__file__)), ".env")
-#  if os.path.exists(dotenv_file):
-#  load_dotenv(dotenv_file)
-
-app = Flask(__name__)
-app.config.from_object("config")
-if os.environ.get("COALICS_CONFIG"):
-    app.config.from_envvar("COALICS_CONFIG")
 
 from logging.config import dictConfig
 
-dictConfig(
-    {
-        "version": 1,
-        "formatters": {
-            "default": {
-                "format": "[%(asctime)s] %(levelname)s in %(name)s/%(module)s: %(message)s",
-            }
-        },
-        "handlers": {
-            "wsgi": {"class": "logging.StreamHandler", "formatter": "default"}
-        },
-        "root": {"level": "INFO", "handlers": ["wsgi"]},
-    }
-)
+from coalics.models import db, User
+from coalics.views import init_views
+from coalics.util import string_shorten
 
-if app.debug:
-    logging.getLogger().setLevel(logging.DEBUG)
+def create_app():
+    app = Flask(__name__)
 
 
-# logging.getLogger("werkzeug").setLevel(logging.WARNING)
-
-#  logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.DEBUG)
 
 
-#  if not app.debug:
-#  stream_handler = logging.StreamHandler()
-#  stream_handler.setLevel(logging.INFO)
-#  app.logger.addHandler(stream_handler)
+
+    app.config.from_object("coalics.config")
+
+    dictConfig(
+        {
+            "version": 1,
+            "formatters": {
+                "default": {
+                    "format": "[%(asctime)s] %(levelname)s in %(name)s/%(module)s: %(message)s",
+                }
+            },
+            "handlers": {
+                "wsgi": {"class": "logging.StreamHandler", "formatter": "default"}
+            },
+            "root": {"level": "INFO", "handlers": ["wsgi"]},
+        }
+    )
+
+    if app.debug:
+        logging.getLogger().setLevel(logging.DEBUG)
 
 
-def datetimefilter(value, format="%d.%m.%Y %H:%M:%S"):
-    # this will have to come from the user sometime
-    tz = pytz.timezone("Europe/Zurich")
-    dt = value
-    local_dt = dt.astimezone(tz)
-    return local_dt.strftime(format)
+    def datetimefilter(value, format="%d.%m.%Y %H:%M:%S"):
+        # this will have to come from the user sometime
+        tz = pytz.timezone("Europe/Zurich")
+        dt = value
+        local_dt = dt.astimezone(tz)
+        return local_dt.strftime(format)
 
 
-app.jinja_env.filters["localdate"] = datetimefilter
+    app.jinja_env.filters["localdate"] = datetimefilter
 
-db = SQLAlchemy(app)
+    db.init_app(app)
+    migrate = Migrate(app, db)
 
-app.session_interface = SqlAlchemySessionInterface(
-    app, db, app.config["SESSION_TABLE"], key_prefix="coalics"
-)
+    app.session_interface = SqlAlchemySessionInterface(
+        app, db, app.config["SESSION_TABLE"], key_prefix="coalics"
+    )
 
+    cli = AppGroup("coalics")
 
-from .models import User, Calendar, CalendarSource
-from .forms import (
-    CalendarForm,
-    CalendarSourceForm,
-    DeleteForm,
-    LoginForm,
-    LogoutForm,
-    EditForm,
-)
-from .util import string_shorten
+    @cli.command("init_db")
+    def init_db():
+        db.create_all()
 
-app.jinja_env.filters["shorten"] = string_shorten
+    app.cli.add_command(cli)
 
-lm = LoginManager()
-lm.login_view = "login"
-lm.init_app(app)
+    app.jinja_env.filters["shorten"] = string_shorten
+
+    lm = LoginManager()
+    lm.login_view = "login"
+    lm.login_message = None
+    lm.init_app(app)
 
 
-@lm.user_loader
-def load_user(user_id):
-    return User.query.get(user_id)
+    @lm.user_loader
+    def load_user(user_id):
+        return User.query.get(user_id)
 
 
-migrate = Migrate(app, db)
+    init_views(app)
 
-import coalics.views
+    return app
