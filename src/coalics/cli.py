@@ -2,7 +2,7 @@ from datetime import timedelta
 import time
 
 from flask.cli import AppGroup
-from flask.globals import current_app
+from flask import current_app
 
 from coalics.models import db
 from coalics import tasks
