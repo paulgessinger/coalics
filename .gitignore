@@ -9,3 +9,4 @@ celerybeat-schedule
 /redis-data
 /.env
 postgres-datax
+.vscode/settings.json

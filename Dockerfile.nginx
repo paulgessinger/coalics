@@ -1,5 +1,0 @@
-FROM nginx
-MAINTAINER Paul Gessinger <hello@paulgessinger.com>
-
-COPY coalics/static /var/www/html
-COPY nginx.conf /etc/nginx

@@ -16,7 +16,6 @@ COPY config.py .
 COPY wsgi.py .
 COPY wait-for-it.sh .
 COPY Procfile .
-COPY manage.py .
 COPY migrations migrations
 COPY CHECKS .
 
