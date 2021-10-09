@@ -71,6 +71,8 @@ def create_app():
 
     app.jinja_env.filters["shorten"] = string_shorten
 
+    app.jinja_env.globals["git_rev"] = os.environ.get("GIT_REV")
+
     lm = LoginManager()
     lm.login_view = "login"
     lm.login_message = None
