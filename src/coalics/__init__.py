@@ -29,6 +29,7 @@ from logging.config import dictConfig
 from coalics.models import db, User
 from coalics.views import init_views
 from coalics.util import string_shorten
+from coalics.cli import init_cli
 
 
 def create_app():
@@ -66,13 +67,7 @@ def create_app():
     db.init_app(app)
     Migrate(app, db)
 
-    cli = AppGroup("coalics")
-
-    @cli.command("init_db")
-    def init_db():
-        db.create_all()
-
-    app.cli.add_command(cli)
+    init_cli(app)
 
     app.jinja_env.filters["shorten"] = string_shorten
 
