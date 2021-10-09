@@ -73,3 +73,17 @@ def test_user_registration(app, client):
     r = client.post("/login", data=dict(email=email, password=password))
     assert r.status_code == 302
     assert r.headers["Location"].endswith(url_for("calendars"))
+
+
+def test_user_registration_disabled(app):
+    with app.test_client() as client:
+        r = client.get("/register")
+        assert r.status_code == 200
+
+    app.config["REGISTER_ENABLED"] = False
+
+    with app.test_client() as client:
+        r = client.get("/register")
+        assert r.status_code == 404
+        r = client.post("/register")
+        assert r.status_code == 404
