@@ -3,6 +3,9 @@
 <h1>coalics</h1>
 
 <a href="{{ url_for("login") }}">login</a>
+{% if config.REGISTER_ENABLED %}
+|
 <a href="{{ url_for("register") }}">register</a>
+{% endif %}
 
 {% endblock %}

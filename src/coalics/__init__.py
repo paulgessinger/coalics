@@ -30,12 +30,9 @@ from coalics.models import db, User
 from coalics.views import init_views
 from coalics.util import string_shorten
 
+
 def create_app():
     app = Flask(__name__)
-
-
-
-
 
     app.config.from_object("coalics.config")
 
@@ -57,7 +54,6 @@ def create_app():
     if app.debug:
         logging.getLogger().setLevel(logging.DEBUG)
 
-
     def datetimefilter(value, format="%d.%m.%Y %H:%M:%S"):
         # this will have to come from the user sometime
         tz = pytz.timezone("Europe/Zurich")
@@ -65,15 +61,10 @@ def create_app():
         local_dt = dt.astimezone(tz)
         return local_dt.strftime(format)
 
-
     app.jinja_env.filters["localdate"] = datetimefilter
 
     db.init_app(app)
-    migrate = Migrate(app, db)
-
-    app.session_interface = SqlAlchemySessionInterface(
-        app, db, app.config["SESSION_TABLE"], key_prefix="coalics"
-    )
+    Migrate(app, db)
 
     cli = AppGroup("coalics")
 
@@ -90,11 +81,9 @@ def create_app():
     lm.login_message = None
     lm.init_app(app)
 
-
     @lm.user_loader
     def load_user(user_id):
         return User.query.get(user_id)
-
 
     init_views(app)
 

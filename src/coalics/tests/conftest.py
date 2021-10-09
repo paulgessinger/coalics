@@ -9,9 +9,10 @@ from coalics.models import CalendarSource, Calendar, User
 @pytest.fixture
 def app():
     os.environ["DATABASE_URL"] = "sqlite:///:memory:"
-    os.environ["EMAIL_SALT"] = "$2b$12$xePh6QJ0c06AcqCtGuWNbO"
+    os.environ["COALICS_CSRF_KEY"] = "abc"
+    os.environ["SECRET_KEY"] = "abc"
+    os.environ["REGISTER_ENABLED"] = "True"
     app = coalics.create_app()
-    app.secret_key = "hurz"
 
     app.testing = True
     with app.app_context():

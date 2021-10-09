@@ -34,7 +34,7 @@ def test_user_registration(app, client):
     password = "123456"
 
     with pytest.raises(NoResultFound):
-        User.find_by_email(email)
+        User.query.filter_by(email=email).one()
 
     r = client.post("/login", data=dict(email=email, password=password))
     assert b"Invalid login info" in r.data
@@ -65,7 +65,7 @@ def test_user_registration(app, client):
     assert r.status_code == 302
     assert r.headers["Location"].endswith(url_for("calendars"))
 
-    User.find_by_email(email)
+    User.query.filter_by(email=email).one()
 
     r = client.post("/login", data=dict(email=email, password="nope"))
     assert r.status_code == 403

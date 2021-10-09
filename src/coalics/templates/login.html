@@ -2,7 +2,9 @@
 {% extends "base.html" %}
 
 {% block subnav %}
+{% if config.REGISTER_ENABLED %}
 {{ subnav_item("Register", url_for("register"), "secondary") }}
+{% endif %}
 {% endblock %}
 
 {% block content %}

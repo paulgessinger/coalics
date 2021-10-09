@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, abort
 import flask
+from flask.globals import current_app
 from flask_login import (
     LoginManager,
     login_required,
@@ -35,30 +36,20 @@ from .tasks import update_sources, update_source_id
 
 from coalics.models import db
 
+
 def init_views(app):
 
     app.jinja_env.globals["logout_form"] = lambda: LogoutForm()
 
-
     @app.route("/")
     def home():
-        return "hi", 200
-        # # r = q.enqueue(update_sources)
-        # # while not r.result:
-        # # time.sleep(0.1)
-
-        # # return ""
-
-        # # update.delay()
-        # if current_user.is_authenticated:
-        # return flask.redirect(url_for("calendars"))
-        # return render_template("home.html")
-
+        if current_user.is_authenticated:
+            return flask.redirect(url_for("calendars"))
+        return render_template("home.html")
 
     @app.route("/robots.txt")
     def robots():
         return "User-agent: *\nDisallow: /"
-
 
     @app.route("/calendar")
     @login_required
@@ -67,8 +58,9 @@ def init_views(app):
 
         delete_form = DeleteForm()
 
-        return render_template("calendars.html", calendars=cals, delete_form=delete_form)
-
+        return render_template(
+            "calendars.html", calendars=cals, delete_form=delete_form
+        )
 
     @app.route("/calendar/add", methods=["GET", "POST"])
     @login_required
@@ -89,7 +81,6 @@ def init_views(app):
         flask.flash("Calendar group {} created".format(cal.name), "success")
 
         return redirect(url_for("calendar_edit", cal_id=cal.id))
-
 
     @app.route("/calendar/<int:cal_id>", methods=["GET", "POST"])
     @login_required
@@ -135,7 +126,6 @@ def init_views(app):
         flask.flash("Calendar saved sucessfully", "success")
         return redirect(url_for("calendar_edit", cal_id=cal_id))
 
-
     @app.route("/calendar/<int:cal_id>/delete", methods=["post"])
     @login_required
     def calendar_delete(cal_id):
@@ -159,7 +149,6 @@ def init_views(app):
         db.session.commit()
 
         return redirect(url_for("calendars"))
-
 
     @app.route("/ics/<slug>/<name>.ics")
     def calendar_ics(slug, name):
@@ -235,7 +224,6 @@ def init_views(app):
         # else:
         # return "<pre>{}</pre>".format(str(root.to_ical(), "utf-8"))
 
-
     @app.route("/calendar/<int:cal_id>/source", methods=["GET", "POST"])
     @login_required
     def add_source(cal_id):
@@ -263,7 +251,6 @@ def init_views(app):
 
         return redirect(url_for("calendar_edit", cal_id=cal_id))
 
-
     @app.route("/source/<int:source_id>", methods=["GET"])
     @login_required
     def view_source(source_id):
@@ -277,7 +264,6 @@ def init_views(app):
             .paginate(max_per_page=20)
         )
         return render_template("view_source.html", events=events, source=source)
-
 
     @app.route(
         "/calendar/<int:cal_id>/source/<int:source_id>/edit", methods=["GET", "POST"]
@@ -343,7 +329,6 @@ def init_views(app):
         flask.flash("Calendar source saved sucessfully", "success")
         return redirect(url_for("edit_source", source_id=source_id, cal_id=cal_id))
 
-
     @app.route("/calendar/<int:cal_id>/source/<int:source_id>/delete", methods=["POST"])
     @login_required
     def delete_source(cal_id, source_id):
@@ -360,7 +345,6 @@ def init_views(app):
         db.session.delete(source)
         db.session.commit()
         return redirect(url_for("calendar_edit", cal_id=cal_id))
-
 
     @app.route("/login", methods=["GET", "POST"])
     def login():
@@ -385,20 +369,19 @@ def init_views(app):
             app.logger.debug(user)
         except sqlalchemy.orm.exc.NoResultFound:
             flask.flash("Invalid login info", "danger")
-            return render_template("login.html", form=form)
+            return render_template("login.html", form=form), 403
 
         if user.password != psw:
             flask.flash("Invalid password", "danger")
-            return render_template("login.html", form=form)
-            # return render_template("login.html"), 401
+            return render_template("login.html", form=form), 403
 
         login_user(user)
         return flask.redirect(url_for("calendars"))
 
-
     @app.route("/register", methods=("GET", "POST"))
     def register():
-        #  return "", 404
+        if not app.config["REGISTER_ENABLED"]:
+            return "", 404
 
         if request.method == "GET":
             form = RegisterForm()
@@ -410,7 +393,8 @@ def init_views(app):
 
         form = RegisterForm(request.form)
         if not form.validate():
-            return render_template("register.html", form=form)
+            flask.flash("Error creating account", "danger")
+            return render_template("register.html", form=form), 400
 
         user = User(email=email, password=psw1)
         db.session.add(user)
@@ -419,12 +403,11 @@ def init_views(app):
             db.session.commit()
         except sqlalchemy.exc.IntegrityError:
             flask.flash("Error creating account", "danger")
-            return render_template("register.html", form=form)
+            return render_template("register.html", form=form), 400
 
         login_user(user)
         flask.flash("Account created", "success")
         return flask.redirect(url_for("calendars"))
-
 
     @app.route("/logout", methods=["POST"])
     @login_required
@@ -437,11 +420,9 @@ def init_views(app):
         else:
             flask.abort(400)
 
-
     @app.route("/privacy")
     def privacy():
         return render_template("privacy.html")
-
 
     @app.route("/imprint")
     def imprint():
