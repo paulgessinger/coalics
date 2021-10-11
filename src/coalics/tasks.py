@@ -33,7 +33,9 @@ def update_sources():
     end = datetime.now()
 
     delta = end - start
-    current_app.logger.info("Task update_sources successful after {}s".format(delta.seconds))
+    current_app.logger.info(
+        "Task update_sources successful after {}s".format(delta.seconds)
+    )
 
     if update_ping_url is not None:
         current_app.logger.info("Sending ping to %s", update_ping_url)
@@ -89,7 +91,7 @@ class ICSEvent:
         return "Event('{}', {}, {})".format(self.summary, self.start, self.uid)
 
 
-def _update_source(cal, source):
+def _update_source(cal: ics.Calendar, source: CalendarSource):
 
     upstream_events = [ICSEvent(e) for e in cal.subcomponents if e.name == "VEVENT"]
 
@@ -106,7 +108,9 @@ def _update_source(cal, source):
 
     for event in matching_stored_events:
         if not event.uid in upstream_uids:
-            current_app.logger.debug("Event with uid %s was deleted upstream", event.uid)
+            current_app.logger.debug(
+                "Event with uid %s was deleted upstream", event.uid
+            )
             # was deleted upstream
             db.session.delete(event)
 
@@ -128,7 +132,9 @@ def _update_source(cal, source):
                 # check if event is still accepted by filters
                 if accept_event(event):
                     # yes: update
-                    current_app.logger.debug("Event %s exists and is accepted, update", event)
+                    current_app.logger.debug(
+                        "Event %s exists and is accepted, update", event
+                    )
                     event.populate_obj(dbevent)
                 else:
                     # no: remove it

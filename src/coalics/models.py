@@ -82,6 +82,7 @@ class CalendarSource(db.Model):
     positive_pattern = db.Column(db.String(255), default=".*")
     negative_pattern = db.Column(db.String(255), default="")
     alerts = db.Column(db.String(255), default="")
+    all_day_override = db.Column(db.Boolean, default=0, nullable=False)
     calendar_id = db.Column(
         db.Integer, db.ForeignKey("calendar.id", ondelete="CASCADE")
     )

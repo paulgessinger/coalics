@@ -205,16 +205,17 @@ def init_views(app):
             event.add("dtstamp", make_zulu(dbevent.timestamp))
 
             # add alarms
-            for mins in dbevent.source.alerts.split(";"):
-                # app.logger.debug(mins)
-                # td = timedelta(minutes=int(mins))
-                # alarmtime = dtstart - td
-                alarm = ics.Alarm()
-                # alarm.add("trigger", alarmtime)
-                # alarm.add("trigger", "-PT{}M".format(mins))
-                alarm["TRIGGER"] = "-PT{}M".format(mins)
-                alarm.add("action", "DISPLAY")
-                event.add_component(alarm)
+            if dbevent.source.alerts != "":
+                for mins in dbevent.source.alerts.split(";"):
+                    # app.logger.debug(mins)
+                    # td = timedelta(minutes=int(mins))
+                    # alarmtime = dtstart - td
+                    alarm = ics.Alarm()
+                    # alarm.add("trigger", alarmtime)
+                    # alarm.add("trigger", "-PT{}M".format(mins))
+                    alarm["TRIGGER"] = "-PT{}M".format(mins)
+                    alarm.add("action", "DISPLAY")
+                    event.add_component(alarm)
 
             root.add_component(event)
 

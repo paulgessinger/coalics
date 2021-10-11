@@ -1,0 +1,150 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CERN//INDICO//EN
+BEGIN:VEVENT
+SUMMARY:Observation and study of the doubly charmed Tcc+ tetraquark at LHC
+ b
+DTSTART;VALUE=DATE-TIME:20210914T090000Z
+DTEND;VALUE=DATE-TIME:20210914T100000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065144@indico.cern.ch
+DESCRIPTION:Speakers: Ivan Polyakov (Syracuse University (US))\nA state wi
+ th minimal quark content ccu~d~ has been observed in the full dataset coll
+ ected by the LHCb experiment in Run1&2. This is the first observation of a
+  new class of exotic hadrons\, containing two same-sign heavy quarks. This
+  exotic state manifests itself as a narrow peak in the mass spectrum of D0
+ D0π+ mesons just below the D∗+D0 mass threshold. Study of the DD and Dp
+ i mass distributions suggest the interpretation of the state as an isoscal
+ ar ground Tcc+ tetraquark with spin-parity numbers JP=1+. Fundamental reso
+ nance parameters including the pole position\, scattering length\, effecti
+ ve range and compositeness are measured to reveal important information ab
+ out the nature of this new state. In addition\, an unexpected dependence o
+ f the production rate as a function of track multiplicity is observed.\nht
+ tps://indico.cern.ch/event/1065144/\n\nLHC Seminar - LHCb: https://cern.zo
+ om.us/j/67862924211?pwd=T3Bqb0tjZ1lORVdkZFhpOXlXVU5wZz09
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065144/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Probing electroweak boson self-interactions with ATLAS
+DTSTART;VALUE=DATE-TIME:20210921T090000Z
+DTEND;VALUE=DATE-TIME:20210921T100000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065145@indico.cern.ch
+DESCRIPTION:Speakers: Philip Sommer (University of Sheffield (GB))\nMeasur
+ ements of multiboson production at the LHC probe the electroweak gauge str
+ ucture of the Standard Model for contributions from anomalous couplings. P
+ rocesses involving quartic gauge-boson self-interactions have only become 
+ experimentally accessible with the LHC Run-2 data through the study of ele
+ ctroweak diboson and triboson production. In this seminar\, recent ATLAS r
+ esults on the measurement of electroweak production of a Zgamma pair in as
+ sociation with two jets and the first observation of three W boson product
+ ion are presented. Moreover\, precise boson and diboson differential cross
+ -section measurements are interpreted in a combined  Effective Field Theo
+ ry analysis\, allowing to systematically probe gauge boson self-interactio
+ ns.\nhttps://indico.cern.ch/event/1065145/\n\nLHC Seminar - ATLAS: https:/
+ /cern.zoom.us/j/65446136955?pwd=ZzRlVDhaT2cxelRxTVRZUjNubS90dz09
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065145/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Recent results on Higgs Boson pair production exploring boosted to
+ pologies from CMS
+DTSTART;VALUE=DATE-TIME:20210928T090000Z
+DTEND;VALUE=DATE-TIME:20210928T100000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065146@indico.cern.ch
+DESCRIPTION:Speakers: Santeri Laurila (CERN)\nThe measurement of the produ
+ ction of Higgs boson pairs (HH) at the LHC allows the exploration of the H
+ iggs particle’s interaction with itself and is thus of utmost importance
+ . In this talk we present recent results from the CMS collaboration on mea
+ surements of HH production as predicted by the Standard Model and the sear
+ ch for beyond-SM physics involving cascades or resonances producing HH pai
+ rs. The most stringent constraints on the 4-point-coupling between WW or Z
+ Z pairs with HH pairs are set\, excluding for the first time the case of n
+ o such SM coupling\, with all other SM couplings in place. At the highest 
+ HH invariant masses novel neural-network approaches to identification of b
+ oosted Higgs bosons enhance sensitivity significantly over previous search
+ es.\nhttps://indico.cern.ch/event/1065146/\n\nCMS seminar 28 September 202
+ 1: https://cern.zoom.us/j/66857137325?pwd=K2RMOVpJOUZOYXUweUtzTEk0eUpjQT09
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065146/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Global and local polarization of $\\Lambda$ and anti-$\\Lambda$ hy
+ perons in Pb-Pb collisions in ALICE
+DTSTART;VALUE=DATE-TIME:20211005T090000Z
+DTEND;VALUE=DATE-TIME:20211005T100000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065147@indico.cern.ch
+DESCRIPTION:Speakers: Debojit Sarkar (Wayne State University (US))\nThe ex
+ treme temperatures and energy densities generated in the ultrarelativistic
+  nuclear collisions produce a state of partonic matter\, the quark-gluon p
+ lasma (QGP)\, which behaves almost like an ideal fluid. The created system
+  may possess large orbital angular momentum leading to the global polariza
+ tion of particles perpendicular to the reaction plane. Also\, local asymme
+ tries in the velocity fields due to anisotropic flow can generate vorticit
+ y and particle polarization along the beam direction. In parity-violating 
+ weak decays of hyperons\, the momentum direction of the decay baryon is co
+ rrelated with the hyperon spin. This feature can be used to measure the hy
+ peron polarization and estimate the local and global vorticity of the syst
+ em created in relativistic heavy-ion collisions.\n\nThis talk will present
+  the recent experimental measurements of the $\\Lambda$ and $\\overline \\
+ Lambda$ hyperons' local and global spin polarization in Pb-Pb collisions i
+ n ALICE [1\, 2]. The first experimental evidence of a non-zero hyperon spi
+ n polarization along the beam direction (local polarization) in Pb-Pb coll
+ isions at the LHC will be presented. Also\, the global hyperon spin polari
+ zation measurement in ALICE\, consistent with zero within experimental unc
+ ertainties\, will be discussed. The comparison of the measured local polar
+ ization with the hydrodynamic model calculations\, including competing con
+ tributions from thermal and shear-induced vorticity\, will be shown. A com
+ parison of the ALICE results with the previous STAR measurements and the c
+ ollision energy dependence of the local and global hyperon spin polarizati
+ on will be discussed.\n\n[1] ALICE Collaboration\, arXiv:2107.11183v1 [nuc
+ l-ex] [2] ALICE Collaboration\, Phys. Rev. C 101\, 044611 (2020)\n\n \nht
+ tps://indico.cern.ch/event/1065147/\n\nLHC Seminar - ALICE: https://cern.z
+ oom.us/j/64338816402?pwd=eVdWWGVkbWVIblA4SnJmRFBYWndpUT09
+LOCATION:ZOOM (CERN)
+URL:https://indico.cern.ch/event/1065147/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:LHCb
+DTSTART;VALUE=DATE-TIME:20211019T090000Z
+DTEND;VALUE=DATE-TIME:20211019T100000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065152@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/1065152/
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065152/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ATLAS
+DTSTART;VALUE=DATE-TIME:20211123T100000Z
+DTEND;VALUE=DATE-TIME:20211123T110000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065153@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/1065153/
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065153/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:CMS
+DTSTART;VALUE=DATE-TIME:20211130T100000Z
+DTEND;VALUE=DATE-TIME:20211130T110000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065154@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/1065154/
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065154/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:ALICE
+DTSTART;VALUE=DATE-TIME:20211207T100000Z
+DTEND;VALUE=DATE-TIME:20211207T110000Z
+DTSTAMP;VALUE=DATE-TIME:20211011T122900Z
+UID:indico-event-1065155@indico.cern.ch
+DESCRIPTION:https://indico.cern.ch/event/1065155/
+LOCATION:Video only
+URL:https://indico.cern.ch/event/1065155/
+END:VEVENT
+END:VCALENDAR
