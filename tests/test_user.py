@@ -5,12 +5,21 @@ from sqlalchemy.orm.exc import NoResultFound
 
 
 def test_user_login(client):
+    r = client.get("/")
+    assert r.status_code == 200
+
     r = client.get("/calendar")
     assert r.status_code == 302
     assert r.headers["Location"].endswith(url_for("login", next="/calendar"))
 
     r = client.post("/login", data=dict(email="test@example.com", password="hallo"))
     assert r.status_code == 302
+
+    r = client.get("/")
+    assert r.status_code == 302
+    assert "Location" in r.headers and r.headers["Location"].endswith(
+        url_for("calendars")
+    )
 
     r = client.get("/calendar")
     assert r.status_code == 200

@@ -27,9 +27,6 @@ class HashedPassword:
         else:
             raise TypeError("Must be HashedPassword or str")
 
-    def __neq__(self, test):
-        return not self.__eq__()
-
 
 class User(db.Model, flask_login.mixins.UserMixin):
     id = db.Column(db.Integer, primary_key=True)
@@ -68,11 +65,6 @@ class Calendar(db.Model):
         self.name = name
         self.owner = owner
         self.slug = str(uuid.uuid4())
-
-    @property
-    def events(self):
-        # query events from all sources
-        return Event.query.join(CalendarSource).filter_by(calendar=self)
 
 
 class CalendarSource(db.Model):
