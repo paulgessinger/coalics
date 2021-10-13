@@ -14,3 +14,5 @@ src/coalics/db.sqlite
 *.egg-info
 .DS_Store
 .coverage
+.python-version
+.tox
