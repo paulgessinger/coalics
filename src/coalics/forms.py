@@ -3,11 +3,7 @@ from wtforms import (
     BooleanField,
     StringField,
     validators,
-    SelectMultipleField,
-    ValidationError,
     widgets,
-    HiddenField,
-    SubmitField,
     PasswordField,
 )
 import flask

@@ -1,27 +1,11 @@
-from flask import Flask, render_template, request, redirect, url_for, abort
-import flask
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
 from flask_migrate import Migrate
-from flask_login import (
-    LoginManager,
-    login_required,
-    login_user,
-    current_user,
-    logout_user,
-)
-from flask_session import SqlAlchemySessionInterface
-from flask.cli import AppGroup
-import uuid
-from functools import wraps
+from flask_login import LoginManager
 import logging
 import logging.handlers
 import os
-from dotenv import load_dotenv
 
 import pytz
-from tzlocal import get_localzone
-from flask.logging import default_handler
-import platform
 
 
 from logging.config import dictConfig

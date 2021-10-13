@@ -1,13 +1,11 @@
 import requests
 import icalendar as ics
-import time
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor
 from flask import current_app
 
 from coalics import db
 from coalics.models import CalendarSource, Event
-from coalics.util import wait_for, event_acceptor, timeout, TimeoutException
+from coalics.util import event_acceptor, TimeoutException
 
 
 def update_sources():
@@ -19,16 +17,10 @@ def update_sources():
 
     calendar_sources = CalendarSource.query.all()
     current_app.logger.info("Update {} sources".format(len(calendar_sources)))
-    tasks = []
     start = datetime.now()
 
-    # with ThreadPoolExecutor() as ex:
-    #    results = ex.map(update_source, calendar_sources)
     for source in calendar_sources:
         update_source(source)
-
-    #  wait_for(tasks)
-    # db.session.close()
 
     end = datetime.now()
 
@@ -107,7 +99,7 @@ def _update_source(cal: ics.Calendar, source: CalendarSource):
     ).all()
 
     for event in matching_stored_events:
-        if not event.uid in upstream_uids:
+        if event.uid not in upstream_uids:
             current_app.logger.debug(
                 "Event with uid %s was deleted upstream", event.uid
             )
