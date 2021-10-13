@@ -32,9 +32,7 @@ def upgrade():
         sa.Column("location", sa.Text(), nullable=True),
         sa.Column("source_id", sa.Integer(), nullable=True),
         sa.ForeignKeyConstraint(
-            ["source_id"],
-            ["calendar_source.id"],
-            ondelete="CASCADE",
+            ["source_id"], ["calendar_source.id"], ondelete="CASCADE",
         ),
         sa.PrimaryKeyConstraint("id"),
     )
