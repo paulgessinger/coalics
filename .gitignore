@@ -13,3 +13,4 @@ postgres-datax
 src/coalics/db.sqlite
 *.egg-info
 .DS_Store
+.coverage
