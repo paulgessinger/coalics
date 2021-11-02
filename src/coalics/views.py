@@ -9,7 +9,7 @@ from flask_login import (
 import sqlalchemy
 import icalendar as ics
 import pytz
-from datetime import datetime
+from datetime import datetime, timedelta
 
 from .util import (
     event_acceptor,
@@ -178,8 +178,10 @@ def init_views(app):
             dtend = make_zulu(dbevent.end)
 
             if dbevent.source.all_day_override and dtstart.date() != dtend.date():
+                app.logger.debug("Override start %s -> %s", dtstart, dtstart.date())
+                app.logger.debug("Override end %s -> %s", dtend, dtend.date())
                 event.add("dtstart", dtstart.date())
-                event.add("dtend", dtend.date())
+                event.add("dtend", dtend.date() + timedelta(days=1))
             else:
                 event.add("dtstart", dtstart)
                 event.add("dtend", dtend)
