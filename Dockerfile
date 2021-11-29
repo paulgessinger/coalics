@@ -1,12 +1,13 @@
-FROM python:3.8
+FROM python:3.8-slim-buster
 MAINTAINER Paul Gessinger <hello@paulgessinger.com>
+
+RUN pip install gunicorn
 
 ENV APP_PATH /app
 WORKDIR $APP_PATH
 
 COPY . /app
 RUN pip install .
-RUN pip install uwsgi
 
 
 
