@@ -55,13 +55,18 @@ def update_source(source):
 
     nevents_prev = Event.query.filter_by(source=source).count()
     current_app.logger.info("Updating source url {}".format(source.url))
-    res = _update_source(build_ics(source), source)
-
-    nevents = Event.query.filter_by(source=source).count()
-    current_app.logger.info(
-        "Source %s had %d events now has %d events", source.url, nevents_prev, nevents
-    )
-    return res
+    try:
+        res = _update_source(build_ics(source), source)
+        nevents = Event.query.filter_by(source=source).count()
+        current_app.logger.info(
+            "Source %s had %d events now has %d events",
+            source.url,
+            nevents_prev,
+            nevents,
+        )
+        return res
+    except Exception as e:
+        current_app.logger.error("Error updating source url {}", source.url, exc_info=e)
 
 
 class ICSEvent:
