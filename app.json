@@ -1,0 +1,8 @@
+{
+  "cron": [
+    {
+      "command": "flask coalics update",
+      "schedule": "*/30 * * * *"
+    }
+  ]
+}

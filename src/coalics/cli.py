@@ -32,4 +32,11 @@ def init_cli(app):
                 logger.info("Scheduler: Sleeping for {}s".format(td.seconds))
                 time.sleep(td.seconds)
 
+    @cli.command("update")
+    def update():
+        logger = current_app.logger
+        logger.info("Begin update run")
+        tasks.update_sources()
+        logger.info("Update ran without error")
+
     app.cli.add_command(cli)

@@ -387,6 +387,7 @@ def init_views(app):
             db.session.commit()
         except sqlalchemy.exc.IntegrityError:
             flask.flash("Error creating account", "danger")
+            app.logger.error("Error creating account", exc_info=True)
             return render_template("register.html", form=form), 400
 
         login_user(user)
