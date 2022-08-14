@@ -30,6 +30,9 @@ SQLAlchemy-Utils = "^0.37.8"
 pytest = "^6.2.5"
 psycopg2-binary = "^2.9.2"
 MarkupSafe = "2.0.1"
+prometheus-client = "^0.14.1"
+prometheus-flask-exporter = "^0.20.3"
+Flask-HTTPAuth = "^4.7.0"
 
 [tool.poetry.dev-dependencies]
 black = "^19.10b0"

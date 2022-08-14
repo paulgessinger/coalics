@@ -6,10 +6,14 @@ import logging.handlers
 import os
 
 import pytz
+from prometheus_flask_exporter import PrometheusMetrics
+from flask_httpauth import HTTPBasicAuth
+from werkzeug.security import generate_password_hash, check_password_hash
 
 
 from logging.config import dictConfig
 
+from coalics import config
 from coalics.models import db, User
 from coalics.views import init_views
 from coalics.util import string_shorten
@@ -18,6 +22,16 @@ from coalics.cli import init_cli
 
 def create_app():
     app = Flask(__name__)
+
+    basic_auth = HTTPBasicAuth()
+
+    @basic_auth.verify_password
+    def verify_password(username, password):
+        if config.PROM_USERNAME is None or config.PROM_PWHASH is None:
+            return False
+        if username != config.PROM_USERNAME:
+            return False
+        return check_password_hash(config.PROM_PWHASH, password)
 
     app.config.from_object("coalics.config")
 
@@ -66,6 +80,13 @@ def create_app():
     def load_user(user_id):
         return User.query.get(user_id)
 
-    init_views(app)
+    metrics = PrometheusMetrics(
+        app,
+        defaults_prefix="coalics",
+        path="/metrics",
+        metrics_decorator=basic_auth.login_required,
+    )
+
+    init_views(app, metrics)
 
     return app

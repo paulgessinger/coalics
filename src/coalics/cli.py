@@ -3,9 +3,11 @@ import time
 
 from flask.cli import AppGroup
 from flask import current_app
+from prometheus_client import push_to_gateway
 
 from coalics.models import db
-from coalics import tasks
+from coalics import tasks, config
+from coalics.metrics import push_registry, update_success_time
 
 
 def init_cli(app):
@@ -38,5 +40,9 @@ def init_cli(app):
         logger.info("Begin update run")
         tasks.update_sources()
         logger.info("Update ran without error")
+
+        if config.UPDATE_PUSHGATEWAY is not None:
+            push_to_gateway(config.UPDATE_PUSHGATEWAY, "coalics_update", push_registry)
+        update_success_time.set_to_current_time()
 
     app.cli.add_command(cli)

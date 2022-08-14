@@ -1,22 +1,22 @@
 version: '3.2'
 
 services:
-  app:
-    build: .
-    user: nobody
-    hostname: app
-    depends_on:
-      - db
-    ports:
-      - "8080:8080"
-    # command: ["./wait-for-it.sh", "db:5432", "--", "python", "run.py"]
-    command: ["./wait-for-it.sh", "db:5432", "--", "uwsgi", "--http", ":8080", "--wsgi-file", "wsgi.py"]
-    env_file: .env
-    environment:
-      - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
-    working_dir: /src
-    volumes:
-      - ./:/src
+  # app:
+  #   build: .
+  #   user: nobody
+  #   hostname: app
+  #   depends_on:
+  #     - db
+  #   ports:
+  #     - "8080:8080"
+  #   # command: ["./wait-for-it.sh", "db:5432", "--", "python", "run.py"]
+  #   command: ["./wait-for-it.sh", "db:5432", "-t", "3", "--", "gunicorn", "-b", ":8080", "wsgi.py"]
+  #   env_file: .env
+  #   environment:
+  #     - DATABASE_URL=postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@db/${POSTGRES_DB}
+  #   working_dir: /src
+  #   volumes:
+  #     - ./:/src
 
 
   # worker:

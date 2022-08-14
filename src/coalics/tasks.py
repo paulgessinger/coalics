@@ -6,9 +6,17 @@ from flask import current_app
 from coalics import db
 from coalics.models import CalendarSource, Event
 from coalics.util import event_acceptor, TimeoutException
+from coalics.metrics import (
+    update_duration,
+    update_source_count,
+    update_error_counter,
+    update_count,
+)
 
 
+@update_duration.time()
 def update_sources():
+    update_count.inc()
     update_ping_url = current_app.config["UPDATE_PING_URL"]
 
     if update_ping_url is not None:
@@ -18,6 +26,8 @@ def update_sources():
     calendar_sources = CalendarSource.query.all()
     current_app.logger.info("Update {} sources".format(len(calendar_sources)))
     start = datetime.now()
+
+    update_source_count.observe(len(calendar_sources))
 
     for source in calendar_sources:
         update_source(source)
@@ -66,6 +76,7 @@ def update_source(source):
         )
         return res
     except Exception as e:
+        update_error_counter.incr()
         current_app.logger.error("Error updating source url {}", source.url, exc_info=e)
 
 

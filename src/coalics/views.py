@@ -7,6 +7,7 @@ from flask_login import (
     logout_user,
 )
 import sqlalchemy
+from prometheus_flask_exporter import PrometheusMetrics
 import icalendar as ics
 import pytz
 from datetime import datetime, timedelta
@@ -30,7 +31,7 @@ from .tasks import update_source_id
 from coalics.models import db
 
 
-def init_views(app):
+def init_views(app, metrics: PrometheusMetrics):
 
     app.jinja_env.globals["logout_form"] = lambda: LogoutForm()
 
@@ -144,6 +145,11 @@ def init_views(app):
         return redirect(url_for("calendars"))
 
     @app.route("/ics/<slug>/<name>.ics")
+    @metrics.summary(
+        "ics_present",
+        "Latencies of ICS presentation view",
+        labels={"status": lambda r: r.status_code},
+    )
     def calendar_ics(slug, name):
 
         try:

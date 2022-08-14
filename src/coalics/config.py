@@ -21,3 +21,10 @@ REGEX_TIMEOUT = 10
 UPDATE_PING_URL = os.environ.get("UPDATE_PING_URL", None)
 
 REGISTER_ENABLED = os.environ.get("REGISTER_ENABLED", "False") == "True"
+
+
+UPDATE_PUSHGATEWAY = os.environ.get("UPDATE_PUSHGATEWAY")
+
+
+PROM_USERNAME = os.environ.get("PROM_USERNAME")
+PROM_PWHASH = os.environ.get("PROM_PWHASH")
