@@ -145,6 +145,7 @@ def init_views(app, metrics: PrometheusMetrics):
         return redirect(url_for("calendars"))
 
     @app.route("/ics/<slug>/<name>.ics")
+    @metrics.do_not_track()
     @metrics.summary(
         "coalics_ics_present",
         "Latencies of ICS presentation view",
