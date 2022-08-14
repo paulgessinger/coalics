@@ -146,7 +146,7 @@ def init_views(app, metrics: PrometheusMetrics):
 
     @app.route("/ics/<slug>/<name>.ics")
     @metrics.summary(
-        "ics_present",
+        "coalics_ics_present",
         "Latencies of ICS presentation view",
         labels={"status": lambda r: r.status_code},
     )
