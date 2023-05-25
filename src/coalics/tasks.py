@@ -76,7 +76,7 @@ def update_source(source):
         )
         return res
     except Exception as e:
-        update_error_counter.incr()
+        update_error_counter.inc()
         current_app.logger.error("Error updating source url {}", source.url, exc_info=e)
 
 
